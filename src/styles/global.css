@@ -152,15 +152,22 @@ section {
 	}
 }
 
-.podium-display {
+body:has(.podium-display) {
 	align-items: center;
+	background: var(--fg);
+	block-size: 100dvb;
+	color: var(--bg);
+	display: flex;
+	justify-content: center;
+}
+
+.podium-display {
 	aspect-ratio: 16 / 9;
 	container: podium / inline-size;
-	display: flex;
 	flex-direction: column;
 	gap: 10cqb;
-	justify-content: center;
-	margin: 0;
+	inline-size: 1280px;
+	margin: 10cqb 0 0;
 
 	h1 {
 		color: #1ccc08;

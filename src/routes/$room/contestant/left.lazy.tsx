@@ -6,7 +6,6 @@ import { ReadOnlyContestant } from '../../../types';
 import contestants from '../../../data/s1e1/contestants.json';
 
 function ContestantLeft() {
-	const { room } = Route.useParams();
 	const [contestant, setContestant] = useState<ReadOnlyContestant | null>(
 		ReadOnlyContestant.parse({ name: contestants.at(0) }),
 	);
