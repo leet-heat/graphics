@@ -47,7 +47,13 @@ function Host() {
 							</div>
 						) : null}
 					</>
-				) : null}
+				) : (
+					<img
+						src="https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_800/v1733784577/leet-heat/LeetHeat_Lockup_Pixelated_HiRes.png"
+						alt="Leet Heat"
+						className="logo"
+					/>
+				)}
 			</section>
 		</main>
 	);
