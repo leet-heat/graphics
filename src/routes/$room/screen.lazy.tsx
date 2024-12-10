@@ -7,11 +7,8 @@ function Host() {
 	const [question, setQuestion] = useState<Question | null>(null);
 
 	usePartySocket({
-		// TODO: add env var
-		host: 'http://localhost:1999',
-
-		// TODO set this somewhere (URL?)
-		room: 's1e1',
+		host: import.meta.env.VITE_PARTY_URL,
+		room: import.meta.env.VITE_PARTY_ROOM,
 		onMessage(event) {
 			const parsed = JSON.parse(event.data);
 

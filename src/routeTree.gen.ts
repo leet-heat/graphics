@@ -8,376 +8,378 @@
 // You should NOT make any changes in this file as it will be overwritten.
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute } from '@tanstack/react-router';
 
 // Import Routes
 
-import { Route as rootRoute } from './routes/__root'
-import { Route as RoomrootImport } from './routes/$room/__root'
+import { Route as rootRoute } from './routes/__root';
+import { Route as RoomrootImport } from './routes/$room/__root';
 
 // Create Virtual Routes
 
-const RoomImport = createFileRoute('/$room')()
-const ScreenLazyImport = createFileRoute('/screen')()
-const ProducerLazyImport = createFileRoute('/producer')()
-const HostLazyImport = createFileRoute('/host')()
-const IndexLazyImport = createFileRoute('/')()
-const RoomIndexLazyImport = createFileRoute('/$room/')()
-const ContestantRightLazyImport = createFileRoute('/contestant/right')()
-const ContestantLeftLazyImport = createFileRoute('/contestant/left')()
-const RoomScreenLazyImport = createFileRoute('/$room/screen')()
-const RoomProducerLazyImport = createFileRoute('/$room/producer')()
-const RoomHostLazyImport = createFileRoute('/$room/host')()
+const RoomImport = createFileRoute('/$room')();
+const ScreenLazyImport = createFileRoute('/screen')();
+const ProducerLazyImport = createFileRoute('/producer')();
+const HostLazyImport = createFileRoute('/host')();
+const IndexLazyImport = createFileRoute('/')();
+const RoomIndexLazyImport = createFileRoute('/$room/')();
+const ContestantRightLazyImport = createFileRoute('/contestant/right')();
+const ContestantLeftLazyImport = createFileRoute('/contestant/left')();
+const RoomScreenLazyImport = createFileRoute('/$room/screen')();
+const RoomProducerLazyImport = createFileRoute('/$room/producer')();
+const RoomHostLazyImport = createFileRoute('/$room/host')();
 const RoomContestantRightLazyImport = createFileRoute(
-  '/$room/contestant/right',
-)()
-const RoomContestantLeftLazyImport = createFileRoute('/$room/contestant/left')()
+	'/$room/contestant/right',
+)();
+const RoomContestantLeftLazyImport = createFileRoute(
+	'/$room/contestant/left',
+)();
 
 // Create/Update Routes
 
 const RoomrootRoute = RoomrootImport.update({
-  id: '/__root',
-  getParentRoute: () => RoomRoute,
-} as any)
+	id: '/__root',
+	getParentRoute: () => RoomRoute,
+} as any);
 
 const RoomRoute = RoomImport.update({
-  id: '/$room',
-  path: '/$room',
-  getParentRoute: () => rootRoute,
-} as any)
+	id: '/$room',
+	path: '/$room',
+	getParentRoute: () => rootRoute,
+} as any);
 
 const ScreenLazyRoute = ScreenLazyImport.update({
-  id: '/screen',
-  path: '/screen',
-  getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/screen.lazy').then((d) => d.Route))
+	id: '/screen',
+	path: '/screen',
+	getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/screen.lazy').then((d) => d.Route));
 
 const ProducerLazyRoute = ProducerLazyImport.update({
-  id: '/producer',
-  path: '/producer',
-  getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/producer.lazy').then((d) => d.Route))
+	id: '/producer',
+	path: '/producer',
+	getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/producer.lazy').then((d) => d.Route));
 
 const HostLazyRoute = HostLazyImport.update({
-  id: '/host',
-  path: '/host',
-  getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/host.lazy').then((d) => d.Route))
+	id: '/host',
+	path: '/host',
+	getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/host.lazy').then((d) => d.Route));
 
 const IndexLazyRoute = IndexLazyImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/index.lazy').then((d) => d.Route))
+	id: '/',
+	path: '/',
+	getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/index.lazy').then((d) => d.Route));
 
 const RoomIndexLazyRoute = RoomIndexLazyImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => RoomRoute,
-} as any).lazy(() => import('./routes/$room/index.lazy').then((d) => d.Route))
+	id: '/',
+	path: '/',
+	getParentRoute: () => RoomRoute,
+} as any).lazy(() => import('./routes/index.lazy').then((d) => d.Route));
 
 const ContestantRightLazyRoute = ContestantRightLazyImport.update({
-  id: '/contestant/right',
-  path: '/contestant/right',
-  getParentRoute: () => rootRoute,
+	id: '/contestant/right',
+	path: '/contestant/right',
+	getParentRoute: () => rootRoute,
 } as any).lazy(() =>
-  import('./routes/contestant/right.lazy').then((d) => d.Route),
-)
+	import('./routes/contestant/right.lazy').then((d) => d.Route),
+);
 
 const ContestantLeftLazyRoute = ContestantLeftLazyImport.update({
-  id: '/contestant/left',
-  path: '/contestant/left',
-  getParentRoute: () => rootRoute,
+	id: '/contestant/left',
+	path: '/contestant/left',
+	getParentRoute: () => rootRoute,
 } as any).lazy(() =>
-  import('./routes/contestant/left.lazy').then((d) => d.Route),
-)
+	import('./routes/contestant/left.lazy').then((d) => d.Route),
+);
 
 const RoomScreenLazyRoute = RoomScreenLazyImport.update({
-  id: '/screen',
-  path: '/screen',
-  getParentRoute: () => RoomRoute,
-} as any).lazy(() => import('./routes/$room/screen.lazy').then((d) => d.Route))
+	id: '/screen',
+	path: '/screen',
+	getParentRoute: () => RoomRoute,
+} as any).lazy(() => import('./routes/$room/screen.lazy').then((d) => d.Route));
 
 const RoomProducerLazyRoute = RoomProducerLazyImport.update({
-  id: '/producer',
-  path: '/producer',
-  getParentRoute: () => RoomRoute,
+	id: '/producer',
+	path: '/producer',
+	getParentRoute: () => RoomRoute,
 } as any).lazy(() =>
-  import('./routes/$room/producer.lazy').then((d) => d.Route),
-)
+	import('./routes/$room/producer.lazy').then((d) => d.Route),
+);
 
 const RoomHostLazyRoute = RoomHostLazyImport.update({
-  id: '/host',
-  path: '/host',
-  getParentRoute: () => RoomRoute,
-} as any).lazy(() => import('./routes/$room/host.lazy').then((d) => d.Route))
+	id: '/host',
+	path: '/host',
+	getParentRoute: () => RoomRoute,
+} as any).lazy(() => import('./routes/$room/host.lazy').then((d) => d.Route));
 
 const RoomContestantRightLazyRoute = RoomContestantRightLazyImport.update({
-  id: '/contestant/right',
-  path: '/contestant/right',
-  getParentRoute: () => RoomRoute,
+	id: '/contestant/right',
+	path: '/contestant/right',
+	getParentRoute: () => RoomRoute,
 } as any).lazy(() =>
-  import('./routes/$room/contestant/right.lazy').then((d) => d.Route),
-)
+	import('./routes/$room/contestant/right.lazy').then((d) => d.Route),
+);
 
 const RoomContestantLeftLazyRoute = RoomContestantLeftLazyImport.update({
-  id: '/contestant/left',
-  path: '/contestant/left',
-  getParentRoute: () => RoomRoute,
+	id: '/contestant/left',
+	path: '/contestant/left',
+	getParentRoute: () => RoomRoute,
 } as any).lazy(() =>
-  import('./routes/$room/contestant/left.lazy').then((d) => d.Route),
-)
+	import('./routes/$room/contestant/left.lazy').then((d) => d.Route),
+);
 
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
-  interface FileRoutesByPath {
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexLazyImport
-      parentRoute: typeof rootRoute
-    }
-    '/host': {
-      id: '/host'
-      path: '/host'
-      fullPath: '/host'
-      preLoaderRoute: typeof HostLazyImport
-      parentRoute: typeof rootRoute
-    }
-    '/producer': {
-      id: '/producer'
-      path: '/producer'
-      fullPath: '/producer'
-      preLoaderRoute: typeof ProducerLazyImport
-      parentRoute: typeof rootRoute
-    }
-    '/screen': {
-      id: '/screen'
-      path: '/screen'
-      fullPath: '/screen'
-      preLoaderRoute: typeof ScreenLazyImport
-      parentRoute: typeof rootRoute
-    }
-    '/$room': {
-      id: '/$room'
-      path: '/$room'
-      fullPath: '/$room'
-      preLoaderRoute: typeof RoomImport
-      parentRoute: typeof rootRoute
-    }
-    '/$room/__root': {
-      id: '/$room/__root'
-      path: '/$room'
-      fullPath: '/$room'
-      preLoaderRoute: typeof RoomrootImport
-      parentRoute: typeof RoomRoute
-    }
-    '/$room/host': {
-      id: '/$room/host'
-      path: '/host'
-      fullPath: '/$room/host'
-      preLoaderRoute: typeof RoomHostLazyImport
-      parentRoute: typeof RoomImport
-    }
-    '/$room/producer': {
-      id: '/$room/producer'
-      path: '/producer'
-      fullPath: '/$room/producer'
-      preLoaderRoute: typeof RoomProducerLazyImport
-      parentRoute: typeof RoomImport
-    }
-    '/$room/screen': {
-      id: '/$room/screen'
-      path: '/screen'
-      fullPath: '/$room/screen'
-      preLoaderRoute: typeof RoomScreenLazyImport
-      parentRoute: typeof RoomImport
-    }
-    '/contestant/left': {
-      id: '/contestant/left'
-      path: '/contestant/left'
-      fullPath: '/contestant/left'
-      preLoaderRoute: typeof ContestantLeftLazyImport
-      parentRoute: typeof rootRoute
-    }
-    '/contestant/right': {
-      id: '/contestant/right'
-      path: '/contestant/right'
-      fullPath: '/contestant/right'
-      preLoaderRoute: typeof ContestantRightLazyImport
-      parentRoute: typeof rootRoute
-    }
-    '/$room/': {
-      id: '/$room/'
-      path: '/'
-      fullPath: '/$room/'
-      preLoaderRoute: typeof RoomIndexLazyImport
-      parentRoute: typeof RoomImport
-    }
-    '/$room/contestant/left': {
-      id: '/$room/contestant/left'
-      path: '/contestant/left'
-      fullPath: '/$room/contestant/left'
-      preLoaderRoute: typeof RoomContestantLeftLazyImport
-      parentRoute: typeof RoomImport
-    }
-    '/$room/contestant/right': {
-      id: '/$room/contestant/right'
-      path: '/contestant/right'
-      fullPath: '/$room/contestant/right'
-      preLoaderRoute: typeof RoomContestantRightLazyImport
-      parentRoute: typeof RoomImport
-    }
-  }
+	interface FileRoutesByPath {
+		'/': {
+			id: '/';
+			path: '/';
+			fullPath: '/';
+			preLoaderRoute: typeof IndexLazyImport;
+			parentRoute: typeof rootRoute;
+		};
+		'/host': {
+			id: '/host';
+			path: '/host';
+			fullPath: '/host';
+			preLoaderRoute: typeof HostLazyImport;
+			parentRoute: typeof rootRoute;
+		};
+		'/producer': {
+			id: '/producer';
+			path: '/producer';
+			fullPath: '/producer';
+			preLoaderRoute: typeof ProducerLazyImport;
+			parentRoute: typeof rootRoute;
+		};
+		'/screen': {
+			id: '/screen';
+			path: '/screen';
+			fullPath: '/screen';
+			preLoaderRoute: typeof ScreenLazyImport;
+			parentRoute: typeof rootRoute;
+		};
+		'/$room': {
+			id: '/$room';
+			path: '/$room';
+			fullPath: '/$room';
+			preLoaderRoute: typeof RoomImport;
+			parentRoute: typeof rootRoute;
+		};
+		'/$room/__root': {
+			id: '/$room/__root';
+			path: '/$room';
+			fullPath: '/$room';
+			preLoaderRoute: typeof RoomrootImport;
+			parentRoute: typeof RoomRoute;
+		};
+		'/$room/host': {
+			id: '/$room/host';
+			path: '/host';
+			fullPath: '/$room/host';
+			preLoaderRoute: typeof RoomHostLazyImport;
+			parentRoute: typeof RoomImport;
+		};
+		'/$room/producer': {
+			id: '/$room/producer';
+			path: '/producer';
+			fullPath: '/$room/producer';
+			preLoaderRoute: typeof RoomProducerLazyImport;
+			parentRoute: typeof RoomImport;
+		};
+		'/$room/screen': {
+			id: '/$room/screen';
+			path: '/screen';
+			fullPath: '/$room/screen';
+			preLoaderRoute: typeof RoomScreenLazyImport;
+			parentRoute: typeof RoomImport;
+		};
+		'/contestant/left': {
+			id: '/contestant/left';
+			path: '/contestant/left';
+			fullPath: '/contestant/left';
+			preLoaderRoute: typeof ContestantLeftLazyImport;
+			parentRoute: typeof rootRoute;
+		};
+		'/contestant/right': {
+			id: '/contestant/right';
+			path: '/contestant/right';
+			fullPath: '/contestant/right';
+			preLoaderRoute: typeof ContestantRightLazyImport;
+			parentRoute: typeof rootRoute;
+		};
+		'/$room/': {
+			id: '/$room/';
+			path: '/';
+			fullPath: '/$room/';
+			preLoaderRoute: typeof RoomIndexLazyImport;
+			parentRoute: typeof RoomImport;
+		};
+		'/$room/contestant/left': {
+			id: '/$room/contestant/left';
+			path: '/contestant/left';
+			fullPath: '/$room/contestant/left';
+			preLoaderRoute: typeof RoomContestantLeftLazyImport;
+			parentRoute: typeof RoomImport;
+		};
+		'/$room/contestant/right': {
+			id: '/$room/contestant/right';
+			path: '/contestant/right';
+			fullPath: '/$room/contestant/right';
+			preLoaderRoute: typeof RoomContestantRightLazyImport;
+			parentRoute: typeof RoomImport;
+		};
+	}
 }
 
 // Create and export the route tree
 
 interface RoomRouteChildren {
-  RoomrootRoute: typeof RoomrootRoute
-  RoomHostLazyRoute: typeof RoomHostLazyRoute
-  RoomProducerLazyRoute: typeof RoomProducerLazyRoute
-  RoomScreenLazyRoute: typeof RoomScreenLazyRoute
-  RoomIndexLazyRoute: typeof RoomIndexLazyRoute
-  RoomContestantLeftLazyRoute: typeof RoomContestantLeftLazyRoute
-  RoomContestantRightLazyRoute: typeof RoomContestantRightLazyRoute
+	RoomrootRoute: typeof RoomrootRoute;
+	RoomHostLazyRoute: typeof RoomHostLazyRoute;
+	RoomProducerLazyRoute: typeof RoomProducerLazyRoute;
+	RoomScreenLazyRoute: typeof RoomScreenLazyRoute;
+	RoomIndexLazyRoute: typeof RoomIndexLazyRoute;
+	RoomContestantLeftLazyRoute: typeof RoomContestantLeftLazyRoute;
+	RoomContestantRightLazyRoute: typeof RoomContestantRightLazyRoute;
 }
 
 const RoomRouteChildren: RoomRouteChildren = {
-  RoomrootRoute: RoomrootRoute,
-  RoomHostLazyRoute: RoomHostLazyRoute,
-  RoomProducerLazyRoute: RoomProducerLazyRoute,
-  RoomScreenLazyRoute: RoomScreenLazyRoute,
-  RoomIndexLazyRoute: RoomIndexLazyRoute,
-  RoomContestantLeftLazyRoute: RoomContestantLeftLazyRoute,
-  RoomContestantRightLazyRoute: RoomContestantRightLazyRoute,
-}
+	RoomrootRoute: RoomrootRoute,
+	RoomHostLazyRoute: RoomHostLazyRoute,
+	RoomProducerLazyRoute: RoomProducerLazyRoute,
+	RoomScreenLazyRoute: RoomScreenLazyRoute,
+	RoomIndexLazyRoute: RoomIndexLazyRoute,
+	RoomContestantLeftLazyRoute: RoomContestantLeftLazyRoute,
+	RoomContestantRightLazyRoute: RoomContestantRightLazyRoute,
+};
 
-const RoomRouteWithChildren = RoomRoute._addFileChildren(RoomRouteChildren)
+const RoomRouteWithChildren = RoomRoute._addFileChildren(RoomRouteChildren);
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexLazyRoute
-  '/host': typeof HostLazyRoute
-  '/producer': typeof ProducerLazyRoute
-  '/screen': typeof ScreenLazyRoute
-  '/$room': typeof RoomrootRoute
-  '/$room/host': typeof RoomHostLazyRoute
-  '/$room/producer': typeof RoomProducerLazyRoute
-  '/$room/screen': typeof RoomScreenLazyRoute
-  '/contestant/left': typeof ContestantLeftLazyRoute
-  '/contestant/right': typeof ContestantRightLazyRoute
-  '/$room/': typeof RoomIndexLazyRoute
-  '/$room/contestant/left': typeof RoomContestantLeftLazyRoute
-  '/$room/contestant/right': typeof RoomContestantRightLazyRoute
+	'/': typeof IndexLazyRoute;
+	'/host': typeof HostLazyRoute;
+	'/producer': typeof ProducerLazyRoute;
+	'/screen': typeof ScreenLazyRoute;
+	'/$room': typeof RoomrootRoute;
+	'/$room/host': typeof RoomHostLazyRoute;
+	'/$room/producer': typeof RoomProducerLazyRoute;
+	'/$room/screen': typeof RoomScreenLazyRoute;
+	'/contestant/left': typeof ContestantLeftLazyRoute;
+	'/contestant/right': typeof ContestantRightLazyRoute;
+	'/$room/': typeof RoomIndexLazyRoute;
+	'/$room/contestant/left': typeof RoomContestantLeftLazyRoute;
+	'/$room/contestant/right': typeof RoomContestantRightLazyRoute;
 }
 
 export interface FileRoutesByTo {
-  '/': typeof IndexLazyRoute
-  '/host': typeof HostLazyRoute
-  '/producer': typeof ProducerLazyRoute
-  '/screen': typeof ScreenLazyRoute
-  '/$room': typeof RoomIndexLazyRoute
-  '/$room/host': typeof RoomHostLazyRoute
-  '/$room/producer': typeof RoomProducerLazyRoute
-  '/$room/screen': typeof RoomScreenLazyRoute
-  '/contestant/left': typeof ContestantLeftLazyRoute
-  '/contestant/right': typeof ContestantRightLazyRoute
-  '/$room/contestant/left': typeof RoomContestantLeftLazyRoute
-  '/$room/contestant/right': typeof RoomContestantRightLazyRoute
+	'/': typeof IndexLazyRoute;
+	'/host': typeof HostLazyRoute;
+	'/producer': typeof ProducerLazyRoute;
+	'/screen': typeof ScreenLazyRoute;
+	'/$room': typeof RoomIndexLazyRoute;
+	'/$room/host': typeof RoomHostLazyRoute;
+	'/$room/producer': typeof RoomProducerLazyRoute;
+	'/$room/screen': typeof RoomScreenLazyRoute;
+	'/contestant/left': typeof ContestantLeftLazyRoute;
+	'/contestant/right': typeof ContestantRightLazyRoute;
+	'/$room/contestant/left': typeof RoomContestantLeftLazyRoute;
+	'/$room/contestant/right': typeof RoomContestantRightLazyRoute;
 }
 
 export interface FileRoutesById {
-  __root__: typeof rootRoute
-  '/': typeof IndexLazyRoute
-  '/host': typeof HostLazyRoute
-  '/producer': typeof ProducerLazyRoute
-  '/screen': typeof ScreenLazyRoute
-  '/$room': typeof RoomRouteWithChildren
-  '/$room/__root': typeof RoomrootRoute
-  '/$room/host': typeof RoomHostLazyRoute
-  '/$room/producer': typeof RoomProducerLazyRoute
-  '/$room/screen': typeof RoomScreenLazyRoute
-  '/contestant/left': typeof ContestantLeftLazyRoute
-  '/contestant/right': typeof ContestantRightLazyRoute
-  '/$room/': typeof RoomIndexLazyRoute
-  '/$room/contestant/left': typeof RoomContestantLeftLazyRoute
-  '/$room/contestant/right': typeof RoomContestantRightLazyRoute
+	__root__: typeof rootRoute;
+	'/': typeof IndexLazyRoute;
+	'/host': typeof HostLazyRoute;
+	'/producer': typeof ProducerLazyRoute;
+	'/screen': typeof ScreenLazyRoute;
+	'/$room': typeof RoomRouteWithChildren;
+	'/$room/__root': typeof RoomrootRoute;
+	'/$room/host': typeof RoomHostLazyRoute;
+	'/$room/producer': typeof RoomProducerLazyRoute;
+	'/$room/screen': typeof RoomScreenLazyRoute;
+	'/contestant/left': typeof ContestantLeftLazyRoute;
+	'/contestant/right': typeof ContestantRightLazyRoute;
+	'/$room/': typeof RoomIndexLazyRoute;
+	'/$room/contestant/left': typeof RoomContestantLeftLazyRoute;
+	'/$room/contestant/right': typeof RoomContestantRightLazyRoute;
 }
 
 export interface FileRouteTypes {
-  fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths:
-    | '/'
-    | '/host'
-    | '/producer'
-    | '/screen'
-    | '/$room'
-    | '/$room/host'
-    | '/$room/producer'
-    | '/$room/screen'
-    | '/contestant/left'
-    | '/contestant/right'
-    | '/$room/'
-    | '/$room/contestant/left'
-    | '/$room/contestant/right'
-  fileRoutesByTo: FileRoutesByTo
-  to:
-    | '/'
-    | '/host'
-    | '/producer'
-    | '/screen'
-    | '/$room'
-    | '/$room/host'
-    | '/$room/producer'
-    | '/$room/screen'
-    | '/contestant/left'
-    | '/contestant/right'
-    | '/$room/contestant/left'
-    | '/$room/contestant/right'
-  id:
-    | '__root__'
-    | '/'
-    | '/host'
-    | '/producer'
-    | '/screen'
-    | '/$room'
-    | '/$room/__root'
-    | '/$room/host'
-    | '/$room/producer'
-    | '/$room/screen'
-    | '/contestant/left'
-    | '/contestant/right'
-    | '/$room/'
-    | '/$room/contestant/left'
-    | '/$room/contestant/right'
-  fileRoutesById: FileRoutesById
+	fileRoutesByFullPath: FileRoutesByFullPath;
+	fullPaths:
+		| '/'
+		| '/host'
+		| '/producer'
+		| '/screen'
+		| '/$room'
+		| '/$room/host'
+		| '/$room/producer'
+		| '/$room/screen'
+		| '/contestant/left'
+		| '/contestant/right'
+		| '/$room/'
+		| '/$room/contestant/left'
+		| '/$room/contestant/right';
+	fileRoutesByTo: FileRoutesByTo;
+	to:
+		| '/'
+		| '/host'
+		| '/producer'
+		| '/screen'
+		| '/$room'
+		| '/$room/host'
+		| '/$room/producer'
+		| '/$room/screen'
+		| '/contestant/left'
+		| '/contestant/right'
+		| '/$room/contestant/left'
+		| '/$room/contestant/right';
+	id:
+		| '__root__'
+		| '/'
+		| '/host'
+		| '/producer'
+		| '/screen'
+		| '/$room'
+		| '/$room/__root'
+		| '/$room/host'
+		| '/$room/producer'
+		| '/$room/screen'
+		| '/contestant/left'
+		| '/contestant/right'
+		| '/$room/'
+		| '/$room/contestant/left'
+		| '/$room/contestant/right';
+	fileRoutesById: FileRoutesById;
 }
 
 export interface RootRouteChildren {
-  IndexLazyRoute: typeof IndexLazyRoute
-  HostLazyRoute: typeof HostLazyRoute
-  ProducerLazyRoute: typeof ProducerLazyRoute
-  ScreenLazyRoute: typeof ScreenLazyRoute
-  RoomRoute: typeof RoomRouteWithChildren
-  ContestantLeftLazyRoute: typeof ContestantLeftLazyRoute
-  ContestantRightLazyRoute: typeof ContestantRightLazyRoute
+	IndexLazyRoute: typeof IndexLazyRoute;
+	HostLazyRoute: typeof HostLazyRoute;
+	ProducerLazyRoute: typeof ProducerLazyRoute;
+	ScreenLazyRoute: typeof ScreenLazyRoute;
+	RoomRoute: typeof RoomRouteWithChildren;
+	ContestantLeftLazyRoute: typeof ContestantLeftLazyRoute;
+	ContestantRightLazyRoute: typeof ContestantRightLazyRoute;
 }
 
 const rootRouteChildren: RootRouteChildren = {
-  IndexLazyRoute: IndexLazyRoute,
-  HostLazyRoute: HostLazyRoute,
-  ProducerLazyRoute: ProducerLazyRoute,
-  ScreenLazyRoute: ScreenLazyRoute,
-  RoomRoute: RoomRouteWithChildren,
-  ContestantLeftLazyRoute: ContestantLeftLazyRoute,
-  ContestantRightLazyRoute: ContestantRightLazyRoute,
-}
+	IndexLazyRoute: IndexLazyRoute,
+	HostLazyRoute: HostLazyRoute,
+	ProducerLazyRoute: ProducerLazyRoute,
+	ScreenLazyRoute: ScreenLazyRoute,
+	RoomRoute: RoomRouteWithChildren,
+	ContestantLeftLazyRoute: ContestantLeftLazyRoute,
+	ContestantRightLazyRoute: ContestantRightLazyRoute,
+};
 
 export const routeTree = rootRoute
-  ._addFileChildren(rootRouteChildren)
-  ._addFileTypes<FileRouteTypes>()
+	._addFileChildren(rootRouteChildren)
+	._addFileTypes<FileRouteTypes>();
 
 /* ROUTE_MANIFEST_START
 {
