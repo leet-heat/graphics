@@ -80,9 +80,12 @@ function ProducerView() {
 		contestant2,
 	} = game;
 
+	console.log(questions);
 	const currentQuestions = questions
 		.filter((q) => q.category === category)
 		.filter((q) => q.round === round);
+
+	console.log(currentQuestions);
 
 	const remaining = currentQuestions.filter((q) => !answered.has(q.id));
 	const completed = currentQuestions.filter((q) => answered.has(q.id));

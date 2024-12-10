@@ -1,0 +1,634 @@
+[
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 1,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "What does SQL stand for?",
+			"answer": "Structured Query Language"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 2,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "Which of the following is a NoSQL database?",
+			"options": {
+				"A": "MySQL",
+				"B": "PostgreSQL",
+				"C": "Astra DB",
+				"D": "SQLite"
+			},
+			"answer": "C"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 3,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "What is the shorthand in SQL that means 'all fields for each row'?",
+			"answer": "*"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 4,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "To select all users whose names begin with 'A', what should be inserted in the blank?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/q_auto/f_auto/v1733861138/leet-heat/s1e2/databases-1.4.png",
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 5,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "What type of join should you use if you want to return only rows that have a match in both tables?",
+			"answer": "INNER JOIN"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 6,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "In a distributed system, the CAP theorem states that it’s only possible to have two of these three properties: Consistency, Availability, and what?",
+			"answer": "Partition Tolerance"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 7,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "Which type of database is best suited for handling large-scale online analytics queries?",
+			"options": {
+				"A": "OLTP (Online Transactional Processing)",
+				"B": "OLAP (Online Analytics Processing)",
+				"C": "Key-Value Store",
+				"D": "Document Store"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 8,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "What portmanteau is commonly used to describe the pattern shown in this SQL snippet?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733861139/leet-heat/s1e2/databases-2.3.png",
+			"answer": "Upsert"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 9,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "Used to speed up queries, which concept in SQL shares its name with a finger and a type of card?",
+			"answer": "Index"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 10,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "What is it called when data is split into smaller, independent parts and distributed across multiple servers to scale large databases efficiently?",
+			"answer": "Sharding"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 11,
+		"category": "APIs",
+		"type": "trivia",
+		"question": {
+			"text": "What kind of API accepts queries like this?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733861756/leet-heat/s1e2/apis-1.1.png",
+			"answer": "GraphQL"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 12,
+		"category": "APIs",
+		"type": "trivia",
+		"question": {
+			"text": "Which HTTP method is used to retrieve data from a server?",
+			"options": {
+				"A": "POST",
+				"B": "GET",
+				"C": "PUT",
+				"D": "DELETE"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 13,
+		"category": "APIs",
+		"type": "trivia",
+		"question": {
+			"text": "In a REST API, which HTTP method is commonly recommended to use when partially updating a resource?",
+			"answer": "PATCH"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 14,
+		"category": "APIs",
+		"type": "trivia",
+		"question": {
+			"text": "In this JavaScript snippet, which value for 'method' is semantically correct when creating a new resource via REST API? fetch('/api/data', { method: '_______', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: 'John' }) });",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733861757/leet-heat/s1e2/apis-1.4.png",
+			"answer": "POST"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 15,
+		"category": "APIs",
+		"type": "trivia",
+		"question": {
+			"text": "Which of the following is not a type of API?",
+			"options": {
+				"A": "REST",
+				"B": "PORT",
+				"C": "GraphQL",
+				"D": "SOAP"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 16,
+		"category": "APIs",
+		"type": "trivia",
+		"question": {
+			"text": "To ensure data consistency, many APIs ensure that certain operations always produce the same result, no matter how many times they are called. When an HTTP API method ensures this, the method is said to be safe and what?",
+			"answer": "Idempotent"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 17,
+		"category": "APIs",
+		"type": "trivia",
+		"question": {
+			"text": "Which status code indicates that a resource has been permanently moved?",
+			"options": {
+				"A": "200",
+				"B": "301",
+				"C": "404",
+				"D": "500"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 18,
+		"category": "APIs",
+		"type": "trivia",
+		"question": {
+			"text": "What does REST stand for?",
+			"answer": "Representational State Transfer"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 19,
+		"category": "APIs",
+		"type": "trivia",
+		"question": {
+			"text": "If your API returns data in the following format, what should the value of the Content-Type header be set to?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733861758/leet-heat/s1e2/apis-2.4.png",
+			"answer": "application/json"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 20,
+		"category": "APIs",
+		"type": "trivia",
+		"question": {
+			"text": "When you log into a site using another account, like Google, what protocol is followed to grant credentials?",
+			"answer": "OAuth2"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 21,
+		"category": "Web Performance",
+		"type": "trivia",
+		"question": {
+			"text": "What does CDN stand for?",
+			"answer": "Content Delivery Network"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 22,
+		"category": "Web Performance",
+		"type": "trivia",
+		"question": {
+			"text": "Which metric measures how quickly content appears on screen after a user navigates to a page?",
+			"options": {
+				"A": "Time to First Byte (TTFB)",
+				"B": "First Contentful Paint (FCP)",
+				"C": "Largest Contentful Paint (LCP)",
+				"D": "Time to Interactive (TTI)"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 23,
+		"category": "Web Performance",
+		"type": "trivia",
+		"question": {
+			"text": "What is the name of the technique that waits to load a resource, such as an image, until it would no longer block the main document?",
+			"answer": "Lazy loading"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 24,
+		"category": "Web Performance",
+		"type": "trivia",
+		"question": {
+			"text": "What attribute added here will improve CSS loading performance?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733861758/leet-heat/s1e2/web-performance-1.4.png",
+			"answer": "preload"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 25,
+		"category": "Web Performance",
+		"type": "trivia",
+		"question": {
+			"text": "Sometimes seen in your browser’s devtools, this is a visual representation of a stack trace that can help spot which parts of a program are burning CPU cycles. What is this called?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733863682/leet-heat/s1e2/flame-graph.svg",
+			"answer": "Flame Graph"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 26,
+		"category": "Web Performance",
+		"type": "trivia",
+		"question": {
+			"text": "One of Google’s Core Web Vitals, which metric tells us how quickly the web page responds to a user’s actions?",
+			"answer": "Interaction to Next Paint (INP)"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 27,
+		"category": "Web Performance",
+		"type": "trivia",
+		"question": {
+			"text": "Which of these techniques can reduce JavaScript bundle size?",
+			"options": {
+				"A": "Minification",
+				"B": "Gzip Compression",
+				"C": "Tree Shaking",
+				"D": "All of the above"
+			},
+			"answer": "D"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 28,
+		"category": "Web Performance",
+		"type": "trivia",
+		"question": {
+			"text": "Used to avoid calling a function too quickly or too often, what is this kind of function called?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733861759/leet-heat/s1e2/web-performance-2.3.png",
+			"answer": "Debounce"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 29,
+		"category": "Web Performance",
+		"type": "trivia",
+		"question": {
+			"text": "Which attribute tells the browser to execute this script after the HTML document has been parsed?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733861760/leet-heat/s1e2/web-performance-2.4.png",
+			"answer": "defer"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 30,
+		"category": "Web Performance",
+		"type": "trivia",
+		"question": {
+			"text": "Which web-friendly image format reduces image size over JPEG?",
+			"options": {
+				"A": "GIF",
+				"B": "WebP",
+				"C": "PNG",
+				"D": "Bitmap"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 31,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Which initially controversial templating syntax was initially popularized by React?",
+			"answer": "JSX"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 32,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Which framework is known for its two-way data binding feature?",
+			"options": {
+				"A": "React",
+				"B": "Angular",
+				"C": "Vue.js",
+				"D": "Svelte"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 33,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Which framework popularized the concept of “islands architecture”, a strategy for only hydrating components instead of the full page?",
+			"answer": "Astro"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 34,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Used to keep track of values that may change during the lifecycle of a component, which React hook completes this code snippet?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733861757/leet-heat/s1e2/frameworks-1.4.png",
+			"answer": "useState"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 35,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Introduced in Svelte 5, which mythical sounding concept aims to simplify reactivity?",
+			"answer": "Runes"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 36,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "In Vue.js, what directive would you use to conditionally render an element?",
+			"answer": "v-if"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 37,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Originally introduced in Knockout, which approach to fine-grained reactivity saw a surge in popularity when SolidJS introduced it?",
+			"answer": "Signals"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 38,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Which framework uses single-file components by default?",
+			"options": {
+				"A": "Angular",
+				"B": "Vue.js",
+				"C": "React",
+				"D": "Qwik"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 39,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Many server-side rendered JavaScript frameworks send both an HTML version of the page content, and a JS copy that takes over after it's parsed and executed. What is this practice called?",
+			"answer": "Hydration"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 40,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Which PHP-based framework with a large ecosystem of packages like Livewire and Vapor saw a resurgence in popularity recently?",
+			"answer": "Laravel"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 41,
+		"category": "GenAI",
+		"type": "trivia",
+		"question": {
+			"text": "What does GPT stand for?",
+			"answer": "Generative Pre-trained Transformer"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 42,
+		"category": "GenAI",
+		"type": "trivia",
+		"question": {
+			"text": "Which of these is a Large Language Model?",
+			"options": {
+				"A": "ChatGPT",
+				"B": "GPT-4o",
+				"C": "Perplexity",
+				"D": "OpenAI"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 43,
+		"category": "GenAI",
+		"type": "trivia",
+		"question": {
+			"text": "In a famous hurdle for computer vision, many models struggled to tell the difference between a chihuahua and what food item?",
+			"answer": "Blueberry Muffin"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 44,
+		"category": "GenAI",
+		"type": "trivia",
+		"question": {
+			"text": "As AI in software started gaining popularity, what new job title arrived right on time?",
+			"answer": "Prompt Engineer"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 45,
+		"category": "GenAI",
+		"type": "trivia",
+		"question": {
+			"text": "What was the fastest-growing programming language on GitHub in 2024, due in no small part to the rising popularity of generative AI?",
+			"answer": "Python"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 46,
+		"category": "GenAI",
+		"type": "trivia",
+		"question": {
+			"text": "Which type of database, commonly used in AI applications, converts data into a multidimensional collection of numbers that can be searched based on how semantically similar information is?",
+			"answer": "Vector Database"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 47,
+		"category": "GenAI",
+		"type": "trivia",
+		"question": {
+			"text": "Some AI-powered apps provide LLMs with a bunch of functions that they can call whenever they 'feel like it'. What are these apps commonly known as?",
+			"answer": "Agents"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 48,
+		"category": "GenAI",
+		"type": "trivia",
+		"question": {
+			"text": "To improve the accuracy and relevance of LLM-generated responses, developers can load additional data and context into the prompt, implementing a technique called RAG. What does RAG stand for?",
+			"options": {
+				"A": "Retrieval-Augmented Generation",
+				"B": "Robotic Assembly Guidelines",
+				"C": "Robot-Assisted Generation",
+				"D": "Really Angry Goose"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 49,
+		"category": "GenAI",
+		"type": "trivia",
+		"question": {
+			"text": "What term refers to the unintended bias that can occur in AI models due to biased training data?",
+			"answer": "Algorithmic bias"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 50,
+		"category": "GenAI",
+		"type": "trivia",
+		"question": {
+			"text": "What strategy is being used when machine learning algorithms are rewarded for correct answers?",
+			"answer": "Reinforcement learning"
+		}
+	}
+]

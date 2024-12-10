@@ -1,8 +1,8 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import usePartySocket from 'partysocket/react';
-import categories from '../data/s1e1/categories.json';
-import contestants from '../data/s1e1/contestants.json';
-import questions from '../data/s1e1/questions.json';
+import categories from '../data/s1e2/categories.json';
+import contestants from '../data/s1e2/contestants.json';
+import questions from '../data/s1e2/questions.json';
 import { type Question, type Contestant } from '../types';
 import { json } from '../util/json';
 

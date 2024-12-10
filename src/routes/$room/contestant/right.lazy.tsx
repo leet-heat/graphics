@@ -3,7 +3,7 @@ import usePartySocket from 'partysocket/react';
 import { createLazyFileRoute } from '@tanstack/react-router';
 import { PodiumDisplay } from '../../../components/podium-display';
 import { ReadOnlyContestant } from '../../../types';
-import contestants from '../../../data/s1e1/contestants.json';
+import contestants from '../../../data/s1e2/contestants.json';
 
 function ContestantRight() {
 	const [contestant, setContestant] = useState<ReadOnlyContestant | null>(
