@@ -104,7 +104,7 @@
 		"question": {
 			"text": "What's wrong with this query?",
 			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733810609/leet-heat/s1e1/databases-2.3.png",
-			"answer": "A"
+			"answer": "Extra WHERE query"
 		}
 	},
 	{
