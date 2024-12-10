@@ -1,6 +1,10 @@
-import { Contestant } from '../hooks/use-game';
+import { ReadOnlyContestant } from '../types';
 
-export const PodiumDisplay = ({ contestant }: { contestant: Contestant }) => {
+export const PodiumDisplay = ({
+	contestant,
+}: {
+	contestant: ReadOnlyContestant;
+}) => {
 	return (
 		<main className="podium-display">
 			<h1>{contestant.name}</h1>
@@ -10,7 +14,7 @@ export const PodiumDisplay = ({ contestant }: { contestant: Contestant }) => {
 					{new Intl.NumberFormat('en-US').format(contestant.score)}
 				</p>
 				<p className="contestant-spice-level">
-					🌶️ x {parseInt(contestant.incorrect.size) + 1}
+					🌶️ x {contestant.incorrect.size + 1}
 				</p>
 			</div>
 		</main>
