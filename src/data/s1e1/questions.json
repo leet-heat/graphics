@@ -1,0 +1,719 @@
+[
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 1,
+		"category": "Databases",
+		"type": "multiple-choice",
+		"question": {
+			"text": "What does ACID stand for in database transactions?",
+			"options": {
+				"A": "Atomicity, Consistency, Isolation, Durability",
+				"B": "Advanced Computing Infrastructure Design",
+				"C": "Automated Code Integration & Deployment",
+				"D": "Access Control Identity Directory"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 2,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "In MongoDB or other NoSQL databases, what's the equivalent of a table in SQL?",
+			"answer": "A collection"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 3,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "What does CRUD stand for in database operations?",
+			"answer": "Create, Read, Update, Delete"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 4,
+		"category": "Databases",
+		"type": "multiple-choice",
+		"question": {
+			"text": "Which SQL statement is used to modify existing data in a table?",
+			"options": {
+				"A": "MODIFY",
+				"B": "UPDATE",
+				"C": "CHANGE",
+				"D": "ALTER"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 5,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "What does SQL stand for?",
+			"answer": "Structured Query Language"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 6,
+		"category": "Databases",
+		"type": "multiple-choice",
+		"question": {
+			"text": "What SQL command would you use to add a new column to an existing table?",
+			"options": {
+				"A": "ALTER TABLE",
+				"B": "ADD COLUMN",
+				"C": "CHANGE TABLE",
+				"D": "UPDATE TABLE"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 7,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "Complete this query to find all users who logged in today:",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733684754/leet-heat/s1e1/databases-2.2.png",
+			"answer": "="
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 8,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "What's wrong with this query?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733810609/leet-heat/s1e1/databases-2.3.png",
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 9,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "Which is NOT a valid SQL join type?",
+			"options": {
+				"A": "INNER JOIN",
+				"B": "LEFT JOIN",
+				"C": "MIDDLE JOIN",
+				"D": "RIGHT JOIN"
+			},
+			"answer": "C"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 10,
+		"category": "Databases",
+		"type": "trivia",
+		"question": {
+			"text": "Which statement about table partitioning is FALSE?",
+			"options": {
+				"A": "It improves query performance",
+				"B": "It helps with data archival",
+				"C": "It automatically provides ACID",
+				"D": "It reduces data redundancy"
+			},
+			"answer": "C"
+		}
+	},
+
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 11,
+		"category": "Web Standards",
+		"type": "trivia",
+		"question": {
+			"text": "Which feature of the Web Storage API allows data to persist in the browser even if the tab is closed?",
+			"options": {
+				"A": "localStorage",
+				"B": "sessionStorage",
+				"C": "cookies",
+				"D": "cacheStorage"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 12,
+		"category": "Web Standards",
+		"type": "trivia",
+		"question": {
+			"text": "Which CSS property completely removes the element from the layout, including screen readers?",
+			"options": {
+				"A": "visibility: hidden",
+				"B": "display: none",
+				"C": "hide: true",
+				"D": "opacity: 0"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 13,
+		"category": "Web Standards",
+		"type": "trivia",
+		"question": {
+			"text": "What does HTML stand for?",
+			"answer": "HyperText Markup Language"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 14,
+		"category": "Web Standards",
+		"type": "trivia",
+		"question": {
+			"text": "Which HTML element makes this code semantically correct? <___ datetime=\"2024-04-01\">April 1st, 2024</___>",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733814990/leet-heat/s1e1/web-standards-1.4.png",
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 15,
+		"category": "Web Standards",
+		"type": "trivia",
+		"question": {
+			"text": "Which HTTP status code means \"Not Found\"?",
+			"options": {
+				"A": "404",
+				"B": "500",
+				"C": "403",
+				"D": "401"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 16,
+		"category": "Web Standards",
+		"type": "trivia",
+		"question": {
+			"text": "What does CSP stand for?",
+			"options": {
+				"A": "Content Service Protocol",
+				"B": "Cross-Origin Security Policy",
+				"C": "Content Security Policy",
+				"D": "Content Streaming Protocol"
+			},
+			"answer": "C"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 17,
+		"category": "Web Standards",
+		"type": "trivia",
+		"question": {
+			"text": "Which header is used for CORS pre-flight requests?",
+			"options": {
+				"A": "OPTIONS",
+				"B": "PREFLIGHT",
+				"C": "CORS",
+				"D": "ACCESS"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 18,
+		"category": "Web Standards",
+		"type": "trivia",
+		"question": {
+			"text": "What's the correct order of CSS specificity (highest to lowest)?",
+			"options": {
+				"A": "#id > !important > .class",
+				"B": "!important > .class > #id",
+				"C": "!important > #id > .class",
+				"D": ".class > #id > !important"
+			},
+			"answer": "C"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 19,
+		"category": "Web Standards",
+		"type": "trivia",
+		"question": {
+			"text": "What color does this text render?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733815089/leet-heat/s1e1/web-standards-2.4.png",
+			"answer": "Blue (unset reverts to root level)"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 20,
+		"category": "Web Standards",
+		"type": "trivia",
+		"question": {
+			"text": "Which CSS unit is relative to the current font size?",
+			"options": {
+				"A": "px",
+				"B": "em",
+				"C": "vh",
+				"D": "vw"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 21,
+		"category": "TypeScript",
+		"type": "trivia",
+		"question": {
+			"text": "Why does userStatus show an error?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733815240/leet-heat/s1e1/typescript-1.1.png",
+			"answer": "\"pending\" is not a valid value for Status type"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 22,
+		"category": "TypeScript",
+		"type": "trivia",
+		"question": {
+			"text": "What's the purpose of the 'as' keyword in TypeScript?",
+			"options": {
+				"A": "Cast the variable as a given type",
+				"B": "Change the value of the variable",
+				"C": "Create a new type alias",
+				"D": "None of the above"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 23,
+		"category": "TypeScript",
+		"type": "trivia",
+		"question": {
+			"text": "Which is NOT a TypeScript primitive type?",
+			"options": {
+				"A": "string",
+				"B": "number",
+				"C": "integer",
+				"D": "boolean"
+			},
+			"answer": "C"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 24,
+		"category": "TypeScript",
+		"type": "trivia",
+		"question": {
+			"text": "What type should value use for type safety?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733815481/leet-heat/s1e1/typescript-1.4.png",
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 25,
+		"category": "TypeScript",
+		"type": "trivia",
+		"question": {
+			"text": "Which is the correct way to type an object where all keys are strings and all values are of type any?",
+			"options": {
+				"A": "object: any",
+				"B": "Record<string, any>",
+				"C": "{[key: any]: string}",
+				"D": "string[]"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 26,
+		"category": "TypeScript",
+		"type": "trivia",
+		"question": {
+			"text": "To tell TypeScript that a value cannot be null or undefined, what character do you use?",
+			"answer": "! (exclamation mark — the non-null assertion operator)"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 27,
+		"category": "TypeScript",
+		"type": "trivia",
+		"question": {
+			"text": "If a function does not return anything, what return type should be used?",
+			"options": {
+				"A": "void",
+				"B": "undefined",
+				"C": "none",
+				"D": "never"
+			},
+			"answer": "D"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 28,
+		"category": "TypeScript",
+		"type": "trivia",
+		"question": {
+			"text": "What does TSC stand for in TypeScript?",
+			"answer": "TypeScript Compiler"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 29,
+		"category": "TypeScript",
+		"type": "trivia",
+		"question": {
+			"text": "If you don't know the type of something, but want to require type checking before use, what should you use?",
+			"options": {
+				"A": "unknown",
+				"B": "any",
+				"C": "T",
+				"D": "void"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 30,
+		"category": "TypeScript",
+		"type": "trivia",
+		"question": {
+			"text": "What is the T in this code snippet? function identity<Type>(arg: Type): Type { return arg; }",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733816512/leet-heat/s1e1/typescript-2.5.png",
+			"answer": "A generic"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 31,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Which concept in React allows components inside a provider to share state?",
+			"options": {
+				"A": "Context",
+				"B": "Effects",
+				"C": "React Server Components",
+				"D": "Suspense"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 32,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Which framework manages control flow using custom directives like v-if?",
+			"answer": "Vue.js"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 33,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "What is the Angular equivalent of React's props.children?",
+			"options": {
+				"A": "ng-props",
+				"B": "ng-children",
+				"C": "ng-content",
+				"D": "ng-slot"
+			},
+			"answer": "C"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 34,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "In React, what hook is most commonly used to manage component state?",
+			"options": {
+				"A": "useStorage",
+				"B": "useCallback",
+				"C": "useState",
+				"D": "reactState"
+			},
+			"answer": "C"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 35,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Which Svelte rune enables reactively determining a new value based on state?",
+			"options": {
+				"A": "$bindable",
+				"B": "$derived",
+				"C": "$effect",
+				"D": "$reactive"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 36,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "What gets rendered?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733817525/leet-heat/s1e1/frameworks-2.1.png",
+			"answer": "Nothing / An empty div (because count is 0)"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 37,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "When the server-side rendered HTML and the client-rendered DOM don't match, what is the name of this beverage-themed bug?",
+			"answer": "Hydration errors"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 38,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "In Angular, which kinds of pipes only update when inputs change?",
+			"answer": "Pure pipes"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 39,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Astro enables specific components to become interactive while the rest of the page renders statically. What’s the name of this architecture?",
+			"answer": "Island Architecture"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 40,
+		"category": "Frameworks",
+		"type": "trivia",
+		"question": {
+			"text": "Which build tool is a successor to Webpack and is now used under the hood of nearly every modern web framework?",
+			"answer": "Vite"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 41,
+		"category": "Computer Science",
+		"type": "trivia",
+		"question": {
+			"text": "What does FIFO stand for?",
+			"options": {
+				"A": "First In, First Out",
+				"B": "Fuzzy Information Filtering Overload",
+				"C": "Fast In, Fast Out",
+				"D": "F#@! Internet, Flee Outside"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 42,
+		"category": "Computer Science",
+		"type": "trivia",
+		"question": {
+			"text": "What is it called when memory isn’t released after it’s no longer needed (e.g., forgotten event listeners)?",
+			"answer": "Memory leak"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 43,
+		"category": "Computer Science",
+		"type": "trivia",
+		"question": {
+			"text": "What's a function that always returns same output for same input with no side effects?",
+			"answer": "A pure function"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 44,
+		"category": "Computer Science",
+		"type": "trivia",
+		"question": {
+			"text": "Which data structure follows LIFO principle?",
+			"options": {
+				"A": "Queue",
+				"B": "Stack",
+				"C": "Array",
+				"D": "Tree"
+			},
+			"answer": "B"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 1,
+		"id": 45,
+		"category": "Computer Science",
+		"type": "trivia",
+		"question": {
+			"text": "What does RAM stand for?",
+			"answer": "Random Access Memory"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 46,
+		"category": "Computer Science",
+		"type": "trivia",
+		"question": {
+			"text": "What's the output?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733818653/leet-heat/s1e1/computer-science-2.1.png",
+			"answer": "1 (only first resolution counts)"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 47,
+		"category": "Computer Science",
+		"type": "trivia",
+		"question": {
+			"text": "What's the complexity, in Big O notation, of finding an element in an array by index, e.g. Array[0]?",
+			"options": {
+				"A": "O(1)",
+				"B": "O(n)",
+				"C": "O(log n)",
+				"D": "O(n²)"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 48,
+		"category": "Computer Science",
+		"type": "trivia",
+		"question": {
+			"text": "What's the main difference between Array.map() and Array.forEach()?",
+			"options": {
+				"A": "map returns a new array, forEach doesn't",
+				"B": "forEach is faster than map",
+				"C": "map only works with numberic values",
+				"D": "There is no difference"
+			},
+			"answer": "A"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 49,
+		"category": "Computer Science",
+		"type": "trivia",
+		"question": {
+			"text": "Which method removes and returns the last element of an array?",
+			"options": {
+				"A": "slice()",
+				"B": "shift()",
+				"C": "unshift()",
+				"D": "pop()"
+			},
+			"answer": "D"
+		}
+	},
+	{
+		"episode": 1,
+		"round": 2,
+		"id": 50,
+		"category": "Computer Science",
+		"type": "trivia",
+		"question": {
+			"text": "What's logged?",
+			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733818859/leet-heat/s1e1/computer-science-2.5.png",
+			"answer": "3 (sets only store unique values)"
+		}
+	}
+]
