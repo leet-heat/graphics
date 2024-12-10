@@ -39,8 +39,6 @@ type UseGameObject = {
 	updateChooser: (chooser: Contestant) => void;
 };
 
-// const route = getRouteApi('/$room/producer');
-
 const GameContext = createContext<GameContextObject | null>(null);
 
 function useContestant(
@@ -50,8 +48,6 @@ function useContestant(
 	answered: Set<number>,
 	setChooser: (c: Contestant) => void,
 ) {
-	// const { room } = route.useParams();
-	const room = 's1e1';
 	const [contestant, setContestant] = useState<Contestant>({
 		name,
 		correct: new Set(),
@@ -199,7 +195,7 @@ export function useGame(): UseGameObject | null {
 			setCategory(category);
 			sendUpdate({ type: 'category', data: category });
 		},
-		updateQuestion: (question: Question) => {
+		updateQuestion: (question: Question | null) => {
 			setQuestion(question);
 			sendUpdate({ type: 'question', data: question });
 		},
