@@ -287,7 +287,9 @@ body:has(.screen-display) {
 
 		img {
 			aspect-ratio: 16 / 7;
-			inline-size: 90cqi;
+			display: block;
+			inline-size: 100cqi;
+			margin: auto;
 			object-fit: contain;
 		}
 	}

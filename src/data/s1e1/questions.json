@@ -194,7 +194,7 @@
 		"category": "Web Standards",
 		"type": "trivia",
 		"question": {
-			"text": "Which HTML element makes this code semantically correct? <___ datetime=\"2024-04-01\">April 1st, 2024</___>",
+			"text": "Which HTML element makes this code semantically correct?",
 			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733814990/leet-heat/s1e1/web-standards-1.4.png",
 			"answer": "A"
 		}
@@ -434,7 +434,7 @@
 		"category": "TypeScript",
 		"type": "trivia",
 		"question": {
-			"text": "What is the T in this code snippet? function identity<Type>(arg: Type): Type { return arg; }",
+			"text": "What is the T in this code snippet?",
 			"image": "https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1733816512/leet-heat/s1e1/typescript-2.5.png",
 			"answer": "A generic"
 		}
