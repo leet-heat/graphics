@@ -149,34 +149,6 @@ section:not(:empty) {
 			}
 		}
 
-		.question-options {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0.25rem;
-			inline-size: 90%;
-			margin: 0.5rem auto;
-
-			+ p {
-				margin-block-start: 1rem;
-			}
-		}
-
-		.question-option {
-			background: var(--highlight);
-			border: 2px solid var(--fg);
-			inline-size: calc(50% - 0.125rem);
-			padding: 0.75rem;
-			text-align: start;
-
-			&.correct-answer {
-				background: var(--active);
-			}
-		}
-
-		.question-answer {
-			margin-block-start: 1rem;
-		}
-
 		.buttons {
 			display: flex;
 			gap: 0.5rem;
@@ -302,6 +274,38 @@ section:not(:empty) {
 			}
 		}
 	}
+}
+
+.question-options {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem;
+	inline-size: 90%;
+	margin: 0.5rem auto;
+
+	+ p {
+		margin-block-start: 1rem;
+	}
+}
+
+.question-option {
+	background: var(--highlight);
+	border: 2px solid var(--fg);
+	inline-size: calc(50% - 0.125rem);
+	padding: 0.75rem;
+	text-align: start;
+
+	&.smaller {
+		font-size: clamp(0.5rem, 2.5cqi, 1.25rem);
+	}
+
+	&.correct-answer {
+		background: var(--active);
+	}
+}
+
+.question-answer {
+	margin-block-start: 1rem;
 }
 
 .scoreboard {
@@ -463,7 +467,6 @@ body:has(.podium-display) {
 
 body:has(.screen-display) {
 	align-items: center;
-	background: linear-gradient(to bottom, #480609, #1f1e24);
 	block-size: 100dvb;
 	display: flex;
 	justify-content: center;
@@ -472,12 +475,36 @@ body:has(.screen-display) {
 .screen-display {
 	align-items: center;
 	aspect-ratio: 16 / 9;
-	color: white;
-	container: screen / inline-size;
+	container: screen / size;
 	display: flex;
 	inline-size: 90dvi;
+	justify-content: center;
 	max-inline-size: 1800px;
 	padding: 0 3dvi;
+
+	img {
+		block-size: min(300px, 55cqb);
+		inline-size: auto;
+		object-fit: contain;
+	}
+
+	h2 {
+		font-size: clamp(1rem, 2cqi + 1rem, 2.5rem);
+		text-wrap: balance;
+
+		&.smaller {
+			font-size: clamp(0.5rem, 4cqi, 2rem);
+		}
+	}
+
+	&:has(img) {
+		gap: 0.75rem;
+
+		h2 {
+			font-size: clamp(0.5rem, 4cqi, 2rem);
+			margin: 0;
+		}
+	}
 
 	.active-question {
 		border: 0;

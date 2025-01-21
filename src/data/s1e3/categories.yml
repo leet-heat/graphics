@@ -1,0 +1,14 @@
+- name: CSS
+  sponsor: CodePen
+
+- name: SQL
+  sponsor: Neon
+
+- name: Auth
+  sponsor: Clerk
+
+- name: Accessibility
+  sponsor: Cypress
+
+- name: Search
+  sponsor: Algolia

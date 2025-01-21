@@ -24,8 +24,8 @@ export const Contestant = z.object({
 	name: z.string(),
 	score: z.number().int().default(0),
 	spiceLevel: z.number().int().default(0),
-	correct: z.set(z.string()).default(new Set()),
-	incorrect: z.set(z.string()).default(new Set()),
+	correct: z.array(z.string()).default([]),
+	incorrect: z.array(z.string()).default([]),
 	isBuzzedIn: z.boolean().default(false),
 	isRoundLeader: z.boolean().default(false),
 });
@@ -39,6 +39,7 @@ export const Category = z.object({
 export const Categories = z.record(z.string(), Category);
 
 export const Game = z.object({
+	slug: z.string(),
 	categories: Categories,
 	questions: z.record(z.string(), Question),
 	contestants: z.array(Contestant).length(2),
@@ -47,7 +48,17 @@ export const Game = z.object({
 	current_question: Question.nullable().default(null),
 });
 
+export const GameSnapshot = z.object({
+	status: z.string(),
+	context: Game,
+	value: z.string(),
+	children: z.record(z.string(), z.any()),
+	historyValue: z.record(z.string(), z.any()),
+	tags: z.array(z.any()),
+});
+
 export type Question = z.infer<typeof Question>;
 export type Contestant = z.infer<typeof Contestant>;
 export type Categories = z.infer<typeof Categories>;
 export type Game = z.infer<typeof Game>;
+export type GameSnapshot = z.infer<typeof GameSnapshot>;

@@ -2,11 +2,36 @@ import { createLazyFileRoute } from '@tanstack/react-router';
 import { useActor } from '@xstate/react';
 import { Fragment, useEffect, useState } from 'react';
 import { machine, events } from '../../lib/state/game';
-import { loadGameContext } from '../../lib/loader';
+import { useMutation } from 'convex/react';
+import { api } from '../../../convex/_generated/api';
+import { Snapshot } from 'xstate';
+import { Game } from '../../types';
+import { Doc } from '../../../convex/_generated/dataModel';
 
 function ProducerView() {
 	const [timer, setTimer] = useState(5);
-	const [state, send] = useActor(machine);
+	const [state, send, actor] = useActor(machine);
+	const createOrReplaceContext = useMutation(api.context.createOrReplace);
+
+	useEffect(() => {
+		const subscription = actor.subscribe(async (snapshot) => {
+			// TODO figure out if there's a way to actually get Xstate and Convex
+			// types to play well together
+			const persistedSnapshot = snapshot.machine.getPersistedSnapshot(
+				snapshot,
+			) as unknown;
+
+			const result = await createOrReplaceContext(
+				persistedSnapshot as Doc<'context'>,
+			);
+
+			console.log(result);
+		});
+
+		return () => {
+			subscription.unsubscribe();
+		};
+	}, [actor]);
 
 	useEffect(() => {
 		let timerInterval = undefined;
@@ -34,12 +59,6 @@ function ProducerView() {
 		}
 
 		switch (event) {
-			case 'BEGIN_GAME':
-				const context = await loadGameContext();
-
-				send({ type: 'BEGIN_GAME', data: context });
-				break;
-
 			default:
 				// @ts-expect-error how do I fix this properly?
 				send({ type: event });
@@ -579,13 +598,7 @@ function ProducerView() {
 				<p>Current state: {state.value.toString()}</p>
 				<details>
 					<summary>Full Debug Dump</summary>
-					<pre>
-						{JSON.stringify(
-							state.context,
-							(_key, value) => (value instanceof Set ? [...value] : value),
-							2,
-						)}
-					</pre>
+					<pre>{JSON.stringify(state, null, 2)}</pre>
 				</details>
 			</footer>
 		</main>

@@ -1,0 +1,90 @@
+# CATEGORY: CSS
+
+- id: css-1
+  category: CSS
+  round: 1
+  text: What's this?
+  options:
+    A: One
+    B: One
+    C: One
+    D: One
+  answer: B
+
+- id: css-2
+  category: CSS
+  round: 2
+  text: What's that?
+  answer: Neat
+
+# CATEGORY: SQL
+
+- id: sql-11
+  category: SQL
+  round: 1
+  text: Who sponsored this category?
+  answer: Neon
+
+- id: sql-12
+  category: SQL
+  round: 2
+  text: Who sponsored this category?
+  answer: Neon
+
+# CATEGORY: Auth
+
+- id: auth-21
+  category: Auth
+  round: 1
+  text: Who sponsored this category?
+  answer: Clerk
+
+# CATEGORY: Accessibility
+
+- id: accessibility-31
+  category: Accessibility
+  round: 1
+  text: Who sponsored this category?
+  answer: Cypress
+
+# CATEGORY: Search
+
+- id: search-41
+  category: Search
+  round: 1
+  text: Who sponsored this category?
+  answer: Algolia
+
+- id: search-42
+  category: Search
+  round: 1
+  text: What classification of food is a burrito?
+  options:
+    A: Soup
+    B: Salad
+    C: Sandwich
+    D: None of the above
+  answer: C
+
+- id: search-43
+  category: Search
+  round: 1
+  text: In the 2024 film Dune, what is the name of the blue stuff that the savior guy drinks that might actually be worm pee?
+  options:
+    A: No one knows, but it glows and that's cool
+    B: It's the forbidden grape juice
+    C: It's magic fortune telling water but also poison
+    D: I didn't watch that movie
+  answer: C
+
+- id: search-44
+  category: Search
+  round: 1
+  text: What does this thing do?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/v1737488565/leet-heat/testing.png
+  options:
+    A: One
+    B: Two
+    C: Three
+    D: Four
+  answer: C

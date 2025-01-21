@@ -1,23 +1,20 @@
-import { setup, assign, assertEvent, fromPromise, Snapshot } from 'xstate';
-import { ConvexHttpClient } from 'convex/browser';
+import { setup, assign, assertEvent } from 'xstate';
 import { type Question, type Game, Categories } from '../../types';
-import { loadGameContext } from '../loader';
-import { api } from '../../../convex/_generated/api';
-
-const convex = new ConvexHttpClient(import.meta.env.VITE_CONVEX_URL);
 
 export const events = [
-	'CHOOSE_CATEGORY',
-	'START_ROUND',
-	'CONTESTANT_BUZZES_IN',
-	'REVEAL_FINAL_CATEGORY',
-	'PLACE_WAGER',
-	'BEGIN_GAME',
-	'LAND_ON_CATEGORY',
-	'LAND_ON_LEET_HEAT',
-	'NO_BUZZER_PRESSED',
-	'ANSWER_IS_CORRECT',
-	'ANSWER_IS_INCORRECT',
+	'game-start',
+	'round.start',
+	'category.start',
+	'question.start',
+	'question.buzz-in',
+	'category.reveal-final',
+	'category.wheel-select',
+	'wheel.leet-heat',
+	'question.no-buzzer',
+	'question.answer-correct',
+	'question.answer-incorrect',
+	'question.',
+	'contestant.place-wager',
 	'CHANCE_FOR_OPPONENT',
 	'ALL_CONTESTANTS_HAVE_ANSWERED_INCORRECTLY',
 	'REMAINING_CONTESTANT_CAN_ANSWER',
@@ -35,7 +32,7 @@ export const events = [
 ] as const;
 
 export type GameEvents =
-	| { type: 'BEGIN_GAME' }
+	| { type: 'BEGIN_GAME'; data: Game }
 	| { type: 'START_ROUND' }
 	| { type: 'CHOOSE_CATEGORY'; category: string }
 	| { type: 'LAND_ON_CATEGORY'; category: string }
@@ -69,19 +66,106 @@ export type GameEvents =
 
 export const machine = setup({
 	types: {
+		context: {} as {},
+		events: {} as
+			| { type: 'contestant.override-score'; contestant: string; score: number }
+			| {
+					type: 'contestant.override-spice-level';
+					contestant: string;
+					spiceLevel: number;
+			  }
+			| { type: 'game.start' }
+			| { type: 'wheel.leet-heat' }
+			| { type: 'wheel.category' }
+			| { type: 'category.choose' },
+	},
+	actions: {
+		'override score': assign({}),
+		'override spice level': assign({}),
+		'load game context': assign({}),
+		'increase spice level': assign({}),
+		'set category': assign({}),
+		'set question': assign({}),
+	},
+	guards: {
+		isCategoryComplete: () => {
+			return true;
+		},
+		isRoundComplete: () => {
+			return true;
+		},
+		isQuestionComplete: () => {
+			return true;
+		},
+		isFinalRound: () => {
+			return true;
+		},
+	},
+}).createMachine({
+	id: 'Leet Heat Game Logic',
+	description: '',
+	context: {},
+	initial: 'IDLE',
+	states: {
+		IDLE: {
+			on: {
+				'game.start': {
+					target: 'round.spinning-wheel',
+					actions: ['load game context'],
+				},
+			},
+		},
+		round: {
+			states: {
+				'spinning-wheel': {
+					on: {
+						'wheel.leet-heat': {
+							target: 'spicy-bite.leet-heat',
+							actions: ['increase spice level'],
+						},
+						'wheel.category': {
+							target: 'round.announce-category',
+							actions: ['set category', 'set question'],
+						},
+					},
+				},
+				'announce-category': {},
+				'spicy-bite.leet-heat': {
+					on: {
+						'category.choose': {
+							target: 'round.announce-category',
+							actions: ['set category'],
+						},
+					},
+				},
+			},
+		},
+	},
+	on: {
+		'contestant.override-score': {
+			actions: ['override score'],
+		},
+		'contestant.override-spice-level': {
+			actions: ['override spice level'],
+		},
+	},
+});
+
+export const machineOld = setup({
+	types: {
 		context: {} as Game,
 		events: {} as GameEvents,
 	},
 	actions: {
-		// beginGame: assign(({ event }) => {
-		// 	assertEvent(event, 'BEGIN_GAME');
+		beginGame: assign(({ event }) => {
+			assertEvent(event, 'BEGIN_GAME');
 
-		// 	// TODO make a way to randomize first round leader
-		// 	// set a round leader if one isn't set
-		// 	event.data.contestants.at(0)!.isRoundLeader = true;
+			// TODO make a way to randomize first round leader
+			// set a round leader if one isn't set
+			event.data.contestants.at(0)!.isRoundLeader = true;
 
-		// 	return event.data;
-		// }),
+			return event.data;
+		}),
 		setCategory: assign({
 			current_category: ({ event }) => {
 				// TODO figure out how dynamic params work
@@ -178,11 +262,11 @@ export const machine = setup({
 					if (contestant.isBuzzedIn && context.current_question) {
 						return {
 							...contestant,
-							correct: [...contestant.correct, context.current_question.id],
+							correct: contestant.correct.add(context.current_question.id),
 						};
 					}
 
-					return { ...contestant };
+					return { ...contestant, isRoundLeader: false };
 				});
 			},
 		}),
@@ -192,11 +276,11 @@ export const machine = setup({
 					if (contestant.isBuzzedIn && context.current_question) {
 						return {
 							...contestant,
-							incorrect: [...contestant.incorrect, context.current_question.id],
+							incorrect: contestant.incorrect.add(context.current_question.id),
 						};
 					}
 
-					return { ...contestant };
+					return { ...contestant, isRoundLeader: false };
 				});
 			},
 		}),
@@ -211,7 +295,7 @@ export const machine = setup({
 						};
 					}
 
-					return { ...contestant };
+					return { ...contestant, isRoundLeader: false };
 				});
 			},
 		}),
@@ -254,9 +338,9 @@ export const machine = setup({
 				// TODO figure out how dynamic params work
 				// @see https://stately.ai/docs/typescript#dynamic-parameters
 				assertEvent(event, [
+					'CHANCE_FOR_OPPONENT',
 					'LAND_ON_LEET_HEAT',
 					'CATEGORIES_REMAIN',
-					'ANSWER_IS_INCORRECT',
 				]);
 
 				return context.contestants.map((contestant) => {
@@ -265,7 +349,7 @@ export const machine = setup({
 						spiceLevelIncrease = 1;
 					}
 
-					if (event.type === 'ANSWER_IS_INCORRECT' && contestant.isBuzzedIn) {
+					if (event.type === 'CHANCE_FOR_OPPONENT' && contestant.isBuzzedIn) {
 						spiceLevelIncrease = 1;
 					}
 
@@ -469,24 +553,8 @@ export const machine = setup({
 			return true;
 		},
 	},
-	actors: {
-		loadGameContext: fromPromise(() => {
-			return loadGameContext();
-		}),
-		saveGameContext: fromPromise(
-			async ({ input }: { input: Snapshot<Game> }) => {
-				const result = await convex.mutation(
-					api.context.createOrReplace,
-					input as any,
-				);
-
-				return result;
-			},
-		),
-	},
 }).createMachine({
 	context: {
-		slug: '',
 		current_round: 1,
 		current_question: null,
 		current_category: null,
@@ -502,7 +570,7 @@ export const machine = setup({
 		READY_TO_BEGIN: {
 			on: {
 				BEGIN_GAME: {
-					target: 'LOAD_GAME_CONTEXT',
+					target: 'SPINNING_WHEEL',
 					actions: [
 						{
 							// @ts-expect-error see https://github.com/statelyai/xstate/issues/5164
@@ -513,15 +581,6 @@ export const machine = setup({
 			},
 			description:
 				'To begin the game and continue after depleting a category, the wheel must be spun.',
-		},
-		LOAD_GAME_CONTEXT: {
-			invoke: {
-				src: 'loadGameContext',
-				onDone: {
-					actions: assign(({ event }) => event.output),
-					target: 'SPINNING_WHEEL',
-				},
-			},
 		},
 		SPINNING_WHEEL: {
 			on: {
@@ -660,9 +719,6 @@ export const machine = setup({
 						{
 							type: 'reducePoints',
 						},
-						{
-							type: 'increaseSpiceLevel',
-						},
 					],
 				},
 				UNDO_BUZZ_IN: {
@@ -683,6 +739,10 @@ export const machine = setup({
 						actions: [
 							{
 								// @ts-expect-error see https://github.com/statelyai/xstate/issues/5164
+								type: 'increaseSpiceLevel',
+							},
+							{
+								// @ts-expect-error see https://github.com/statelyai/xstate/issues/5164
 								type: 'clearBuzzedInContestant',
 							},
 						],
@@ -692,12 +752,6 @@ export const machine = setup({
 					},
 					{
 						target: 'HOST_READING_CORRECT_ANSWER',
-						actions: [
-							{
-								// @ts-expect-error see https://github.com/statelyai/xstate/issues/5164
-								type: 'clearBuzzedInContestant',
-							},
-						],
 					},
 				],
 				UNDO_INCORRECT: {

@@ -1,0 +1,12 @@
+- id: 17
+  episode: 1
+  round: 1
+  category: Web Standards
+  question:
+    text: Which HTTP method is used for CORS pre-flight requests?
+    options:
+      - OPTIONS
+      - PREFLIGHT
+      - CORS
+      - ACCESS
+    answer: OPTIONS

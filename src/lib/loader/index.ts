@@ -36,6 +36,7 @@ export async function loadGameContext() {
 	const questions = loadQuestions();
 
 	return Game.parse({
+		slug: 's1e3',
 		categories,
 		questions,
 		contestants,
