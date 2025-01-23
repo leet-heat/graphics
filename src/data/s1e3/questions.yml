@@ -53,7 +53,7 @@
   category: Frameworks
   round: 2
   text: Nuxt.js is a framework built on top of which library?
-  answer: vue
+  answer: Vue.js
 
 - id: frameworks-20003
   category: Frameworks
@@ -277,7 +277,7 @@
   category: Accessibility
   round: 2
   text: To make an element focusable in sequential keyboard navigation without affecting tab order, what value of `tabindex` should you set?
-  answer: 0
+  answer: '0'
 
 - id: developerisms-10001
   category: Developerisms
@@ -299,7 +299,7 @@
     B: wig weaving
     C: yak shaving
     D: hair splitting
-  answer:
+  answer: C
 
 - id: developerisms-10003
   category: Developerisms
