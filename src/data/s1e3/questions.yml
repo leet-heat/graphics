@@ -1,347 +1,342 @@
-- id: frameworks-10001
-  category: Frameworks
+- id: acronyms-10005
+  category: Acronyms
   round: 1
-  text: What is Hono in web development?
+  text: What does PHP stand for?
   options:
-    A: A web framework for building APIs
-    B: A database management tool
-    C: A CSS framework for responsive design
-    D: A version control system
+    A: PHP Hypertext Preprocessor
+    B: Parallel Hardware Processing
+    C: Portable Hosting Platform
+    D: Post-HTML Programming
   answer: A
 
-- id: frameworks-10002
-  category: Frameworks
+- id: acronyms-10006
+  category: Acronyms
   round: 1
-  text: Which of these frameworks emphasizes a "zero JavaScript by default" philosophy?
+  text: What does SSR stand for?
   options:
-    A: Svelte
-    B: Nuxt.js
-    C: Astro
-    D: Analog
+    A: Split Server Route
+    B: Situational Site Rendering
+    C: Server Side Rendering
+    D: Something Something Resource
   answer: C
 
-- id: frameworks-10003
-  category: Frameworks
+- id: acronyms-10007
+  category: Acronyms
   round: 1
-  text: In Svelte 5, reactive state is created using `$state`, which is a category of symbols Svelte refers to as what?
+  text: In web dev, what does MPA stand for?
   options:
-    A: Signals
-    B: Runes
-    C: Observables
-    D: Hooks
+    A: Multi-Platform Architecture
+    B: Multi-Page App
+    C: Mobile Processing Algorithm
+    D: Middleware Protocol Adapter
   answer: B
 
-- id: frameworks-10004
-  category: Frameworks
+- id: acronyms-10008
+  category: Acronyms
   round: 1
-  text: What is Bun?
+  text: What does ORM stand for?
   options:
-    A: A JavaScript runtime and toolkit
-    B: A CSS framework
-    C: A database management tool
-    D: A testing library
+    A: Official Resource Management
+    B: Only Runs at Microsoft
+    C: Ordered Result Manipulation
+    D: Object-Relational Mapping
+  answer: D
+
+- id: acronyms-20005
+  category: Acronyms
+  round: 2
+  text: What does URL stand for?
+  answer: Uniform Resource Locator
+
+- id: acronyms-20006
+  category: Acronyms
+  round: 2
+  text: What does CRUD stand for?
+  answer: Create Read Update Delete
+
+- id: acronyms-20007
+  category: Acronyms
+  round: 2
+  text: What does TDD stand for?
+  answer: Test-Driven Development
+
+- id: acronyms-20008
+  category: Acronyms
+  round: 2
+  text: What does CI/CD stand for?
+  answer: Continuous Integration and Continuous Delivery
+
+- id: dev-lore-10009
+  category: Dev Lore
+  round: 1
+  text: Which flavor of Mountain Dew shares its name with one of the first large-scale computer worm attacks?
+  options:
+    A: Voltage
+    B: Code Red
+    C: Baja Blast
+    D: LiveWire
+  answer: B
+
+- id: dev-lore-10010
+  category: Dev Lore
+  round: 1
+  text: Which classic Unix command, originally named for “Tape Archive,” is used to bundle multiple files into a single archive?
+  options:
+    A: grep
+    B: tar
+    C: concat
+    D: gzip
+  answer: B
+
+- id: dev-lore-10011
+  category: Dev Lore
+  round: 1
+  text: The first known computer “bug” in history was caused by what?
+  options:
+    A: A missing punch card
+    B: Overheated vacuum tubes
+    C: A short circuit on a transistor
+    D: A real moth in a relay
+  answer: D
+  note: The story of the first documented “computer bug” famously involves an actual moth found in a relay of the Mark II computer at Harvard University in 1947.
+
+- id: dev-lore-10012
+  category: Dev Lore
+  round: 1
+  text: In the iconic xkcd comic often referred to as “Little Bobby Tables,” a child’s name causes the school’s database table to be dropped. Which security vulnerability does this scenario illustrate?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737582523/leet-heat/questions/dev-lore-10012.png
+  options:
+    A: Cross-Site Scripting
+    B: SQL Injection
+    C: Denial of Service
+    D: Remote Code Execution
+  answer: B
+
+- id: dev-lore-20009
+  category: Dev Lore
+  round: 2
+  text: On July 19, 2024, which cybersecurity firm released a faulty update to its Falcon sensor software, causing millions of Microsoft Windows systems to crash and disrupting industries worldwide?
+  answer: CrowdStrike
+
+- id: dev-lore-20010
+  category: Dev Lore
+  round: 2
+  text: In Unix, where would someone typically pipe output they don’t want to use?
+  answer: /dev/null
+
+- id: dev-lore-20011
+  category: Dev Lore
+  round: 2
+  text: What was the original proposition called that outlined the values and principles for modern Agile software development in 2001?
+  answer: Agile Manifesto
+
+- id: dev-lore-20012
+  category: Dev Lore
+  round: 2
+  text: The famous "Developers, Developers, Developers!" chant was performed by which Microsoft executive?
+  answer: Steve Ballmer
+
+- id: web-security-10005
+  category: Web Security
+  round: 1
+  text: What does the acronym “HTTPS” stand for?
+  options:
+    A: High-Tech Text Parsing System
+    B: Host Transfer Payload System
+    C: Hypertext Transfer Protocol Secure
+    D: Hyper Transfer Proxy Source
+  answer: C
+
+- id: web-security-10006
+  category: Web Security
+  round: 1
+  text: What is the primary purpose of CSRF attacks?
+  options:
+    A: Overloading server resources
+    B: Injecting malicious code
+    C: Tricking users into performing unintended actions
+    D: Stealing user passwords
+  answer: C
+
+- id: web-security-10007
+  category: Web Security
+  round: 1
+  text: Which cookie setting makes cookies inaccessible to JavaScript?
+  options:
+    A: Path=/
+    B: Domain=example.com
+    C: HttpOnly flag
+    D: Secure
+  answer: C
+
+- id: web-security-10008
+  category: Web Security
+  round: 1
+  text: What is the primary use case of CAPTCHA?
+  options:
+    A: Verifying a user is human
+    B: Managing user roles & permission
+    C: Encrypting user data
+    D: Enhancing password strength
   answer: A
 
-- id: frameworks-20001
-  category: Frameworks
+- id: web-security-20005
+  category: Web Security
   round: 2
-  text: In Angular, this design pattern allows classes to receive their dependencies from external sources rather than creating them themselves
-  answer: Dependency injection
+  text: What does the acronym “CSRF” stand for?
+  answer: Cross-Site Request Forgery
 
-- id: frameworks-20002
-  category: Frameworks
+- id: web-security-20006
+  category: Web Security
   round: 2
-  text: Nuxt.js is a framework built on top of which library?
-  answer: Vue.js
+  text: Trying many passwords quickly is known as a _______.
+  answer: Brute Force Attack
 
-- id: frameworks-20003
-  category: Frameworks
+- id: web-security-20007
+  category: Web Security
   round: 2
-  text: This API allows you to guard against errors in part of your app from breaking the app as a whole, and to recover
-  answer: '<svelte:boundary>'
+  text: SQL Injection attacks primarily target ____.
+  answer: Database Queries
 
-- id: frameworks-20004
-  category: Frameworks
+- id: web-security-20008
+  category: Web Security
   round: 2
-  text: What concept did SolidJS decide to omit which frameworks like React have used for comparisons to detect changes?
-  answer: VirtualDom
+  text: What are Intrusion Detection Systems (IDS)  used for?
+  answer: Detecting unauthorized access or anomalies
 
-- id: user-management-10001
-  category: User Management
+- id: apis-and-sdks-10001
+  category: APIs & SDKs
   round: 1
-  text: What does the acronym RBAC stand for?
+  text: If a request to a REST API has incorrect data, what HTTP response should be returned?
   options:
-    A: Rule-Based Authentication Code
-    B: Responsive Backend Authorization
-    C: Role-Based Access Control
-    D: Resource-Based Access Control
-  answer: C
-
-- id: user-management-10002
-  category: User Management
-  round: 1
-  text: 'In RBAC, what is the term for a collection of permissions?'
-  options:
-    A: Group
-    B: Privilege
-    C: Role
-    D: Policy
-  answer: C
-
-- id: user-management-10003
-  category: User Management
-  round: 1
-  text: Which of these is NOT a standard method for implementing user session management?
-  options:
-    A: Http-only cookies
-    B: Browser local storage
-    C: JWT Tokens
-    D: Server-side sessions with session IDs
-  answer: B
-
-- id: user-management-10004
-  category: User Management
-  round: 1
-  text: What does OAuth stand for?
-  options:
-    A: Open Access
-    B: Official Authentication
-    C: Online Access
-    D: Open Authorization
-  answer: D
-
-- id: user-management-20001
-  category: User Management
-  round: 2
-  text: One recommended approach for assigning user permissions is called ________-based access control.
-  answer: Role-based access control
-
-- id: user-management-20002
-  category: User Management
-  round: 2
-  text: What does LDAP stand for in user management?
-  answer: Lightweight Directory Access Protocol
-
-- id: user-management-20003
-  category: User Management
-  round: 2
-  text: The principle of ______ states that users should only have the minimum permissions necessary.
-  answer: Least Privilege
-
-- id: user-management-20004
-  category: User Management
-  round: 2
-  text: 'When implementing user signout, it’s important to invalidate the user’s _____ on the server side.'
-  answer: Session
-
-- id: css-10013
-  category: CSS
-  round: 1
-  text: Which of these is a valid grid-template-columns declaration?
-  options:
-    A: repeat(1fr, 4)
-    B: 20 20 20
-    C: minmax(0, 1fr) 1fr auto 200px
-    D: min-content content 10rem
-  answer: C
-
-- id: css-10014
-  category: CSS
-  round: 1
-  text: Which value for height matches the viewport including browser UI like the keyboard?
-  options:
-    A: 100vh
-    B: 100%
-    C: calc(100% - env(safe-area-inset-top))
-    D: 100dvh
-  answer: D
-
-- id: css-10015
-  category: CSS
-  round: 1
-  text: Which of these is NOT a valid font format accepted by @font-face?
-  options:
-    A: 'OpenType'
-    B: 'TrueType'
-    C: 'Web Open Font Format'
-    D: 'WebType'
-  answer: D
-
-- id: css-10016
-  category: CSS
-  round: 1
-  text: Which declaration means, "the width of the viewport but a maximum of 300px"?
-  options:
-    A: 'width: max(100%, 300px)'
-    B: 'width: min(100%, 300px)'
-    C: 'width: clamp(0, 300px, 100%)'
-    D: 'width: min-width(300px)'
-  answer: B
-
-- id: css-20013
-  category: CSS
-  round: 2
-  text: In layouts with changing number sequences, which declaration causes numbers to display at equal widths to avoid layout shifts?
-  answer: 'font-variant-numeric: tabular-nums;'
-
-- id: css-20014
-  category: CSS
-  round: 2
-  text: Which declaration allows an image to fill the entire element at different aspect ratios without distortion?
-  answer: 'object-fit: cover'
-
-- id: css-20015
-  category: CSS
-  round: 2
-  text: To prevent an element from responding to clicks, which declaration is used?
-  answer: 'pointer-events: none'
-
-- id: css-20016
-  category: CSS
-  round: 2
-  text: Intended as a performance last resort, what CSS property tells the browser that its value is expected to animate or update to trigger browser optimizations?
-  answer: will-change
-
-# https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
-- id: accessibility-10005
-  category: Accessibility
-  round: 1
-  text: Which CSS media feature allows people with vestibular disorders to request less movement on screen?
-  options:
-    A: 'animation: none'
-    B: prefers-reduced-motion
-    C: disable-movement
-    D: none of the above
-  answer: B
-
-# https://www.w3.org/TR/WCAG20/#seizure
-- id: accessibility-10006
-  category: Accessibility
-  round: 1
-  text: To avoid the risk of siezure, elements on screen should not flash more than how many times per second?
-  options:
-    A: '0'
-    B: '3'
-    C: '10'
-    D: '60'
-  answer: B
-
-# https://adasoutheast.org/legal/court/national-federation-of-the-blind-v-target-corporation-2/
-- id: accessibility-10007
-  category: Accessibility
-  round: 1
-  text: In 2008, how much did Target pay to settle a lawsuit because their website was not accessible?
-  options:
-    A: $100,000
-    B: $750,000
-    C: $2,000,000
-    D: $6,000,000
-  answer: D
-
-# https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#link-purpose-link-only
-- id: accessibility-10008
-  category: Accessibility
-  round: 1
-  text: For clarity and understanding, all links should clearly do what?
-  options:
-    A: describe their purpose
-    B: have a strong call to action
-    C: use a calming blue color
-    D: tell users to "click here"
+    A: '400'
+    B: '401'
+    C: '500'
+    D: '508'
   answer: A
 
-# https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt
-- id: accessibility-20005
-  category: Accessibility
-  round: 2
-  text: Which attribute provides descriptions of images to screen readers?
-  answer: alt
-
-# https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#no-keyboard-trap
-- id: accessibility-20006
-  category: Accessibility
-  round: 2
-  text: What is it commonly called when a user can use a keyboard to navigate into an element, but can't navigate back out?
-  answer: '"focus trap" or "keyboard trap"'
-
-# https://fortune.com/2019/09/21/beyonce-lawsuit-website-ada-compliant/
-- id: accessibility-20007
-  category: Accessibility
-  round: 2
-  text: In 2019, which pop superstar made headlines by getting sued for website ADA violations?
-  answer: Beyoncé
-
-# https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
-- id: accessibility-20008
-  category: Accessibility
-  round: 2
-  text: To make an element focusable in sequential keyboard navigation without affecting tab order, what value of `tabindex` should you set?
-  answer: '0'
-
-- id: developerisms-10001
-  category: Developerisms
+- id: apis-and-sdks-10002
+  category: APIs & SDKs
   round: 1
-  text: In software development this pattern often represents the wrong way to solve a common problem
+  text: A common criticism of GraphQL is that it always returns what HTTP response code?
   options:
-    A: naive bayes
-    B: antipattern
-    C: debugger
-    D: abstraction pattern
+    A: '301'
+    B: '200'
+    C: '206'
+    D: '304'
   answer: B
 
-- id: developerisms-10002
-  category: Developerisms
+- id: apis-and-sdks-10003
+  category: APIs & SDKs
   round: 1
-  text: What "hairy" term describes doing seemingly useless but necessary tasks that are necessary to complete another task in order to get to your original goal?
+  text: A SOAP API sends and receives data using what format?
   options:
-    A: toupee thumping
-    B: wig weaving
-    C: yak shaving
-    D: hair splitting
+    A: JSON
+    B: Buffer
+    C: XML
+    D: all of the above
   answer: C
 
-- id: developerisms-10003
-  category: Developerisms
+- id: apis-and-sdks-10004
+  category: APIs & SDKs
   round: 1
-  text: What term describes getting wrapped up in unrelated tasks that actually prevent you from working on the actual problem?
+  text: What is a common way to provide credentials safely to SDKs that require them?
   options:
-    A: bike-shedding
-    B: race conditions
-    C: chain management
-    D: cycle wasting
+    A: hashed values
+    B: environment variables
+    C: password vault
+    D: secret handshake
+  answer: B
+
+- id: apis-and-sdks-20001
+  category: APIs & SDKs
+  round: 2
+  text: Which technique for testing API endpoints might sound like it's trying to hurt the API's feelings?
+  answer: mocking
+
+- id: apis-and-sdks-20002
+  category: APIs & SDKs
+  round: 2
+  text: GitHub's official SDKs are published under what name, inspired by their mascot?
+  answer: octokit
+
+- id: apis-and-sdks-20003
+  category: APIs & SDKs
+  round: 2
+  text: An API token is commonly sent using which HTTP header?
+  answer: Authorization
+
+- id: apis-and-sdks-20004
+  category: APIs & SDKs
+  round: 2
+  text: For APIs that need two-way, real-time communication, an HTTP connection can be upgraded to which protocol?
+  answer: WebSocket
+
+- id: css-10017
+  category: CSS
+  round: 1
+  text: Which CSS pseudo-class selects inputs with invalid data only after a user has interacted with it?
+  options:
+    A: ':user-invalid'
+    B: ':invalid'
+    C: ':error'
+    D: ':incorrect'
   answer: A
 
-- id: developerisms-10004
-  category: Developerisms
+- id: css-10018
+  category: CSS
   round: 1
-  text: Be careful! This high-impact term describes the number of people on a project, if missing, would cause a project to stall.
+  text: To style the wrapping element that contains a focused element, which pseudo-class is used?
   options:
-    A: hero coding
-    B: slugger debugger
-    C: bus factor
-    D: taxi factor
+    A: ':target'
+    B: ':is(:focus)'
+    C: ':focus-within'
+    D: ':enabled'
   answer: C
 
-- id: developerisms-20001
-  category: Developerisms
-  round: 2
-  text: A riff on a certain physicist's uncertainty principle, what is a slang term for a code problem that seems to change in mysterious ways?
-  answer: Heisenbug
+- id: css-10019
+  category: CSS
+  round: 1
+  text: To size something relative to its container, which unit is used?
+  options:
+    A: cqw
+    B: cqb
+    C: cqi
+    D: all of the above
+  answer: D
 
-- id: developerisms-20002
-  category: Developerisms
-  round: 2
-  text: What is the debugging technique that encourages developers to explain what's happening to an inanimate object?
-  answer: Rubberducking or rubber duck debugging
+- id: css-10020
+  category: CSS
+  round: 1
+  text: What is the third argument of `clamp()`?
+  options:
+    A: the minimum value
+    B: the target value
+    C: the maximum value
+    D: no one knows
+  answer: C
 
-- id: developerisms-20003
-  category: Developerisms
+- id: css-20017
+  category: CSS
   round: 2
-  text: What fiery phrase has been heavily overused to describe the speed of many frameworks and libraries?
-  answer: '"Blazing fast"'
+  text: Which function allows developers to do math in CSS?
+  answer: calc()
 
-- id: developerisms-20004
-  category: Developerisms
+- id: css-20018
+  category: CSS
   round: 2
-  text: A running joke in the dev community is that programming in PHP will make enough money to buy what car?
-  answer: A Lamborghini
+  text: What does this gradient declaration result in?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737621034/leet-heat/questions/css-20018.png
+  answer: all colors or a rainbow
+
+- id: css-20019
+  category: CSS
+  round: 2
+  text: Which CSS function blends two colors together by a given amount?
+  answer: color-mix()
+
+- id: css-20020
+  category: CSS
+  round: 2
+  text: In SVG elements such as `<circle>`, which CSS property is used instead of `background-color` to determine what color the element appears?
+  answer: fill
