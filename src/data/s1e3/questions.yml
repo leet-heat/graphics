@@ -1,339 +1,348 @@
-- id: css-10009
-  category: CSS
+
+- id: frameworks-10001
+  category: Frameworks
   round: 1
-  text: 'What declaration is a replacement for the ruleset top: 0; left: 0; right: 0; bottom: 0;?'
+  text: What is Hono in web development?
   options:
-    A: 'inset: 0;'
-    B: 'margin: auto;'
-    C: 'position: center;'
-    D: 'block-size: 100%;'
+    A: A web framework for building APIs
+    B: A database management tool
+    C: A CSS framework for responsive design
+    D: A version control system
   answer: A
 
-- id: css-10010
-  category: CSS
+- id: frameworks-10002
+  category: Frameworks
   round: 1
-  text: When a defined color value is out of range, like `rgb(1000 0 0)`, what happens?
+  text: Which of these frameworks emphasizes a "zero JavaScript by default" philosophy?
   options:
-    A: Modulus used to determine a valid value
-    B: Mapped to closest valid color in the color space
-    C: Color is invalid and skipped
-    D: Color is interpreted as white
-  answer: B
-
-- id: css-10011
-  category: CSS
-  round: 1
-  text: 'A good reason to use `user-select: none` is...'
-  options:
-    A: To stop users from stealing content
-    B: To disable form elements
-    C: When text selection would interfere with other actions
-    D: To comply with copyright laws
+    A: Svelte
+    B: Nuxt.js
+    C: Astro
+    D: Analog
   answer: C
 
-- id: css-10012
-  category: CSS
+- id: frameworks-10003
+  category: Frameworks
   round: 1
-  text: 'What do you call a bit of CSS like `padding: 1.5rem;`?'
+  text: In Svelte 5, reactive state is created using `$state`, which is a category of symbols Svelte refers to as what?
   options:
-    A: Ruleset
-    B: Selector
-    C: Declaration
-    D: Definition
-  answer: C
-
-- id: css-20009
-  category: CSS
-  round: 2
-  text: Which CSS layout module allows placing elements on a defined set of rows and columns?
-  answer: grid (or table)
-
-- id: css-20010
-  category: CSS
-  round: 2
-  text: Which value of the `position` property causes an element to flow normally until it reaches a given offset, at which point it scrolls?
-  answer: sticky
-
-- id: css-20011
-  category: CSS
-  round: 2
-  text: Which CSS property allows an element to apply effects, such as blur, to the area behind it?
-  answer: backdrop-filter
-
-- id: css-20012
-  category: CSS
-  round: 2
-  text: What declaration ensures that border and padding are accounted for in the width and height of an element?
-  answer: 'box-sizing: border-box;'
-
-- id: authentication-10005
-  category: Authentication
-  round: 1
-  text: What is the main benefit of hashed passwords?
-  options:
-    A: They speed up sign in processes
-    B: They allow plain-text storage
-    C: They're easier to remember
-    D: They protect passwords if databases are breached
-  answer: D
-
-- id: authentication-10006
-  category: Authentication
-  round: 1
-  text: What is the recommended maximum lifetime for a refresh token?
-  options:
-    A: 30 Days
-    B: No standard recommendation
-    C: 24 Hours
-    D: 7 Days
+    A: Signals
+    B: Runes
+    C: Observables
+    D: Hooks
   answer: B
 
-- id: authentication-10007
-  category: Authentication
+- id: frameworks-10004
+  category: Frameworks
   round: 1
-  text: Which cookie setting will allow a cookie to be sent from http://app.example.com/ to http://api.example.com/ during a JavaScript fetch() request?
+  text: What is Bun?
   options:
-    A: Path=/ only
-    B: SameSite=None
-    C: SameSite=Strict
-    D: HttpOnly enabled
-  answer: B
-
-- id: authentication-10008
-  category: Authentication
-  round: 1
-  text: Biometric authentication uses _____.
-  options:
-    A: Security questions
-    B: Unique physical traits
-    C: Email verification
-    D: Passwords & PINs
-  answer: B
-
-- id: authentication-20005
-  category: Authentication
-  round: 2
-  text: What does the acronym JWT stand for?
-  answer: JSON Web Tokens
-
-- id: authentication-20006
-  category: Authentication
-  round: 2
-  text: What is the standard length of a Time-based One-Time Password (TOTP)?
-  answer: 6 digits
-
-- id: authentication-20007
-  category: Authentication
-  round: 2
-  text: Which authentication factor is known to provide the strongest security when implemented correctly?
-  answer: Multi-Factor Authentication (MFA)
-
-- id: authentication-20008
-  category: Authentication
-  round: 2
-  text: Which protocol is commonly used for Single Sign-On (SSO)?
-  answer: SAML
-
-- id: deployment-10001
-  category: Deployment
-  round: 1
-  text: When deploying to AWS, which service manages the actual distribution of assets?
-  options:
-    A: AWS Cloud Control API
-    B: AWS Cloud9
-    C: Amazon EC2
-    D: Amazon CloudFront
-  answer: D
-
-- id: deployment-10002
-  category: Deployment
-  round: 1
-  text: Which of the following is NOT a Cloudflare product name?
-  options:
-    A: D1
-    B: Workers KV
-    C: C7
-    D: R2
-  answer: C
-
-- id: deployment-10003
-  category: Deployment
-  round: 1
-  text: Which of the following is NOT an "infrastructure as code" project?
-  options:
-    A: Terraform
-    B: Pulumi
-    C: OpScribe
-    D: CDK
-  answer: C
-
-- id: deployment-10004
-  category: Deployment
-  round: 1
-  text: The strategy of routing a small number of users to a variation of a page to see which performs better is commonly referred to as what?
-  options:
-    A: Gradual rollout
-    B: Split testing
-    C: Smoke testing
-    D: Continuous deployment
-  answer: B
-
-- id: deployment-20001
-  category: Deployment
-  round: 2
-  text: Which deployment approach means servers are billed by execution time instead of being always on?
-  answer: Serverless
-
-- id: deployment-20002
-  category: Deployment
-  round: 2
-  text: The strategy of keeping two identical environments for deployment — one for production, one for testing — and swapping after testing is called what?
-  answer: '"blue/green deployment" or "red/black deployment"'
-
-- id: deployment-20003
-  category: Deployment
-  round: 2
-  text: What version control management strategy aims to avoid long-lived feature branches and the complexities that come with them by making small, frequent commits directly to the main branch?
-  answer: Trunk-based development
-
-- id: deployment-20004
-  category: Deployment
-  round: 2
-  text: Which tool transforms CSS during builds to add polyfills, prefixes, and other modern features safely?
-  answer: PostCSS
-
-- id: dev-lore-10005
-  category: Dev Lore
-  round: 1
-  text: According to legend, what is the most infamous and dirtiest way to crash a Unix-like system with just a few characters?
-  options:
-    A: 'Bash fork bomb `:(){ :|:& };:`'
-    B: Single misplaced semicolon
-    C: Publishing a .env file
-    D: 'rm -rf /'
+    A: A JavaScript runtime and toolkit
+    B: A CSS framework
+    C: A database management tool
+    D: A testing library
   answer: A
 
-- id: dev-lore-10006
-  category: Dev Lore
-  round: 1
-  text: In the humorous IPoAC proposal, what highly unexpected medium was used to transport TCP communication?
-  options:
-    A: Avian Carriers (Pigeons)
-    B: Aircraft Carriers (Planes)
-    C: Alternative Courier (Bicycles)
-    D: Abstract Communication (Vibes)
-  answer: A
+- id: frameworks-20001
+  category: Frameworks
+  round: 2
+  text: In Angular, this design pattern allows classes to receive their dependencies from external sources rather than creating them themselves
+  answer: Dependency injection
 
-- id: dev-lore-10007
-  category: Dev Lore
-  round: 1
-  text: Before Microsoft introduced TypeScript, there was another attempt to improve JavaScript authoring, using the slogan “It’s just JavaScript”. What was it called?
-  options:
-    A: Flow
-    B: CoffeeScript
-    C: Babel
-    D: Elm
-  answer: B
+- id: frameworks-20002
+  category: Frameworks
+  round: 2
+  text: Nuxt.js is a framework built on top of which library?
+  answer: vue
 
-- id: dev-lore-10008
-  category: Dev Lore
+- id: frameworks-20003
+  category: Frameworks
+  round: 2
+  text: This API allows you to guard against errors in part of your app from breaking the app as a whole, and to recover
+  answer: `<svelte:boundary>`
+
+- id: frameworks-20004
+  category: Frameworks
+  round: 2
+  text: What concept did SolidJS decide to omit which frameworks like React have used for comparisons to detect changes?
+  answer: VirtualDom
+
+- id: user-management-10001
+  category: User Management
   round: 1
-  text: Which acronym represents foundational object-oriented design principles?
+  text: What does the acronym RBAC stand for?
   options:
-    A: KISS
-    B: DRY
-    C: SOLID
-    D: YAGNI
+    A: Rule-Based Authentication Code
+    B: Responsive Backend Authorization
+    C: Role-Based Access Control
+    D: Resource-Based Access Control
   answer: C
 
-- id: dev-lore-20005
-  category: Dev Lore
-  round: 2
-  text: What database infamously claimed to be “web scale”?
-  answer: MongoDB
-
-- id: dev-lore-20006
-  category: Dev Lore
-  round: 2
-  text: What playful HTTP status code, numbered 418, was originally defined in an April Fools' joke and indicates that the server refuses to brew coffee because of its current hardware limitations?
-  answer: I'm a teapot
-
-- id: dev-lore-20007
-  category: Dev Lore
-  round: 2
-  text: In 2009, this cloud service provider experienced a major outage due to network congestion, affecting its Elastic Compute Cloud service and emphasizing the risks of cloud dependency. Which company was it?
-  answer: AWS / Amazon Web Services
-
-- id: dev-lore-20008
-  category: Dev Lore
-  round: 2
-  text: Which cryptocurrency exchange, founded by Sam Bankman-Fried, collapsed in 2022 amid allegations of financial mismanagement and fraud, leading to one of the largest scandals in blockchain history?
-  answer: FTX
-
-- id: team-dynamics-10005
-  category: Team Dynamics
+- id: user-management-10002
+  category: User Management
   round: 1
-  text: 'In larger organizations, some senior leaders will meet 1:1 with employees further down the reporting chain in what kind of meeting?'
+  text: 'In RBAC, what is the term for a collection of permissions?'
   options:
-    A: town hall
-    B: pity party
-    C: lightning round
-    D: skip-level
+    A: Group
+    B: Privilege
+    C: Role
+    D: Policy
+  answer: C
+
+- id: user-management-10003
+  category: User Management
+  round: 1
+  text: Which of these is NOT a standard method for implementing user session management?
+  options:
+    A: Http-only cookies
+    B: Browser local storage
+    C: JWT Tokens
+    D: Server-side sessions with session IDs
+  answer: B
+
+- id: user-management-10004
+  category: User Management
+  round: 1
+  text: What does OAuth stand for?
+  options:
+    A: Open Access
+    B: Official Authentication
+    C: Online Access
+    D: Open Authorization
   answer: D
 
-- id: team-dynamics-10006
-  category: Team Dynamics
+- id: user-management-20001
+  category: User Management
+  round: 2
+  text: One recommended approach for assigning user permissions is called ________-based access control.
+  answer: Role-based access control
+
+- id: user-management-20002
+  category: User Management
+  round: 2
+  text: What does LDAP stand for in user management?
+  answer: Lightweight Directory Access Protocol
+
+- id: user-management-20003
+  category: User Management
+  round: 2
+  text: The principle of ______ states that users should only have the minimum permissions necessary.
+  answer: Least Privilege
+
+- id: user-management-20004
+  category: User Management
+  round: 2
+  text: 'When implementing user signout, it’s important to invalidate the user’s _____ on the server side.'
+  answer: Session
+
+- id: css-10013
+  category: CSS
   round: 1
-  text: According to a study by Williamson & Feyer, being awake for 18 hours without sleep causes the same cognitive impairment as consuming how many alcoholic beverages?
+  text: Which of these is a valid grid-template-columns declaration?
   options:
-    A: '2'
+    A: repeat(1fr, 4)
+    B: 20 20 20
+    C: minmax(0, 1fr) 1fr auto 200px
+    D: min-content content 10rem
+  answer: C
+
+- id: css-10014
+  category: CSS
+  round: 1
+  text: Which value for height matches the viewport including browser UI like the keyboard?
+  options:
+    A: 100vh
+    B: 100%
+    C: calc(100% - env(safe-area-inset-top))
+    D: 100dvh
+  answer: D
+
+- id: css-10015
+  category: CSS
+  round: 1
+  text: Which of these is NOT a valid font format accepted by @font-face?
+  options:
+    A: 'OpenType'
+    B: 'TrueType'
+    C: 'Web Open Font Format'
+    D: 'WebType'
+  answer: D
+
+- id: css-10016
+  category: CSS
+  round: 1
+  text: Which declaration means, "the width of the viewport but a maximum of 300px"?
+  options:
+    A: 'width: max(100%, 300px)'
+    B: 'width: min(100%, 300px)'
+    C: 'width: clamp(0, 300px, 100%)'
+    D: 'width: min-width(300px)'
+  answer: B
+
+- id: css-20013
+  category: CSS
+  round: 2
+  text: In layouts with changing number sequences, which declaration causes numbers to display at equal widths to avoid layout shifts?
+  answer: 'font-variant-numeric: tabular-nums;'
+
+- id: css-20014
+  category: CSS
+  round: 2
+  text: Which declaration allows an image to fill the entire element at different aspect ratios without distortion?
+  answer: 'object-fit: cover'
+
+- id: css-20015
+  category: CSS
+  round: 2
+  text: To prevent an element from responding to clicks, which declaration is used?
+  answer: 'pointer-events: none'
+
+- id: css-20016
+  category: CSS
+  round: 2
+  text: Intended as a performance last resort, what CSS property tells the browser that its value is expected to animate or update to trigger browser optimizations?
+  answer: will-change
+
+# https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
+- id: accessibility-10005
+  category: Accessibility
+  round: 1
+  text: Which CSS media feature allows people with vestibular disorders to request less movement on screen?
+  options:
+    A: 'animation: none'
+    B: prefers-reduced-motion
+    C: disable-movement
+    D: none of the above
+  answer: B
+
+# https://www.w3.org/TR/WCAG20/#seizure
+- id: accessibility-10006
+  category: Accessibility
+  round: 1
+  text: To avoid the risk of siezure, elements on screen should not flash more than how many times per second?
+  options:
+    A: '0'
     B: '3'
-    C: '4'
-    D: '5'
-  answer: C
-
-- id: team-dynamics-10007
-  category: Team Dynamics
-  round: 1
-  text: According to a 2024 study by the University of Pittsburgh, which controversial mandate has led to companies facing high turnover and slow hiring?
-  options:
-    A: forced overtime
-    B: return to office
-    C: casual Fridays
-    D: '"compliment the CEO" Wednesdays'
+    C: '10'
+    D: '60'
   answer: B
 
-- id: team-dynamics-10008
-  category: Team Dynamics
+# https://adasoutheast.org/legal/court/national-federation-of-the-blind-v-target-corporation-2/
+- id: accessibility-10007
+  category: Accessibility
   round: 1
-  text: Which company published a paper with a model for scaling agile with a team structure that it turned out they didn't actually follow?
+  text: In 2008, how much did Target pay to settle a lawsuit because their website was not accessible?
   options:
-    A: IBM
-    B: Airbnb
-    C: Spotify
-    D: Netflix
+    A: $100,000
+    B: $750,000
+    C: $2,000,000
+    D: $6,000,000
+  answer: D
+
+# https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#link-purpose-link-only
+- id: accessibility-10008
+  category: Accessibility
+  round: 1
+  text: For clarity and understanding, all links should clearly do what?
+  options:
+    A: describe their purpose
+    B: have a strong call to action
+    C: use a calming blue color
+    D: tell users to "click here"
+  answer: A
+
+# https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/alt
+- id: accessibility-20005
+  category: Accessibility
+  round: 2
+  text: Which attribute provides descriptions of images to screen readers?
+  answer: alt
+
+# https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#no-keyboard-trap
+- id: accessibility-20006
+  category: Accessibility
+  round: 2
+  text: What is it commonly called when a user can use a keyboard to navigate into an element, but can't navigate back out?
+  answer: '"focus trap" or "keyboard trap"'
+
+# https://fortune.com/2019/09/21/beyonce-lawsuit-website-ada-compliant/
+- id: accessibility-20007
+  category: Accessibility
+  round: 2
+  text: In 2019, which pop superstar made headlines by getting sued for website ADA violations?
+  answer: Beyoncé
+
+# https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
+- id: accessibility-20008
+  category: Accessibility
+  round: 2
+  text: To make an element focusable in sequential keyboard navigation without affecting tab order, what value of `tabindex` should you set?
+  answer: 0
+
+- id: developerisms-10001
+  category: Developerisms
+  round: 1
+  text: In software development this pattern often represents the wrong way to solve a common problem
+  options:
+    A: naive bayes
+    B: antipattern
+    C: debugger
+    D: abstraction pattern
+  answer: B
+
+- id: developerisms-10002
+  category: Developerisms
+  round: 1
+  text: What "hairy" term describes doing seemingly useless but necessary tasks that are necessary to complete another task in order to get to your original goal?
+  options:
+    A: toupee thumping
+    B: wig weaving
+    C: yak shaving
+    D: hair splitting
+  answer:
+
+- id: developerisms-10003
+  category: Developerisms
+  round: 1
+  text: What term describes getting wrapped up in unrelated tasks that actually prevent you from working on the actual problem?
+  options:
+    A: bike-shedding
+    B: race conditions
+    C: chain management
+    D: cycle wasting
+  answer: A
+
+- id: developerisms-10004
+  category: Developerisms
+  round: 1
+  text: Be careful! This high-impact term describes the number of people on a project, if missing, would cause a project to stall.
+  options:
+    A: hero coding
+    B: slugger debugger
+    C: bus factor
+    D: taxi factor
   answer: C
 
-- id: team-dynamics-20005
-  category: Team Dynamics
+- id: developerisms-20001
+  category: Developerisms
   round: 2
-  text: What often daily meeting do many teams hold as a way to share status updates and blockers?
-  answer: standup
+  text: A riff on a certain physicist's uncertainty principle, what is a slang term for a code problem that seems to change in mysterious ways?
+  answer: Heisenbug
 
-- id: team-dynamics-20006
-  category: Team Dynamics
+- id: developerisms-20002
+  category: Developerisms
   round: 2
-  text: In Agile, what sports-themed approach to project planning breaks work into sprints?
-  answer: Scrum
+  text: What is the debugging technique that encourages developers to explain what's happening to an inanimate object?
+  answer: Rubberducking or rubber duck debugging
 
-- id: team-dynamics-20007
-  category: Team Dynamics
+- id: developerisms-20003
+  category: Developerisms
   round: 2
-  text: Which style of planning places tasks on a board that's split into columns?
-  answer: kanban
+  text: What fiery phrase has been heavily overused to describe the speed of many frameworks and libraries?
+  answer: '"Blazing fast"'
 
-- id: team-dynamics-20008
-  category: Team Dynamics
+- id: developerisms-20004
+  category: Developerisms
   round: 2
-  text: Sustained periods of overtime are commonly referred to by what name?
-  answer: crunch mode
+  text: A running joke in the dev community is that programming in PHP will make enough money to buy what car?
+  answer: A Lamborghini
