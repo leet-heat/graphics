@@ -11,58 +11,58 @@
     D: '[data-type$=spicy]'
   answer: B
 
-# - id: css-10002
-#   category: CSS
-#   round: 1
-#   text: Which property MUST be set for the ::before and ::after pseudo-elements to be rendered?
-#   options:
-#     A: display
-#     B: position
-#     C: content
-#     D: visibility
-#   answer: C
+- id: css-10002
+  category: CSS
+  round: 1
+  text: Which property MUST be set for the ::before and ::after pseudo-elements to be rendered?
+  options:
+    A: display
+    B: position
+    C: content
+    D: visibility
+  answer: C
 
-# - id: css-10003
-#   category: CSS
-#   round: 1
-#   text: Which of the following is NOT a valid color space in CSS?
-#   options:
-#     A: srgb
-#     B: xyz
-#     C: oklch
-#     D: truecolor
-#   answer: D
+- id: css-10003
+  category: CSS
+  round: 1
+  text: Which of the following is NOT a valid color space in CSS?
+  options:
+    A: srgb
+    B: xyz
+    C: oklch
+    D: truecolor
+  answer: D
 
-# - id: css-10004
-#   category: CSS
-#   round: 1
-#   text: What CSS selector targets ONLY the orange box?
-#   image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737649390/leet-heat/questions/s1e3-css-10004.jpg
-#   options:
-#     A: '.box {}'
-#     B: ':only(.box) {}'
-#     C: '!.disabled {}'
-#     D: '.box:not(.disabled) {}'
-#   answer: D
+- id: css-10004
+  category: CSS
+  round: 1
+  text: What CSS selector targets ONLY the orange box?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737649390/leet-heat/questions/s1e3-css-10004.jpg
+  options:
+    A: '.box {}'
+    B: ':only(.box) {}'
+    C: '!.disabled {}'
+    D: '.box:not(.disabled) {}'
+  answer: D
 
-# - id: css-20001
-#   category: CSS
-#   round: 2
-#   text: What color is `.alert` rendered in?
-#   image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737618244/leet-heat/questions/css-20001.png
-#   answer: hotpink
+- id: css-20001
+  category: CSS
+  round: 2
+  text: What color is `.alert` rendered in?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737618244/leet-heat/questions/css-20001.png
+  answer: hotpink
 
-# - id: css-20002
-#   category: CSS
-#   round: 2
-#   text: Which at-rule allows styles to be applied based on an ancestor element's size?
-#   answer: '@container'
+- id: css-20002
+  category: CSS
+  round: 2
+  text: Which at-rule allows styles to be applied based on an ancestor element's size?
+  answer: '@container'
 
-# - id: css-20003
-#   category: CSS
-#   round: 2
-#   text: Which property can be used in place of `width` to add support for any writing mode, direction, and text orientation?
-#   answer: inline-size
+- id: css-20003
+  category: CSS
+  round: 2
+  text: Which property can be used in place of `width` to add support for any writing mode, direction, and text orientation?
+  answer: inline-size
 
 - id: css-20004
   category: CSS
@@ -71,285 +71,285 @@
   answer: cover
 # CATEGORY: Web Security
 
-# - id: web-security-10001
-#   category: Web Security
-#   round: 1
-#   text: What is stored in a JWT to prevent tampering with its payload?
-#   options:
-#     A: Digital signature
-#     B: Encryption key
-#     C: Timestamp only
-#     D: Base64 encoding
-#   answer: A
+- id: web-security-10001
+  category: Web Security
+  round: 1
+  text: What is stored in a JWT to prevent tampering with its payload?
+  options:
+    A: Digital signature
+    B: Encryption key
+    C: Timestamp only
+    D: Base64 encoding
+  answer: A
 
-# - id: web-security-10002
-#   category: Web Security
-#   round: 1
-#   text: What effectively prevents most XSS attacks when displaying user input?
-#   options:
-#     A: URL encoding
-#     B: ASCII filtering
-#     C: Input length limits
-#     D: Escaping HTML entities
-#   answer: D
+- id: web-security-10002
+  category: Web Security
+  round: 1
+  text: What effectively prevents most XSS attacks when displaying user input?
+  options:
+    A: URL encoding
+    B: ASCII filtering
+    C: Input length limits
+    D: Escaping HTML entities
+  answer: D
 
-# - id: web-security-10003
-#   category: Web Security
-#   round: 1
-#   text: "When using client-side rendering, what's the safest place to store an authentication token?"
-#   options:
-#     A: Local storage
-#     B: HTTP-only cookie
-#     C: Window object
-#     D: Session storage
-#   answer: B
+- id: web-security-10003
+  category: Web Security
+  round: 1
+  text: "When using client-side rendering, what's the safest place to store an authentication token?"
+  options:
+    A: Local storage
+    B: HTTP-only cookie
+    C: Window object
+    D: Session storage
+  answer: B
 
-# - id: web-security-10004
-#   category: Web Security
-#   round: 1
-#   text: What is the main security benefit of refresh tokens?
-#   options:
-#     A: Password-less auth
-#     B: Client validation
-#     C: Short-lived access
-#     D: Faster requests
-#   answer: C
+- id: web-security-10004
+  category: Web Security
+  round: 1
+  text: What is the main security benefit of refresh tokens?
+  options:
+    A: Password-less auth
+    B: Client validation
+    C: Short-lived access
+    D: Faster requests
+  answer: C
 
-# - id: web-security-20001
-#   category: Web Security
-#   round: 2
-#   text: What web security mechanism shares a close resemblance in name with a popular American light beer?
-#   answer: CORS (Cross-Origin Resource Sharing)
+- id: web-security-20001
+  category: Web Security
+  round: 2
+  text: What web security mechanism shares a close resemblance in name with a popular American light beer?
+  answer: CORS (Cross-Origin Resource Sharing)
 
-# - id: web-security-20003
-#   category: Web Security
-#   round: 2
-#   text: What method helps protect against SQL injection?
-#   answer: Using prepared statements
+- id: web-security-20003
+  category: Web Security
+  round: 2
+  text: What method helps protect against SQL injection?
+  answer: Using prepared statements
 
-# - id: web-security-20004
-#   category: Web Security
-#   round: 2
-#   text: Newly discovered security holes or flaws with no known patches are known as _______.
-#   answer: Zero-day Vulnerabilities
+- id: web-security-20004
+  category: Web Security
+  round: 2
+  text: Newly discovered security holes or flaws with no known patches are known as _______.
+  answer: Zero-day Vulnerabilities
 
-# - id: web-security-20005
-#   category: Web Security
-#   round: 2
-#   text: What does the acronym “CSRF” stand for?
-#   answer: Cross-Site Request Forgery
+- id: web-security-20005
+  category: Web Security
+  round: 2
+  text: What does the acronym “CSRF” stand for?
+  answer: Cross-Site Request Forgery
 
-# # CATEGORY: Animation
+# CATEGORY: Animation
 
-# - id: animation-10001
-#   category: Animation
-#   round: 1
-#   text: Which of the following is NOT an web animation library?
-#   options:
-#     A: Motion
-#     B: Anime.js
-#     C: Sway.js
-#     D: GreenSock
-#   answer: C
+- id: animation-10001
+  category: Animation
+  round: 1
+  text: Which of the following is NOT an web animation library?
+  options:
+    A: Motion
+    B: Anime.js
+    C: Sway.js
+    D: GreenSock
+  answer: C
 
-# - id: animation-10002
-#   category: Animation
-#   round: 1
-#   text: What type of function is used to control the feel of an animation's movement?
-#   options:
-#     A: Bounce
-#     B: Easing
-#     C: Rate
-#     D: Lifecycle
-#   answer: B
+- id: animation-10002
+  category: Animation
+  round: 1
+  text: What type of function is used to control the feel of an animation's movement?
+  options:
+    A: Bounce
+    B: Easing
+    C: Rate
+    D: Lifecycle
+  answer: B
 
-# - id: animation-10003
-#   category: Animation
-#   round: 1
-#   text: In animations, what is used to define the start and end of a given transition?
-#   options:
-#     A: Touchpoints
-#     B: Baselines
-#     C: Reference
-#     D: Keyframes
-#   answer: D
+- id: animation-10003
+  category: Animation
+  round: 1
+  text: In animations, what is used to define the start and end of a given transition?
+  options:
+    A: Touchpoints
+    B: Baselines
+    C: Reference
+    D: Keyframes
+  answer: D
 
-# - id: animation-10004
-#   category: Animation
-#   round: 1
-#   text: To use an exact number of intervals for animation-timing-function, which CSS function is used?
-#   options:
-#     A: steps()
-#     B: frames()
-#     C: draw-frame()
-#     D: sprite()
-#   answer: A
-#   note: Using steps() is helpful when animating using a sprite or frame-based animation.
+- id: animation-10004
+  category: Animation
+  round: 1
+  text: To use an exact number of intervals for animation-timing-function, which CSS function is used?
+  options:
+    A: steps()
+    B: frames()
+    C: draw-frame()
+    D: sprite()
+  answer: A
+  note: Using steps() is helpful when animating using a sprite or frame-based animation.
 
-# # https://mdn.io/@property
-# - id: animation-20001
-#   category: Animation
-#   round: 2
-#   text: The introduction of which at-rule in CSS adds type support for custom properties, which allows for animating things like angles?
-#   answer: '@property'
+# https://mdn.io/@property
+- id: animation-20001
+  category: Animation
+  round: 2
+  text: The introduction of which at-rule in CSS adds type support for custom properties, which allows for animating things like angles?
+  answer: '@property'
 
-# - id: animation-20002
-#   category: Animation
-#   round: 2
-#   text: Which browser API allows CSS-only animation between page navigations and SPA state changes?
-#   answer: View Transitions API
+- id: animation-20002
+  category: Animation
+  round: 2
+  text: Which browser API allows CSS-only animation between page navigations and SPA state changes?
+  answer: View Transitions API
 
-# # https://developer.chrome.com/docs/css-ui/animate-to-height-auto/
-# - id: animation-20003
-#   category: Animation
-#   round: 2
-#   text: 'Which CSS function will enable animating to `height: auto`?'
-#   answer: calc-size() or interpolate-size
-#   note: 'Animating to height: auto has been on developers’ wish lists for so long that Chris Coyier has referred to it as "one of the Boss Battles of CSS".'
+# https://developer.chrome.com/docs/css-ui/animate-to-height-auto/
+- id: animation-20003
+  category: Animation
+  round: 2
+  text: 'Which CSS function will enable animating to `height: auto`?'
+  answer: calc-size() or interpolate-size
+  note: 'Animating to height: auto has been on developers’ wish lists for so long that Chris Coyier has referred to it as "one of the Boss Battles of CSS".'
 
-# - id: animation-20004
-#   category: Animation
-#   round: 2
-#   text: To provide custom timing to animation-timing-function, which CSS function is used?
-#   answer: cubic-bezier()
+- id: animation-20004
+  category: Animation
+  round: 2
+  text: To provide custom timing to animation-timing-function, which CSS function is used?
+  answer: cubic-bezier()
 
-# # CATEGORY: Dev Lore
+# CATEGORY: Dev Lore
 
-# - id: dev-lore-10001
-#   category: Dev Lore
-#   round: 1
-#   text: Which famously litigious company owns both MySQL and the JavaScript trademark?
-#   options:
-#     A: IBM
-#     B: Microsoft
-#     C: Oracle
-#     D: Hulu
-#   answer: C
+- id: dev-lore-10001
+  category: Dev Lore
+  round: 1
+  text: Which famously litigious company owns both MySQL and the JavaScript trademark?
+  options:
+    A: IBM
+    B: Microsoft
+    C: Oracle
+    D: Hulu
+  answer: C
 
-# - id: dev-lore-10002
-#   category: Dev Lore
-#   round: 1
-#   text: In March 2016, the sudden removal of which tiny 11-line utility from the npm registry caused widespread build failures and reignited discussions on open-source dependency risks?
-#   options:
-#     A: slugify
-#     B: left-pad
-#     C: deep-assign
-#     D: is-even
-#   answer: B
+- id: dev-lore-10002
+  category: Dev Lore
+  round: 1
+  text: In March 2016, the sudden removal of which tiny 11-line utility from the npm registry caused widespread build failures and reignited discussions on open-source dependency risks?
+  options:
+    A: slugify
+    B: left-pad
+    C: deep-assign
+    D: is-even
+  answer: B
 
-# - id: dev-lore-10003
-#   category: Dev Lore
-#   round: 1
-#   text: In late 2017, macOS High Sierra (v10.13) was found to have a critical bug that allowed anyone to authenticate as the “root” user without providing a password by simply…
-#   options:
-#     A: Setting the system date to 1970 and bypassing the password check
-#     B: Using a special Siri voice command at the login screen
-#     C: Logging in from the Guest account and then toggling a hidden admin setting
-#     D: Repeatedly pressing Enter after typing “root” in the username field
-#   answer: D
+- id: dev-lore-10003
+  category: Dev Lore
+  round: 1
+  text: In late 2017, macOS High Sierra (v10.13) was found to have a critical bug that allowed anyone to authenticate as the “root” user without providing a password by simply…
+  options:
+    A: Setting the system date to 1970 and bypassing the password check
+    B: Using a special Siri voice command at the login screen
+    C: Logging in from the Guest account and then toggling a hidden admin setting
+    D: Repeatedly pressing Enter after typing “root” in the username field
+  answer: D
 
-# - id: dev-lore-10004
-#   category: Dev Lore
-#   round: 1
-#   text: In 2014, what critical vulnerability in the OpenSSL cryptography library allowed attackers to read memory from servers, potentially exposing private keys and passwords?
-#   options:
-#     A: Spectre
-#     B: Heartbleed
-#     C: Shellshock
-#     D: HashBreak
-#   answer: B
+- id: dev-lore-10004
+  category: Dev Lore
+  round: 1
+  text: In 2014, what critical vulnerability in the OpenSSL cryptography library allowed attackers to read memory from servers, potentially exposing private keys and passwords?
+  options:
+    A: Spectre
+    B: Heartbleed
+    C: Shellshock
+    D: HashBreak
+  answer: B
 
-# - id: dev-lore-20001
-#   category: Dev Lore
-#   round: 2
-#   text: What does the acronym LAMP stand for in web development?
-#   answer: Linux, Apache, MySQL, PHP (or Python/Perl)
+- id: dev-lore-20001
+  category: Dev Lore
+  round: 2
+  text: What does the acronym LAMP stand for in web development?
+  answer: Linux, Apache, MySQL, PHP (or Python/Perl)
 
-# - id: dev-lore-20002
-#   category: Dev Lore
-#   round: 2
-#   text: Which computer virus shared its name with an enemy from the popular video game, Minecraft?
-#   answer: Creeper
+- id: dev-lore-20002
+  category: Dev Lore
+  round: 2
+  text: Which computer virus shared its name with an enemy from the popular video game, Minecraft?
+  answer: Creeper
 
-# - id: dev-lore-20003
-#   category: Dev Lore
-#   round: 2
-#   text: What year was the World Wide Web created?
-#   answer: '1989'
+- id: dev-lore-20003
+  category: Dev Lore
+  round: 2
+  text: What year was the World Wide Web created?
+  answer: '1989'
 
-# - id: dev-lore-20004
-#   category: Dev Lore
-#   round: 2
-#   text: According to the famous XKCD comic, the “#1 programmer excuse for legitimately slacking off is ___________.
-#   image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737583295/leet-heat/questions/dev-lore-20004.png
-#   answer: Compiling
+- id: dev-lore-20004
+  category: Dev Lore
+  round: 2
+  text: According to the famous XKCD comic, the “#1 programmer excuse for legitimately slacking off is ___________.
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737583295/leet-heat/questions/dev-lore-20004.png
+  answer: Compiling
 
-# # CATEGORY: Team Dynamics
+# CATEGORY: Team Dynamics
 
-# - id: team-dynamics-10001
-#   category: Team Dynamics
-#   round: 1
-#   text: What is a commonly used metaphor when estimating the work involved in a given task?
-#   options:
-#     A: pizza sizing
-#     B: t-shirt sizing
-#     C: contingency planning
-#     D: hand waving
-#   answer: B
+- id: team-dynamics-10001
+  category: Team Dynamics
+  round: 1
+  text: What is a commonly used metaphor when estimating the work involved in a given task?
+  options:
+    A: pizza sizing
+    B: t-shirt sizing
+    C: contingency planning
+    D: hand waving
+  answer: B
 
-# - id: team-dynamics-10002
-#   category: Team Dynamics
-#   round: 1
-#   text: Love it or hate it, which approach to building software on teams is wildly popular?
-#   options:
-#     A: Agile
-#     B: Magical thinking
-#     C: Cowboy coding
-#     D: Flat organizations
-#   answer: A
+- id: team-dynamics-10002
+  category: Team Dynamics
+  round: 1
+  text: Love it or hate it, which approach to building software on teams is wildly popular?
+  options:
+    A: Agile
+    B: Magical thinking
+    C: Cowboy coding
+    D: Flat organizations
+  answer: A
 
-# - id: team-dynamics-10003
-#   category: Team Dynamics
-#   round: 1
-#   text: After a big launch or incident, what type of meeting is intended to identify the good, the bad, and the next steps?
-#   options:
-#     A: Skip-level
-#     B: Performance review
-#     C: Retrospective
-#     D: CEO fireside chat
-#   answer: C
+- id: team-dynamics-10003
+  category: Team Dynamics
+  round: 1
+  text: After a big launch or incident, what type of meeting is intended to identify the good, the bad, and the next steps?
+  options:
+    A: Skip-level
+    B: Performance review
+    C: Retrospective
+    D: CEO fireside chat
+  answer: C
 
-# - id: team-dynamics-10004
-#   category: Team Dynamics
-#   round: 1
-#   text: Where do tasks go to die on a project planning board?
-#   options:
-#     A: The farm
-#     B: The icebox
-#     C: The furnace
-#     D: The kitchen
-#   answer: B
+- id: team-dynamics-10004
+  category: Team Dynamics
+  round: 1
+  text: Where do tasks go to die on a project planning board?
+  options:
+    A: The farm
+    B: The icebox
+    C: The furnace
+    D: The kitchen
+  answer: B
 
-# - id: team-dynamics-20001
-#   category: Team Dynamics
-#   round: 2
-#   text: What style of product planning has all features created and approved by leadership far in advance of building them?
-#   answer: waterfall
+- id: team-dynamics-20001
+  category: Team Dynamics
+  round: 2
+  text: What style of product planning has all features created and approved by leadership far in advance of building them?
+  answer: waterfall
 
-# - id: team-dynamics-20002
-#   category: Team Dynamics
-#   round: 2
-#   text: What is it called when two developers work together using the same computer?
-#   answer: pair programming
+- id: team-dynamics-20002
+  category: Team Dynamics
+  round: 2
+  text: What is it called when two developers work together using the same computer?
+  answer: pair programming
 
-# - id: team-dynamics-20003
-#   category: Team Dynamics
-#   round: 2
-#   text: A document describing how a role progresses across different levels of seniority is called a what?
-#   answer: career ladder
+- id: team-dynamics-20003
+  category: Team Dynamics
+  round: 2
+  text: A document describing how a role progresses across different levels of seniority is called a what?
+  answer: career ladder
 
-# - id: team-dynamics-20004
-#   category: Team Dynamics
-#   round: 2
-#   text: In an effort to keep teams small and effective, Amazon famously introduced a "two ____ team" rule.
-#   answer: pizza
+- id: team-dynamics-20004
+  category: Team Dynamics
+  round: 2
+  text: In an effort to keep teams small and effective, Amazon famously introduced a "two ____ team" rule.
+  answer: pizza
