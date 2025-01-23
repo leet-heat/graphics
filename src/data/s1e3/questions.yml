@@ -1,349 +1,339 @@
-- id: acronyms-10001
-  category: Acronyms
+- id: css-10009
+  category: CSS
   round: 1
-  text: In startup speak, what does PLG stand for?
+  text: 'What declaration is a replacement for the ruleset top: 0; left: 0; right: 0; bottom: 0;?'
   options:
-    A: Partial Load Generation
-    B: Product-Led Growth
-    C: Primarily LLM-Generated
-    D: Post-Lunch Gloom
-  answer: B
-
-- id: acronyms-10002
-  category: Acronyms
-  round: 1
-  text: What does OKR stand for?
-  options:
-    A: Only Known Response
-    B: Operational Key Resource
-    C: Organizational Knowledge Retention
-    D: Objectives and Key Results
-  answer: D
-
-- id: acronyms-10003
-  category: Acronyms
-  round: 1
-  text: What does IDE stand for?
-  options:
-    A: Integrated Development Environment
-    B: Internet Data Encryption
-    C: Interactive Digital Experience
-    D: Illegal Drone Experiments
+    A: 'inset: 0;'
+    B: 'margin: auto;'
+    C: 'position: center;'
+    D: 'block-size: 100%;'
   answer: A
 
-- id: acronyms-10004
-  category: Acronyms
+- id: css-10010
+  category: CSS
   round: 1
-  text: What does MVC stand for?
+  text: When a defined color value is out of range, like `rgb(1000 0 0)`, what happens?
   options:
-    A: Module Validation Criteria
-    B: Managed Virtual Cloud
-    C: Model View Controller
-    D: Machine Vision Control
+    A: Modulus used to determine a valid value
+    B: Mapped to closest valid color in the color space
+    C: Color is invalid and skipped
+    D: Color is interpreted as white
+  answer: B
+
+- id: css-10011
+  category: CSS
+  round: 1
+  text: 'A good reason to use `user-select: none` is...'
+  options:
+    A: To stop users from stealing content
+    B: To disable form elements
+    C: When text selection would interfere with other actions
+    D: To comply with copyright laws
   answer: C
 
-- id: acronyms-20001
-  category: Acronyms
-  round: 2
-  text: What does XSS stand for?
-  answer: Cross-Site Scripting
-
-- id: acronyms-20002
-  category: Acronyms
-  round: 2
-  text: In color, what does HSL stand for?
-  answer: Hue Saturation Lightness
-
-- id: acronyms-20003
-  category: Acronyms
-  round: 2
-  text: What does TLD stand for?
-  answer: Top-Level Domain
-
-- id: acronyms-20004
-  category: Acronyms
-  round: 2
-  text: What does JSON stand for?
-  answer: JavaScript Object Notation
-
-# https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#contrast-minimum
-- id: accessibility-10001
-  category: Accessibility
+- id: css-10012
+  category: CSS
   round: 1
-  text: What is the minimum contrast required for text to be considered accessible?
+  text: 'What do you call a bit of CSS like `padding: 1.5rem;`?'
   options:
-    A: '4.5:1'
-    B: '9:1'
-    C: '14:1'
-    D: '16:9'
-  answer: A
+    A: Ruleset
+    B: Selector
+    C: Declaration
+    D: Definition
+  answer: C
 
-# https://kittygiraudel.com/snippets/sr-only-class/
-- id: accessibility-10002
-  category: Accessibility
+- id: css-20009
+  category: CSS
+  round: 2
+  text: Which CSS layout module allows placing elements on a defined set of rows and columns?
+  answer: grid (or table)
+
+- id: css-20010
+  category: CSS
+  round: 2
+  text: Which value of the `position` property causes an element to flow normally until it reaches a given offset, at which point it scrolls?
+  answer: sticky
+
+- id: css-20011
+  category: CSS
+  round: 2
+  text: Which CSS property allows an element to apply effects, such as blur, to the area behind it?
+  answer: backdrop-filter
+
+- id: css-20012
+  category: CSS
+  round: 2
+  text: What declaration ensures that border and padding are accounted for in the width and height of an element?
+  answer: 'box-sizing: border-box;'
+
+- id: authentication-10005
+  category: Authentication
   round: 1
-  text: This CSS snippet is a common way to do what?
-  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1737327129/leet-heat/questions/accessibility-20005_1.png
+  text: What is the main benefit of hashed passwords?
   options:
-    A: hide text on screen
-    B: add descriptions for assistive technology
-    C: prevent an element from affecting layout
-    D: all of the above
+    A: They speed up sign in processes
+    B: They allow plain-text storage
+    C: They're easier to remember
+    D: They protect passwords if databases are breached
   answer: D
 
-# https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML
-- id: accessibility-10003
-  category: Accessibility
+- id: authentication-10006
+  category: Authentication
   round: 1
-  text: A great deal of web content is made accessible just by doing what?
+  text: What is the recommended maximum lifetime for a refresh token?
   options:
-    A: Adding ARIA labels to everything
-    B: Using semantic HTML
-    C: Installing an accessibility overlay
-    D: Develop using a screen reader
+    A: 30 Days
+    B: No standard recommendation
+    C: 24 Hours
+    D: 7 Days
   answer: B
 
-# https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#keyboard
-- id: accessibility-10004
-  category: Accessibility
+- id: authentication-10007
+  category: Authentication
   round: 1
-  text: To meet WCAG guidelines, all functionality of a website must be operable using ONLY what?
+  text: Which cookie setting will allow a cookie to be sent from http://app.example.com/ to http://api.example.com/ during a JavaScript fetch() request?
   options:
-    A: A mouse
-    B: Customizable shortcuts
-    C: A keyboard
-    D: LLMs
-  answer: C
-
-# https://benmyers.dev/blog/clickable-divs/
-- id: accessibility-20001
-  category: Accessibility
-  round: 2
-  text: A common accessibility antipattern is to make which HTML element clickable?
-  answer: div
-
-# https://www.w3.org/WAI/tutorials/images/decision-tree/
-- id: accessibility-20002
-  category: Accessibility
-  round: 2
-  text: When should an image NOT have alt text?
-  answer: purely decorative / only for visual formatting
-
-# https://www.w3.org/WAI/tutorials/forms/labels/
-- id: accessibility-20003
-  category: Accessibility
-  round: 2
-  text: With few exceptions, what should always be provided for form inputs and controls?
-  answer: a label tag
-
-# https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions
-- id: accessibility-20004
-  category: Accessibility
-  round: 2
-  text: To make sure screen readers announce dynamic content changes, which ARIA feature should be used?
-  answer: live regions
-
-- id: shipping-fast-10001
-  category: Shipping Fast
-  round: 1
-  text: How long did it take Brendan Eich to create JavaScript?
-  options:
-    A: 3 hours
-    B: 1 day
-    C: 10 days
-    D: 1 month
-  answer: C
-
-- id: shipping-fast-10002
-  category: Shipping Fast
-  round: 1
-  text: Which language can go through 1 billion nested loops fastest?
-  options:
-    A: Rust
-    B: Java
-    C: Visual Basic
-    D: Rockstar
-  answer: A
-
-- id: shipping-fast-10003
-  category: Shipping Fast
-  round: 1
-  text: What is the common term for the network created by manually moving data from place to place on hard drives, instead of over the internet?
-  options:
-    A: Tape Transport
-    B: Offline Web
-    C: Sneakernet
-    D: Airgap Network
-  answer: C
-  note: '“Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway.”'
-
-- id: shipping-fast-10004
-  category: Shipping Fast
-  round: 1
-  text: What is the name for the method of speeding up the review of large code changes by chaining together a series of smaller Pull Requests, popularized at Meta?
-  options:
-    A: Squashed Pull Requests
-    B: Stacked Pull Requests
-    C: Parallel Pull Requests
-    D: Nested Pull Requests
+    A: Path=/ only
+    B: SameSite=None
+    C: SameSite=Strict
+    D: HttpOnly enabled
   answer: B
 
-- id: shipping-fast-20001
-  category: Shipping Fast
-  round: 2
-  text: What popular JavaScript framework is known for its "blazing fast" performance and was created by Rich Harris?
-  answer: Svelte
-
-- id: shipping-fast-20002
-  category: Shipping Fast
-  round: 2
-  text: Which programming language is known for its focus on speed and memory safety, often rivaling C++?
-  answer: HDD
-
-- id: shipping-fast-20003
-  category: Shipping Fast
-  round: 2
-  text: A key factor that enables edge computing to process data faster than alternatives is its proximity to what?
-  answer: Data sources
-
-- id: shipping-fast-20004
-  category: Shipping Fast
-  round: 2
-  text: In semantic versioning (e.g., MAJOR.MINOR.PATCH), which part of the version number should be incremented if a backward-compatible feature is introduced?
-  answer: Minor
-
-- id: css-10005
-  category: CSS
+- id: authentication-10008
+  category: Authentication
   round: 1
-  text: Which value for `text-wrap` attempts to improve layouts by making lines in a paragraph roughly equal in length?
+  text: Biometric authentication uses _____.
   options:
-    A: justify
-    B: balance
-    C: force-wrap
-    D: pretty
+    A: Security questions
+    B: Unique physical traits
+    C: Email verification
+    D: Passwords & PINs
   answer: B
 
-- id: css-10006
-  category: CSS
-  round: 1
-  text: 'How much opacity is applied to the color #00000080?'
-  options:
-    A: '80%'
-    B: '20%'
-    C: '50%'
-    D: That's not a valid color
-  answer: C
+- id: authentication-20005
+  category: Authentication
+  round: 2
+  text: What does the acronym JWT stand for?
+  answer: JSON Web Tokens
 
-- id: css-10007
-  category: CSS
-  round: 1
-  text: Which of the following is NOT a valid custom property name?
-  options:
-    A: --BrⓐndC🅞lor
-    B: --brand.color
-    C: --brand🧡color
-    D: --Br4nDc0lr
-  answer: B
+- id: authentication-20006
+  category: Authentication
+  round: 2
+  text: What is the standard length of a Time-based One-Time Password (TOTP)?
+  answer: 6 digits
 
-- id: css-10008
-  category: CSS
+- id: authentication-20007
+  category: Authentication
+  round: 2
+  text: Which authentication factor is known to provide the strongest security when implemented correctly?
+  answer: Multi-Factor Authentication (MFA)
+
+- id: authentication-20008
+  category: Authentication
+  round: 2
+  text: Which protocol is commonly used for Single Sign-On (SSO)?
+  answer: SAML
+
+- id: deployment-10001
+  category: Deployment
   round: 1
-  text: Which of these functions can help make a multiple-bounce easing effect in an animation?
+  text: When deploying to AWS, which service manages the actual distribution of assets?
   options:
-    A: cubic-bezier()
-    B: spring()
-    C: bounce()
-    D: linear()
+    A: AWS Cloud Control API
+    B: AWS Cloud9
+    C: Amazon EC2
+    D: Amazon CloudFront
   answer: D
 
-- id: css-20005
-  category: CSS
-  round: 2
-  text: In a grid layout, which property determines the distance between grid areas?
-  answer: gap
-
-- id: css-20006
-  category: CSS
-  round: 2
-  text: Which at-rule allows for checking that a browser is able to render a given declaration?
-  answer: '@supports'
-
-- id: css-20007
-  category: CSS
-  round: 2
-  text: Which media query argument is used to check the user's current color theme?
-  answer: prefers-color-scheme
-
-- id: css-20008
-  category: CSS
-  round: 2
-  text: 'If two sibling elements have `margin: 50px` set, what size is the space between them?'
-  answer: 50px due to margin collapsing
-
-- id: authentication-10001
-  category: Authentication
+- id: deployment-10002
+  category: Deployment
   round: 1
-  text: What does a 418 HTTP status response code indicate?
+  text: Which of the following is NOT a Cloudflare product name?
   options:
-    A: Not Allowed
-    B: Not Found
-    C: I'm a teapot
-    D: Unauthorized
+    A: D1
+    B: Workers KV
+    C: C7
+    D: R2
   answer: C
 
-- id: authentication-10002
-  category: Authentication
+- id: deployment-10003
+  category: Deployment
   round: 1
-  text: What is the default expiration time for a JWT if not specified?
+  text: Which of the following is NOT an "infrastructure as code" project?
   options:
-    A: 24 Hours
-    B: No Expiration
-    C: 30 Days
-    D: 1 Hour
-  answer: B
-
-- id: authentication-10003
-  category: Authentication
-  round: 1
-  text: What is the default expiration time for a session in OAuth 2.0?
-  options:
-    A: 24 Hours
-    B: No default specified in the standard
-    C: 30 Days
-    D: 1 Hour
-  answer: B
-
-- id: authentication-10004
-  category: Authentication
-  round: 1
-  text: Which algorithm is commonly used for password hashing in 2025?
-  options:
-    A: SHA-1
-    B: Unsalted Hashes
-    C: Argon2
-    D: MD5
+    A: Terraform
+    B: Pulumi
+    C: OpScribe
+    D: CDK
   answer: C
 
-- id: authentication-20001
-  category: Authentication
-  round: 2
-  text: 'With regards to 2FA, what does TOTP refer to?'
-  answer: Time-Based One-Time Passwords
+- id: deployment-10004
+  category: Deployment
+  round: 1
+  text: The strategy of routing a small number of users to a variation of a page to see which performs better is commonly referred to as what?
+  options:
+    A: Gradual rollout
+    B: Split testing
+    C: Smoke testing
+    D: Continuous deployment
+  answer: B
 
-- id: authentication-20002
-  category: Authentication
+- id: deployment-20001
+  category: Deployment
   round: 2
-  text: Which header typically carries the JWT in an HTTP request?
-  answer: Authorization
+  text: Which deployment approach means servers are billed by execution time instead of being always on?
+  answer: Serverless
 
-- id: authentication-20003
-  category: Authentication
+- id: deployment-20002
+  category: Deployment
   round: 2
-  text: What does the acronym "SAML" stand for?
-  answer: Security Assertion Markup Language
+  text: The strategy of keeping two identical environments for deployment — one for production, one for testing — and swapping after testing is called what?
+  answer: '"blue/green deployment" or "red/black deployment"'
 
-- id: authentication-20004
-  category: Authentication
+- id: deployment-20003
+  category: Deployment
   round: 2
-  text: Which HTTP status code indicates an "not authorized" error?
-  answer: '401'
+  text: What version control management strategy aims to avoid long-lived feature branches and the complexities that come with them by making small, frequent commits directly to the main branch?
+  answer: Trunk-based development
+
+- id: deployment-20004
+  category: Deployment
+  round: 2
+  text: Which tool transforms CSS during builds to add polyfills, prefixes, and other modern features safely?
+  answer: PostCSS
+
+- id: dev-lore-10005
+  category: Dev Lore
+  round: 1
+  text: According to legend, what is the most infamous and dirtiest way to crash a Unix-like system with just a few characters?
+  options:
+    A: 'Bash fork bomb `:(){ :|:& };:`'
+    B: Single misplaced semicolon
+    C: Publishing a .env file
+    D: 'rm -rf /'
+  answer: A
+
+- id: dev-lore-10006
+  category: Dev Lore
+  round: 1
+  text: In the humorous IPoAC proposal, what highly unexpected medium was used to transport TCP communication?
+  options:
+    A: Avian Carriers (Pigeons)
+    B: Aircraft Carriers (Planes)
+    C: Alternative Courier (Bicycles)
+    D: Abstract Communication (Vibes)
+  answer: A
+
+- id: dev-lore-10007
+  category: Dev Lore
+  round: 1
+  text: Before Microsoft introduced TypeScript, there was another attempt to improve JavaScript authoring, using the slogan “It’s just JavaScript”. What was it called?
+  options:
+    A: Flow
+    B: CoffeeScript
+    C: Babel
+    D: Elm
+  answer: B
+
+- id: dev-lore-10008
+  category: Dev Lore
+  round: 1
+  text: Which acronym represents foundational object-oriented design principles?
+  options:
+    A: KISS
+    B: DRY
+    C: SOLID
+    D: YAGNI
+  answer: C
+
+- id: dev-lore-20005
+  category: Dev Lore
+  round: 2
+  text: What database infamously claimed to be “web scale”?
+  answer: MongoDB
+
+- id: dev-lore-20006
+  category: Dev Lore
+  round: 2
+  text: What playful HTTP status code, numbered 418, was originally defined in an April Fools' joke and indicates that the server refuses to brew coffee because of its current hardware limitations?
+  answer: I'm a teapot
+
+- id: dev-lore-20007
+  category: Dev Lore
+  round: 2
+  text: In 2009, this cloud service provider experienced a major outage due to network congestion, affecting its Elastic Compute Cloud service and emphasizing the risks of cloud dependency. Which company was it?
+  answer: AWS / Amazon Web Services
+
+- id: dev-lore-20008
+  category: Dev Lore
+  round: 2
+  text: Which cryptocurrency exchange, founded by Sam Bankman-Fried, collapsed in 2022 amid allegations of financial mismanagement and fraud, leading to one of the largest scandals in blockchain history?
+  answer: FTX
+
+- id: team-dynamics-10005
+  category: Team Dynamics
+  round: 1
+  text: 'In larger organizations, some senior leaders will meet 1:1 with employees further down the reporting chain in what kind of meeting?'
+  options:
+    A: town hall
+    B: pity party
+    C: lightning round
+    D: skip-level
+  answer: D
+
+- id: team-dynamics-10006
+  category: Team Dynamics
+  round: 1
+  text: According to a study by Williamson & Feyer, being awake for 18 hours without sleep causes the same cognitive impairment as consuming how many alcoholic beverages?
+  options:
+    A: '2'
+    B: '3'
+    C: '4'
+    D: '5'
+  answer: C
+
+- id: team-dynamics-10007
+  category: Team Dynamics
+  round: 1
+  text: According to a 2024 study by the University of Pittsburgh, which controversial mandate has led to companies facing high turnover and slow hiring?
+  options:
+    A: forced overtime
+    B: return to office
+    C: casual Fridays
+    D: '"compliment the CEO" Wednesdays'
+  answer: B
+
+- id: team-dynamics-10008
+  category: Team Dynamics
+  round: 1
+  text: Which company published a paper with a model for scaling agile with a team structure that it turned out they didn't actually follow?
+  options:
+    A: IBM
+    B: Airbnb
+    C: Spotify
+    D: Netflix
+  answer: C
+
+- id: team-dynamics-20005
+  category: Team Dynamics
+  round: 2
+  text: What often daily meeting do many teams hold as a way to share status updates and blockers?
+  answer: standup
+
+- id: team-dynamics-20006
+  category: Team Dynamics
+  round: 2
+  text: In Agile, what sports-themed approach to project planning breaks work into sprints?
+  answer: Scrum
+
+- id: team-dynamics-20007
+  category: Team Dynamics
+  round: 2
+  text: Which style of planning places tasks on a board that's split into columns?
+  answer: kanban
+
+- id: team-dynamics-20008
+  category: Team Dynamics
+  round: 2
+  text: Sustained periods of overtime are commonly referred to by what name?
+  answer: crunch mode
