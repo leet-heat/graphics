@@ -292,11 +292,15 @@ section:not(:empty) {
 	background: var(--highlight);
 	border: 2px solid var(--fg);
 	inline-size: calc(50% - 0.125rem);
-	padding: 0.75rem;
+	font-size: 3.5cqi;
+	line-height: 1.1;
+	padding: 0.75rem 1ch;
+	padding-inline-start: 4ch;
 	text-align: start;
+	text-indent: -3ch;
 
 	&.smaller {
-		font-size: clamp(0.5rem, 2.5cqi, 1.25rem);
+		font-size: clamp(0.5rem, 2.25cqi, 4rem);
 	}
 
 	&.correct-answer {
@@ -483,17 +487,18 @@ body:has(.screen-display) {
 	padding: 0 3dvi;
 
 	img {
-		block-size: min(300px, 55cqb);
+		block-size: min(800px, 65cqb);
 		inline-size: auto;
 		object-fit: contain;
 	}
 
 	h2 {
-		font-size: clamp(1rem, 2cqi + 1rem, 2.5rem);
+		font-size: clamp(1rem, 5cqi + 1rem, 5.5rem);
+		line-height: 1.1;
 		text-wrap: balance;
 
 		&.smaller {
-			font-size: clamp(0.5rem, 4cqi, 2rem);
+			font-size: clamp(0.5rem, 4cqi, 4rem);
 		}
 	}
 
@@ -501,7 +506,7 @@ body:has(.screen-display) {
 		gap: 0.75rem;
 
 		h2 {
-			font-size: clamp(0.5rem, 4cqi, 2rem);
+			font-size: clamp(0.5rem, 4cqi, 4rem);
 			margin: 0;
 		}
 	}
