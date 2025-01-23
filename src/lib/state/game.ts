@@ -33,6 +33,7 @@ export const events = [
 	'SET_CONTESTANT_SCORE',
 	'SET_CONTESTANT_SPICE_LEVEL',
 	'CHECK_ANSWERS',
+	'PLAY_FINAL_ROUND',
 ] as const;
 
 export type GameEvents =
@@ -55,6 +56,7 @@ export type GameEvents =
 	| { type: 'CHECK_ROUND_TYPE' }
 	| { type: 'REVEAL_FINAL_CATEGORY' }
 	| { type: 'PLACE_WAGER' }
+	| { type: 'PLAY_FINAL_ROUND' }
 	| { type: 'UNDO_LEET_HEAT' }
 	| { type: 'UNDO_INCORRECT' }
 	| { type: 'UNDO_ROUND_CHANGE' }
@@ -879,6 +881,13 @@ export const machine = setup({
 			},
 		},
 		FINAL_SPICY_BITE: {
+			on: {
+				PLAY_FINAL_ROUND: {
+					target: 'SHOW_QUESTION',
+				},
+			},
+		},
+		SHOW_QUESTION: {
 			on: {
 				CHECK_ANSWERS: {
 					target: 'GAME_END',

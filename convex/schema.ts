@@ -47,8 +47,8 @@ export const gameContext = v.object({
 	questions: v.record(v.string(), Question),
 	contestants: v.array(Contestant),
 	current_round: v.number(),
-	current_category: v.union(v.string(), v.null()),
-	current_question: v.union(Question, v.null()),
+	current_category: v.optional(v.union(v.string(), v.null())),
+	current_question: v.optional(v.union(Question, v.null())),
 });
 
 export const game = v.object({

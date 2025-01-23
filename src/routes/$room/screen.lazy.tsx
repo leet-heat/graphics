@@ -80,9 +80,12 @@ function DisplayedData() {
 		case 'FINAL_SPICY_BITE':
 			return <h1>🔥</h1>;
 
-		case 'REVEAL_FINAL_CATEGORY':
-		case 'PLACE_WAGER':
+		case 'READY_TO_BET':
+		case 'FINAL_SPICY_BITE':
 			return <h1>Name That Logo!</h1>;
+
+		case 'SHOW_QUESTION':
+			return <img src="https://www.svgrepo.com/show/373924/nginx.svg" alt="" />;
 
 		default:
 			return <PlaceholderScreen />;
