@@ -1,11 +1,9 @@
+import { Fragment, useEffect, useState } from 'react';
 import { createLazyFileRoute } from '@tanstack/react-router';
 import { useActor } from '@xstate/react';
-import { Fragment, useEffect, useState } from 'react';
-import { machine, events } from '../../lib/state/game';
 import { useMutation } from 'convex/react';
+import { machine, events } from '../../lib/state/game';
 import { api } from '../../../convex/_generated/api';
-import { Snapshot } from 'xstate';
-import { Game } from '../../types';
 import { Doc } from '../../../convex/_generated/dataModel';
 
 function ProducerView() {
@@ -125,15 +123,18 @@ function ProducerView() {
 						// @ts-expect-error I don't even know what this is
 						state.matches('HOST_ANNOUNCING_CATEGORY') ? (
 							<>
-								<h2>Announce the category and sponsor.</h2>
-								<p>
-									Do the overview read for{' '}
-									{
-										state.context.categories[state.context.current_category!]
-											.sponsor
-									}
-									, then click continue.
-								</p>
+								<h2>Announce the category: {state.context.current_category}</h2>
+								{state.context.categories[state.context.current_category!]
+									.sponsor ? (
+									<p>
+										Do the overview read for{' '}
+										{
+											state.context.categories[state.context.current_category!]
+												.sponsor
+										}
+										.
+									</p>
+								) : null}
 							</>
 						) : null
 					}

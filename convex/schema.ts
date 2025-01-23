@@ -35,7 +35,7 @@ export const Contestant = v.object({
 
 export const Category = v.object({
 	name: v.string(),
-	sponsor: v.string(),
+	sponsor: v.optional(v.string()),
 	isLeetHeat: v.boolean(),
 });
 

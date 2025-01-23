@@ -32,7 +32,7 @@ export const Contestant = z.object({
 
 export const Category = z.object({
 	name: z.string(),
-	sponsor: z.string(),
+	sponsor: z.string().optional(),
 	isLeetHeat: z.boolean().default(false),
 });
 
