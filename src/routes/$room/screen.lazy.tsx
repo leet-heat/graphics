@@ -77,10 +77,15 @@ function DisplayedData() {
 			);
 
 		case 'CONTESTANT_EATING_WRONG_ANSWER_SPICY_BITE':
+		case 'FINAL_SPICY_BITE':
 			return <h1>🔥</h1>;
 
+		case 'REVEAL_FINAL_CATEGORY':
+		case 'PLACE_WAGER':
+			return <h1>Name That Logo!</h1>;
+
 		default:
-			return <h1>{value}</h1>;
+			return <PlaceholderScreen />;
 	}
 }
 

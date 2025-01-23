@@ -32,6 +32,7 @@ export const events = [
 	'UNDO_BUZZ_IN',
 	'SET_CONTESTANT_SCORE',
 	'SET_CONTESTANT_SPICE_LEVEL',
+	'CHECK_ANSWERS',
 ] as const;
 
 export type GameEvents =
@@ -58,6 +59,7 @@ export type GameEvents =
 	| { type: 'UNDO_INCORRECT' }
 	| { type: 'UNDO_ROUND_CHANGE' }
 	| { type: 'UNDO_CATEGORY' }
+	| { type: 'CHECK_ANSWERS' }
 	| {
 			type: 'SET_CONTESTANT_SCORE';
 			data: { contestant: string; score: number };
@@ -873,46 +875,18 @@ export const machine = setup({
 			on: {
 				PLACE_WAGER: {
 					target: 'FINAL_SPICY_BITE',
-					actions: [
-						{
-							// @ts-expect-error see https://github.com/statelyai/xstate/issues/5164
-							type: 'setWagerAmount',
-						},
-						{
-							type: 'increaseSpiceLevel',
-						},
-					],
 				},
 			},
 		},
 		FINAL_SPICY_BITE: {
-			after: {
-				'90000': [
-					{
-						target: 'GAME_END',
-						actions: {
-							// @ts-expect-error see https://github.com/statelyai/xstate/issues/5164
-							type: 'increasePoints',
-						},
-						guard: {
-							type: 'isCorrect',
-						},
-					},
-					{
-						target: 'GAME_END',
-						actions: {
-							type: 'reducePoints',
-						},
-					},
-				],
+			on: {
+				CHECK_ANSWERS: {
+					target: 'GAME_END',
+				},
 			},
 		},
 		GAME_END: {
 			type: 'final',
-			entry: {
-				// @ts-expect-error see https://github.com/statelyai/xstate/issues/5164
-				type: 'calculateFinalScores',
-			},
 		},
 	},
 	on: {

@@ -292,7 +292,7 @@ section:not(:empty) {
 	background: var(--highlight);
 	border: 2px solid var(--fg);
 	inline-size: calc(50% - 0.125rem);
-	font-size: 3.5cqi;
+	font-size: 2.5cqi;
 	line-height: 1.1;
 	padding: 0.75rem 1ch;
 	padding-inline-start: 4ch;

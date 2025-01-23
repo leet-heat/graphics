@@ -1,13 +1,12 @@
 - name: CSS
   sponsor: CodePen
 
-- name: SQL
-  sponsor: Neon
+- name: Team Dynamics
 
-- name: Auth
+- name: Web Security
   sponsor: Clerk
 
-- name: Accessibility
+- name: Animation
 
-- name: Search
-  sponsor: Algolia
+- name: Dev Lore
+  sponsor: Neon
