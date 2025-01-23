@@ -13,11 +13,9 @@ import { createFileRoute } from '@tanstack/react-router'
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
-import { Route as RoomrootImport } from './routes/$room/__root'
 
 // Create Virtual Routes
 
-const RoomImport = createFileRoute('/$room')()
 const IndexLazyImport = createFileRoute('/')()
 const RoomScreenLazyImport = createFileRoute('/$room/screen')()
 const RoomProducerLazyImport = createFileRoute('/$room/producer')()
@@ -29,17 +27,6 @@ const RoomContestantLeftLazyImport = createFileRoute('/$room/contestant/left')()
 
 // Create/Update Routes
 
-const RoomrootRoute = RoomrootImport.update({
-  id: '/__root',
-  getParentRoute: () => RoomRoute,
-} as any)
-
-const RoomRoute = RoomImport.update({
-  id: '/$room',
-  path: '/$room',
-  getParentRoute: () => rootRoute,
-} as any)
-
 const IndexLazyRoute = IndexLazyImport.update({
   id: '/',
   path: '/',
@@ -47,37 +34,37 @@ const IndexLazyRoute = IndexLazyImport.update({
 } as any).lazy(() => import('./routes/index.lazy').then((d) => d.Route))
 
 const RoomScreenLazyRoute = RoomScreenLazyImport.update({
-  id: '/screen',
-  path: '/screen',
-  getParentRoute: () => RoomRoute,
+  id: '/$room/screen',
+  path: '/$room/screen',
+  getParentRoute: () => rootRoute,
 } as any).lazy(() => import('./routes/$room/screen.lazy').then((d) => d.Route))
 
 const RoomProducerLazyRoute = RoomProducerLazyImport.update({
-  id: '/producer',
-  path: '/producer',
-  getParentRoute: () => RoomRoute,
+  id: '/$room/producer',
+  path: '/$room/producer',
+  getParentRoute: () => rootRoute,
 } as any).lazy(() =>
   import('./routes/$room/producer.lazy').then((d) => d.Route),
 )
 
 const RoomHostLazyRoute = RoomHostLazyImport.update({
-  id: '/host',
-  path: '/host',
-  getParentRoute: () => RoomRoute,
+  id: '/$room/host',
+  path: '/$room/host',
+  getParentRoute: () => rootRoute,
 } as any).lazy(() => import('./routes/$room/host.lazy').then((d) => d.Route))
 
 const RoomContestantRightLazyRoute = RoomContestantRightLazyImport.update({
-  id: '/contestant/right',
-  path: '/contestant/right',
-  getParentRoute: () => RoomRoute,
+  id: '/$room/contestant/right',
+  path: '/$room/contestant/right',
+  getParentRoute: () => rootRoute,
 } as any).lazy(() =>
   import('./routes/$room/contestant/right.lazy').then((d) => d.Route),
 )
 
 const RoomContestantLeftLazyRoute = RoomContestantLeftLazyImport.update({
-  id: '/contestant/left',
-  path: '/contestant/left',
-  getParentRoute: () => RoomRoute,
+  id: '/$room/contestant/left',
+  path: '/$room/contestant/left',
+  getParentRoute: () => rootRoute,
 } as any).lazy(() =>
   import('./routes/$room/contestant/left.lazy').then((d) => d.Route),
 )
@@ -93,83 +80,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexLazyImport
       parentRoute: typeof rootRoute
     }
-    '/$room': {
-      id: '/$room'
-      path: '/$room'
-      fullPath: '/$room'
-      preLoaderRoute: typeof RoomImport
-      parentRoute: typeof rootRoute
-    }
-    '/$room/__root': {
-      id: '/$room/__root'
-      path: '/$room'
-      fullPath: '/$room'
-      preLoaderRoute: typeof RoomrootImport
-      parentRoute: typeof RoomRoute
-    }
     '/$room/host': {
       id: '/$room/host'
-      path: '/host'
+      path: '/$room/host'
       fullPath: '/$room/host'
       preLoaderRoute: typeof RoomHostLazyImport
-      parentRoute: typeof RoomImport
+      parentRoute: typeof rootRoute
     }
     '/$room/producer': {
       id: '/$room/producer'
-      path: '/producer'
+      path: '/$room/producer'
       fullPath: '/$room/producer'
       preLoaderRoute: typeof RoomProducerLazyImport
-      parentRoute: typeof RoomImport
+      parentRoute: typeof rootRoute
     }
     '/$room/screen': {
       id: '/$room/screen'
-      path: '/screen'
+      path: '/$room/screen'
       fullPath: '/$room/screen'
       preLoaderRoute: typeof RoomScreenLazyImport
-      parentRoute: typeof RoomImport
+      parentRoute: typeof rootRoute
     }
     '/$room/contestant/left': {
       id: '/$room/contestant/left'
-      path: '/contestant/left'
+      path: '/$room/contestant/left'
       fullPath: '/$room/contestant/left'
       preLoaderRoute: typeof RoomContestantLeftLazyImport
-      parentRoute: typeof RoomImport
+      parentRoute: typeof rootRoute
     }
     '/$room/contestant/right': {
       id: '/$room/contestant/right'
-      path: '/contestant/right'
+      path: '/$room/contestant/right'
       fullPath: '/$room/contestant/right'
       preLoaderRoute: typeof RoomContestantRightLazyImport
-      parentRoute: typeof RoomImport
+      parentRoute: typeof rootRoute
     }
   }
 }
 
 // Create and export the route tree
 
-interface RoomRouteChildren {
-  RoomrootRoute: typeof RoomrootRoute
-  RoomHostLazyRoute: typeof RoomHostLazyRoute
-  RoomProducerLazyRoute: typeof RoomProducerLazyRoute
-  RoomScreenLazyRoute: typeof RoomScreenLazyRoute
-  RoomContestantLeftLazyRoute: typeof RoomContestantLeftLazyRoute
-  RoomContestantRightLazyRoute: typeof RoomContestantRightLazyRoute
-}
-
-const RoomRouteChildren: RoomRouteChildren = {
-  RoomrootRoute: RoomrootRoute,
-  RoomHostLazyRoute: RoomHostLazyRoute,
-  RoomProducerLazyRoute: RoomProducerLazyRoute,
-  RoomScreenLazyRoute: RoomScreenLazyRoute,
-  RoomContestantLeftLazyRoute: RoomContestantLeftLazyRoute,
-  RoomContestantRightLazyRoute: RoomContestantRightLazyRoute,
-}
-
-const RoomRouteWithChildren = RoomRoute._addFileChildren(RoomRouteChildren)
-
 export interface FileRoutesByFullPath {
   '/': typeof IndexLazyRoute
-  '/$room': typeof RoomrootRoute
   '/$room/host': typeof RoomHostLazyRoute
   '/$room/producer': typeof RoomProducerLazyRoute
   '/$room/screen': typeof RoomScreenLazyRoute
@@ -179,7 +131,6 @@ export interface FileRoutesByFullPath {
 
 export interface FileRoutesByTo {
   '/': typeof IndexLazyRoute
-  '/$room': typeof RoomrootRoute
   '/$room/host': typeof RoomHostLazyRoute
   '/$room/producer': typeof RoomProducerLazyRoute
   '/$room/screen': typeof RoomScreenLazyRoute
@@ -190,8 +141,6 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexLazyRoute
-  '/$room': typeof RoomRouteWithChildren
-  '/$room/__root': typeof RoomrootRoute
   '/$room/host': typeof RoomHostLazyRoute
   '/$room/producer': typeof RoomProducerLazyRoute
   '/$room/screen': typeof RoomScreenLazyRoute
@@ -203,7 +152,6 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/$room'
     | '/$room/host'
     | '/$room/producer'
     | '/$room/screen'
@@ -212,7 +160,6 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/$room'
     | '/$room/host'
     | '/$room/producer'
     | '/$room/screen'
@@ -221,8 +168,6 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
-    | '/$room'
-    | '/$room/__root'
     | '/$room/host'
     | '/$room/producer'
     | '/$room/screen'
@@ -233,12 +178,20 @@ export interface FileRouteTypes {
 
 export interface RootRouteChildren {
   IndexLazyRoute: typeof IndexLazyRoute
-  RoomRoute: typeof RoomRouteWithChildren
+  RoomHostLazyRoute: typeof RoomHostLazyRoute
+  RoomProducerLazyRoute: typeof RoomProducerLazyRoute
+  RoomScreenLazyRoute: typeof RoomScreenLazyRoute
+  RoomContestantLeftLazyRoute: typeof RoomContestantLeftLazyRoute
+  RoomContestantRightLazyRoute: typeof RoomContestantRightLazyRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexLazyRoute: IndexLazyRoute,
-  RoomRoute: RoomRouteWithChildren,
+  RoomHostLazyRoute: RoomHostLazyRoute,
+  RoomProducerLazyRoute: RoomProducerLazyRoute,
+  RoomScreenLazyRoute: RoomScreenLazyRoute,
+  RoomContestantLeftLazyRoute: RoomContestantLeftLazyRoute,
+  RoomContestantRightLazyRoute: RoomContestantRightLazyRoute,
 }
 
 export const routeTree = rootRoute
@@ -252,16 +205,6 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/$room"
-      ]
-    },
-    "/": {
-      "filePath": "index.lazy.tsx"
-    },
-    "/$room": {
-      "filePath": "$room",
-      "children": [
-        "/$room/__root",
         "/$room/host",
         "/$room/producer",
         "/$room/screen",
@@ -269,29 +212,23 @@ export const routeTree = rootRoute
         "/$room/contestant/right"
       ]
     },
-    "/$room/__root": {
-      "filePath": "$room/__root.tsx",
-      "parent": "/$room"
+    "/": {
+      "filePath": "index.lazy.tsx"
     },
     "/$room/host": {
-      "filePath": "$room/host.lazy.tsx",
-      "parent": "/$room"
+      "filePath": "$room/host.lazy.tsx"
     },
     "/$room/producer": {
-      "filePath": "$room/producer.lazy.tsx",
-      "parent": "/$room"
+      "filePath": "$room/producer.lazy.tsx"
     },
     "/$room/screen": {
-      "filePath": "$room/screen.lazy.tsx",
-      "parent": "/$room"
+      "filePath": "$room/screen.lazy.tsx"
     },
     "/$room/contestant/left": {
-      "filePath": "$room/contestant/left.lazy.tsx",
-      "parent": "/$room"
+      "filePath": "$room/contestant/left.lazy.tsx"
     },
     "/$room/contestant/right": {
-      "filePath": "$room/contestant/right.lazy.tsx",
-      "parent": "/$room"
+      "filePath": "$room/contestant/right.lazy.tsx"
     }
   }
 }
