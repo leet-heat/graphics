@@ -1,355 +1,350 @@
-# CATEGORY: CSS
-
-- id: css-10001
-  category: CSS
+- id: acronyms-10001
+  category: Acronyms
   round: 1
-  text: Which selector matches elements with a `data-type` attribute starting with "spicy"?
+  text: In startup speak, what does PLG stand for?
   options:
-    A: '[data-type*=spicy]'
-    B: '[data-type^=spicy]'
-    C: '[data-type|=spicy]'
-    D: '[data-type$=spicy]'
+    A: Partial Load Generation
+    B: Product-Led Growth
+    C: Primarily LLM-Generated
+    D: Post-Lunch Gloom
   answer: B
 
-- id: css-10002
-  category: CSS
+- id: acronyms-10002
+  category: Acronyms
   round: 1
-  text: Which property MUST be set for the ::before and ::after pseudo-elements to be rendered?
+  text: What does OKR stand for?
   options:
-    A: display
-    B: position
-    C: content
-    D: visibility
-  answer: C
-
-- id: css-10003
-  category: CSS
-  round: 1
-  text: Which of the following is NOT a valid color space in CSS?
-  options:
-    A: srgb
-    B: xyz
-    C: oklch
-    D: truecolor
+    A: Only Known Response
+    B: Operational Key Resource
+    C: Organizational Knowledge Retention
+    D: Objectives and Key Results
   answer: D
 
-- id: css-10004
-  category: CSS
+- id: acronyms-10003
+  category: Acronyms
   round: 1
-  text: What CSS selector targets ONLY the orange box?
-  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737649390/leet-heat/questions/s1e3-css-10004.jpg
+  text: What does IDE stand for?
   options:
-    A: '.box {}'
-    B: ':only(.box) {}'
-    C: '!.disabled {}'
-    D: '.box:not(.disabled) {}'
-  answer: D
-
-- id: css-20001
-  category: CSS
-  round: 2
-  text: What color is `.alert` rendered in?
-  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737618244/leet-heat/questions/css-20001.png
-  answer: hotpink
-
-- id: css-20002
-  category: CSS
-  round: 2
-  text: Which at-rule allows styles to be applied based on an ancestor element's size?
-  answer: '@container'
-
-- id: css-20003
-  category: CSS
-  round: 2
-  text: Which property can be used in place of `width` to add support for any writing mode, direction, and text orientation?
-  answer: inline-size
-
-- id: css-20004
-  category: CSS
-  round: 2
-  text: To cause an image to fill an element's entire area without being stretched, which value for `object-fit` should be set?
-  answer: cover
-# CATEGORY: Web Security
-
-- id: web-security-10001
-  category: Web Security
-  round: 1
-  text: What is stored in a JWT to prevent tampering with its payload?
-  options:
-    A: Digital signature
-    B: Encryption key
-    C: Timestamp only
-    D: Base64 encoding
+    A: Integrated Development Environment
+    B: Internet Data Encryption
+    C: Interactive Digital Experience
+    D: Illegal Drone Experiments
   answer: A
 
-- id: web-security-10002
-  category: Web Security
+- id: acronyms-10004
+  category: Acronyms
   round: 1
-  text: What effectively prevents most XSS attacks when displaying user input?
+  text: What does MVC stand for?
   options:
-    A: URL encoding
-    B: ASCII filtering
-    C: Input length limits
-    D: Escaping HTML entities
-  answer: D
-
-- id: web-security-10003
-  category: Web Security
-  round: 1
-  text: "When using client-side rendering, what's the safest place to store an authentication token?"
-  options:
-    A: Local storage
-    B: HTTP-only cookie
-    C: Window object
-    D: Session storage
-  answer: B
-
-- id: web-security-10004
-  category: Web Security
-  round: 1
-  text: What is the main security benefit of refresh tokens?
-  options:
-    A: Password-less auth
-    B: Client validation
-    C: Short-lived access
-    D: Faster requests
+    A: Module Validation Criteria
+    B: Managed Virtual Cloud
+    C: Model View Controller
+    D: Machine Vision Control
   answer: C
 
-- id: web-security-20001
-  category: Web Security
+- id: acronyms-20001
+  category: Acronyms
   round: 2
-  text: What web security mechanism shares a close resemblance in name with a popular American light beer?
-  answer: CORS (Cross-Origin Resource Sharing)
+  text: What does XSS stand for?
+  answer: Cross-Site Scripting
 
-- id: web-security-20003
-  category: Web Security
+- id: acronyms-20002
+  category: Acronyms
   round: 2
-  text: What method helps protect against SQL injection?
-  answer: Using prepared statements
+  text: In color, what does HSL stand for?
+  answer: Hue Saturation Lightness
 
-- id: web-security-20004
-  category: Web Security
+- id: acronyms-20003
+  category: Acronyms
   round: 2
-  text: Newly discovered security holes or flaws with no known patches are known as _______.
-  answer: Zero-day Vulnerabilities
+  text: What does TLD stand for?
+  answer: Top-Level Domain
 
-- id: web-security-20005
-  category: Web Security
+- id: acronyms-20004
+  category: Acronyms
   round: 2
-  text: What does the acronym “CSRF” stand for?
-  answer: Cross-Site Request Forgery
+  text: What does JSON stand for?
+  answer: JavaScript Object Notation
 
-# CATEGORY: Animation
-
-- id: animation-10001
-  category: Animation
+# https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#contrast-minimum
+- id: accessibility-10001
+  category: Accessibility
   round: 1
-  text: Which of the following is NOT an web animation library?
+  text: What is the minimum contrast required for text to be considered accessible?
   options:
-    A: Motion
-    B: Anime.js
-    C: Sway.js
-    D: GreenSock
-  answer: C
-
-- id: animation-10002
-  category: Animation
-  round: 1
-  text: What type of function is used to control the feel of an animation's movement?
-  options:
-    A: Bounce
-    B: Easing
-    C: Rate
-    D: Lifecycle
-  answer: B
-
-- id: animation-10003
-  category: Animation
-  round: 1
-  text: In animations, what is used to define the start and end of a given transition?
-  options:
-    A: Touchpoints
-    B: Baselines
-    C: Reference
-    D: Keyframes
-  answer: D
-
-- id: animation-10004
-  category: Animation
-  round: 1
-  text: To use an exact number of intervals for animation-timing-function, which CSS function is used?
-  options:
-    A: steps()
-    B: frames()
-    C: draw-frame()
-    D: sprite()
-  answer: A
-  note: Using steps() is helpful when animating using a sprite or frame-based animation.
-
-# https://mdn.io/@property
-- id: animation-20001
-  category: Animation
-  round: 2
-  text: The introduction of which at-rule in CSS adds type support for custom properties, which allows for animating things like angles?
-  answer: '@property'
-
-- id: animation-20002
-  category: Animation
-  round: 2
-  text: Which browser API allows CSS-only animation between page navigations and SPA state changes?
-  answer: View Transitions API
-
-# https://developer.chrome.com/docs/css-ui/animate-to-height-auto/
-- id: animation-20003
-  category: Animation
-  round: 2
-  text: 'Which CSS function will enable animating to `height: auto`?'
-  answer: calc-size() or interpolate-size
-  note: 'Animating to height: auto has been on developers’ wish lists for so long that Chris Coyier has referred to it as "one of the Boss Battles of CSS".'
-
-- id: animation-20004
-  category: Animation
-  round: 2
-  text: To provide custom timing to animation-timing-function, which CSS function is used?
-  answer: cubic-bezier()
-
-# CATEGORY: Dev Lore
-
-- id: dev-lore-10001
-  category: Dev Lore
-  round: 1
-  text: Which famously litigious company owns both MySQL and the JavaScript trademark?
-  options:
-    A: IBM
-    B: Microsoft
-    C: Oracle
-    D: Hulu
-  answer: C
-
-- id: dev-lore-10002
-  category: Dev Lore
-  round: 1
-  text: In March 2016, the sudden removal of which tiny 11-line utility from the npm registry caused widespread build failures and reignited discussions on open-source dependency risks?
-  options:
-    A: slugify
-    B: left-pad
-    C: deep-assign
-    D: is-even
-  answer: B
-
-- id: dev-lore-10003
-  category: Dev Lore
-  round: 1
-  text: In late 2017, macOS High Sierra (v10.13) was found to have a critical bug that allowed anyone to authenticate as the “root” user without providing a password by simply…
-  options:
-    A: Setting the system date to 1970 and bypassing the password check
-    B: Using a special Siri voice command at the login screen
-    C: Logging in from the Guest account and then toggling a hidden admin setting
-    D: Repeatedly pressing Enter after typing “root” in the username field
-  answer: D
-
-- id: dev-lore-10004
-  category: Dev Lore
-  round: 1
-  text: In 2014, what critical vulnerability in the OpenSSL cryptography library allowed attackers to read memory from servers, potentially exposing private keys and passwords?
-  options:
-    A: Spectre
-    B: Heartbleed
-    C: Shellshock
-    D: HashBreak
-  answer: B
-
-- id: dev-lore-20001
-  category: Dev Lore
-  round: 2
-  text: What does the acronym LAMP stand for in web development?
-  answer: Linux, Apache, MySQL, PHP (or Python/Perl)
-
-- id: dev-lore-20002
-  category: Dev Lore
-  round: 2
-  text: Which computer virus shared its name with an enemy from the popular video game, Minecraft?
-  answer: Creeper
-
-- id: dev-lore-20003
-  category: Dev Lore
-  round: 2
-  text: What year was the World Wide Web created?
-  answer: '1989'
-
-- id: dev-lore-20004
-  category: Dev Lore
-  round: 2
-  text: According to the famous XKCD comic, the “#1 programmer excuse for legitimately slacking off is ___________.
-  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737583295/leet-heat/questions/dev-lore-20004.png
-  answer: Compiling
-
-# CATEGORY: Team Dynamics
-
-- id: team-dynamics-10001
-  category: Team Dynamics
-  round: 1
-  text: What is a commonly used metaphor when estimating the work involved in a given task?
-  options:
-    A: pizza sizing
-    B: t-shirt sizing
-    C: contingency planning
-    D: hand waving
-  answer: B
-
-- id: team-dynamics-10002
-  category: Team Dynamics
-  round: 1
-  text: Love it or hate it, which approach to building software on teams is wildly popular?
-  options:
-    A: Agile
-    B: Magical thinking
-    C: Cowboy coding
-    D: Flat organizations
+    A: '4.5:1'
+    B: '9:1'
+    C: '14:1'
+    D: '16:9'
   answer: A
 
-- id: team-dynamics-10003
-  category: Team Dynamics
+# https://kittygiraudel.com/snippets/sr-only-class/
+- id: accessibility-10002
+  category: Accessibility
   round: 1
-  text: After a big launch or incident, what type of meeting is intended to identify the good, the bad, and the next steps?
+  text: This CSS snippet is a common way to do what?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/v1737327129/leet-heat/questions/accessibility-20005_1.png
   options:
-    A: Skip-level
-    B: Performance review
-    C: Retrospective
-    D: CEO fireside chat
-  answer: C
+    A: hide text on screen
+    B: add descriptions for assistive technology
+    C: prevent an element from affecting layout
+    D: all of the above
+  answer: D
 
-- id: team-dynamics-10004
-  category: Team Dynamics
+# https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML
+- id: accessibility-10003
+  category: Accessibility
   round: 1
-  text: Where do tasks go to die on a project planning board?
+  text: A great deal of web content is made accessible just by doing what?
   options:
-    A: The farm
-    B: The icebox
-    C: The furnace
-    D: The kitchen
+    A: Adding ARIA labels to everything
+    B: Using semantic HTML
+    C: Installing an accessibility overlay
+    D: Develop using a screen reader
   answer: B
 
-- id: team-dynamics-20001
-  category: Team Dynamics
-  round: 2
-  text: What style of product planning has all features created and approved by leadership far in advance of building them?
-  answer: waterfall
+# https://www.w3.org/WAI/WCAG22/quickref/?versions=2.1#keyboard
+- id: accessibility-10004
+  category: Accessibility
+  round: 1
+  text: To meet WCAG guidelines, all functionality of a website must be operable using ONLY what?
+  options:
+    A: A mouse
+    B: Customizable shortcuts
+    C: A keyboard
+    D: LLMs
+  answer: C
 
-- id: team-dynamics-20002
-  category: Team Dynamics
+# https://benmyers.dev/blog/clickable-divs/
+- id: accessibility-20001
+  category: Accessibility
   round: 2
-  text: What is it called when two developers work together using the same computer?
-  answer: pair programming
+  text: A common accessibility antipattern is to make which HTML element clickable?
+  answer: div
 
-- id: team-dynamics-20003
-  category: Team Dynamics
+# https://www.w3.org/WAI/tutorials/images/decision-tree/
+- id: accessibility-20002
+  category: Accessibility
   round: 2
-  text: A document describing how a role progresses across different levels of seniority is called a what?
-  answer: career ladder
+  text: When should an image NOT have alt text?
+  answer: purely decorative / only for visual formatting
 
-- id: team-dynamics-20004
-  category: Team Dynamics
+# https://www.w3.org/WAI/tutorials/forms/labels/
+- id: accessibility-20003
+  category: Accessibility
   round: 2
-  text: In an effort to keep teams small and effective, Amazon famously introduced a "two ____ team" rule.
-  answer: pizza
+  text: With few exceptions, what should always be provided for form inputs and controls?
+  answer: a label tag
+
+# https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions
+- id: accessibility-20004
+  category: Accessibility
+  round: 2
+  text: To make sure screen readers announce dynamic content changes, which ARIA feature should be used?
+  answer: live regions
+
+- id: shipping-fast-10001
+  category: Shipping Fast
+  round: 1
+  text: How long did it take Brendan Eich to create JavaScript?
+  options:
+    A: 3 hours
+    B: 1 day
+    C: 10 days
+    D: 1 month
+  answer: C
+
+- id: shipping-fast-10002
+  category: Shipping Fast
+  round: 1
+  text: Which language can go through 1 billion nested loops fastest?
+  options:
+    A: Rust
+    B: Java
+    C: Visual Basic
+    D: Rockstar
+  answer: A
+
+- id: shipping-fast-10003
+  category: Shipping Fast
+  round: 1
+  text: What is the common term for the network created by manually moving data from place to place on hard drives, instead of over the internet?
+  options:
+    A: Tape Transport
+    B: Offline Web
+    C: Sneakernet
+    D: Airgap Network
+  answer: C
+  note: '“Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway.”'
+
+- id: shipping-fast-10004
+  category: Shipping Fast
+  round: 1
+  text: What is the name for the method of speeding up the review of large code changes by chaining together a series of smaller Pull Requests, popularized at Meta?
+  options:
+    A: Squashed Pull Requests
+    B: Stacked Pull Requests
+    C: Parallel Pull Requests
+    D: Nested Pull Requests
+  answer: B
+
+- id: shipping-fast-20001
+  category: Shipping Fast
+  round: 2
+  text: What popular JavaScript framework is known for its "blazing fast" performance and was created by Rich Harris?
+  answer: Svelte
+
+- id: shipping-fast-20002
+  category: Shipping Fast
+  round: 2
+  text: Which programming language is known for its focus on speed and memory safety, often rivaling C++?
+  answer: HDD
+
+- id: shipping-fast-20003
+  category: Shipping Fast
+  round: 2
+  text: A key factor that enables edge computing to process data faster than alternatives is its proximity to what?
+  answer: Data sources
+
+- id: shipping-fast-20004
+  category: Shipping Fast
+  round: 2
+  text: In semantic versioning (e.g., MAJOR.MINOR.PATCH), which part of the version number should be incremented if a backward-compatible feature is introduced?
+  answer: Minor
+
+- id: css-10005
+  category: CSS
+  round: 1
+  text: Which value for `text-wrap` attempts to improve layouts by making lines in a paragraph roughly equal in length?
+  options:
+    A: justify
+    B: balance
+    C: force-wrap
+    D: pretty
+  answer: B
+
+- id: css-10006
+  category: CSS
+  round: 1
+  text: 'How much opacity is applied to the color #00000080?'
+  options:
+    A: '80%'
+    B: '20%'
+    C: '50%'
+    D: That's not a valid color
+  answer: C
+
+- id: css-10007
+  category: CSS
+  round: 1
+  text: Which of the following is NOT a valid custom property name?
+  options:
+    A: --BrⓐndC🅞lor
+    B: --brand.color
+    C: --brand🧡color
+    D: --Br4nDc0lr
+  answer: B
+
+- id: css-10008
+  category: CSS
+  round: 1
+  text: Which of these functions can help make a multiple-bounce easing effect in an animation?
+  options:
+    A: cubic-bezier()
+    B: spring()
+    C: bounce()
+    D: linear()
+  answer: D
+
+- id: css-20005
+  category: CSS
+  round: 2
+  text: In a grid layout, which property determines the distance between grid areas?
+  answer: gap
+
+- id: css-20006
+  category: CSS
+  round: 2
+  text: Which at-rule allows for checking that a browser is able to render a given declaration?
+  answer: '@supports'
+
+- id: css-20007
+  category: CSS
+  round: 2
+  text: Which media query argument is used to check the user's current color theme?
+  answer: prefers-color-scheme
+
+- id: css-20008
+  category: CSS
+  round: 2
+  text: 'If two sibling elements have `margin: 50px` set, what size is the space between them?'
+  answer: 50px due to margin collapsing
+
+- id: authentication-10001
+  category: Authentication
+  round: 1
+  text: What does a 418 HTTP status response code indicate?
+  options:
+    A: Not Allowed
+    B: Not Found
+    C: I'm a teapot
+    D: Unauthorized
+  answer: C
+
+- id: authentication-10002
+  category: Authentication
+  round: 1
+  text: What is the default expiration time for a JWT if not specified?
+  options:
+    A: 24 Hours
+    B: No Expiration
+    C: 30 Days
+    D: 1 Hour
+  answer: B
+
+- id: authentication-10003
+  category: Authentication
+  round: 1
+  text: What is the default expiration time for a session in OAuth 2.0?
+  options:
+    A: 24 Hours
+    B: No default specified in the standard
+    C: 30 Days
+    D: 1 Hour
+  answer: B
+
+- id: authentication-10004
+  category: Authentication
+  round: 1
+  text: Which algorithm is commonly used for password hashing in 2025?
+  options:
+    A: SHA-1
+    B: Unsalted Hashes
+    C: Argon2
+    D: MD5
+  answer: C
+
+- id: authentication-20001
+  category: Authentication
+  round: 2
+  text: 'With regards to 2FA, what does TOTP refer to?'
+  answer: Time-Based One-Time Passwords
+
+- id: authentication-20002
+  category: Authentication
+  round: 2
+  text: Which header typically carries the JWT in an HTTP request?
+  answer: Authorization
+
+- id: authentication-20003
+  category: Authentication
+  round: 2
+  text: What does the acronym "SAML" stand for?
+  answer: Security Assertion Markup Language
+
+- id: authentication-20004
+  category: Authentication
+  round: 2
+  text: Which HTTP status code indicates an "not authorized" error?
+  answer: 401
+f
