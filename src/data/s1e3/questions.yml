@@ -1,4 +1,3 @@
-
 - id: frameworks-10001
   category: Frameworks
   round: 1
@@ -59,7 +58,7 @@
   category: Frameworks
   round: 2
   text: This API allows you to guard against errors in part of your app from breaking the app as a whole, and to recover
-  answer: `<svelte:boundary>`
+  answer: '<svelte:boundary>'
 
 - id: frameworks-20004
   category: Frameworks
