@@ -1,343 +1,345 @@
-- id: dev-lore-10013
-  category: Dev Lore
+# https://remix.run/docs/en/main/route/loader
+- id: frameworks-10005
+  category: Frameworks
   round: 1
-  text: What is the name of the Rust crab mascot?
-  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737583091/leet-heat/questions/dev-lore-10013.png
+  text: In Remix, data can be loaded server-side and provided to the client by exporting what function?
   options:
-    A: Rusty
-    B: Citizen Snips
-    C: Clippy
-    D: Ferris
-  answer: D
-
-- id: dev-lore-10014
-  category: Dev Lore
-  round: 1
-  text: What company did Steve Jobs found after being forced out of Apple?
-  options:
-    A: NeXT
-    B: ForWARD
-    C: Ghost
-    D: Apple 2
+    A: 'loader()'
+    B: 'fetcher()'
+    C: 'getStaticProps()'
+    D: 'useData()'
   answer: A
 
-- id: dev-lore-10015
-  category: Dev Lore
+# https://angular.dev/guide/templates/defer
+- id: frameworks-10006
+  category: Frameworks
   round: 1
-  text: 'A common saying among devs is that there are only two hard things in Computer Science: cache invalidation and what?'
+  text: Which feature of Angular waits to load a component until a trigger condition is met?
   options:
-    A: Debugging
-    B: Optimizing algorithms
-    C: Naming things
-    D: Avoiding meetings
+    A: '@suspense'
+    B: '@delay'
+    C: '@defer'
+    D: '@lazy'
+  answer: C
+
+# https://vuejs.org/guide/essentials/event-handling.html#event-handling
+- id: frameworks-10007
+  category: Frameworks
+  round: 1
+  text: In Vue.js, the shorthand for adding an event handler for a click is _____.
+  options:
+    A: 'on:click'
+    B: ':click'
+    C: '@click'
+    D: 'v-click'
+  answer: C
+
+- id: frameworks-10008
+  category: Frameworks
+  round: 1
+  text: How does Svelte template syntax handle conditionals?
+  options:
+    A: '{{#if expression}}...{{/if}}'
+    B: '<% if (expression) { %>...<% } %>'
+    C: "{expression ? '...' : null}"
+    D: '{#if expression}...{/if}'
+  answer: D
+
+- id: frameworks-20005
+  category: Frameworks
+  round: 2
+  text: These reusable classes provide functionality to components, promoting code organization and separation of concerns
+  answer: Services
+
+- id: frameworks-20006
+  category: Frameworks
+  round: 2
+  text: What are the fundamental building blocks of user intefaces in modern web frameworks?
+  answer: Components
+
+- id: frameworks-20007
+  category: Frameworks
+  round: 2
+  text: To transform the combined output of templates, styles, and HTML into a final, optimized form, web frameworks often use what?
+  answer: Compiler
+
+- id: frameworks-20008
+  category: Frameworks
+  round: 2
+  text: In Svelte, these are used to manage complex nested data structures
+  answer: stores
+
+- id: authentication-10009
+  category: Authentication
+  round: 1
+  text: What is the primary purpose of a refresh token?
+  options:
+    A: Validate a user's password
+    B: Store user session data
+    C: Encrypt API requests
+    D: Obtain a new access token without re-authenticating
+  answer: D
+
+- id: authentication-10010
+  category: Authentication
+  round: 1
+  text: In a password-based authentication system, why are passwords salted?
+  options:
+    A: To boost hashing speed
+    B: To comply with OAuth guidelines
+    C: To ensure strong password length
+    D: To protect against rainbow table attacks
+  answer: D
+
+- id: authentication-10011
+  category: Authentication
+  round: 1
+  text: SSO helps you _____.
+  options:
+    A: Share some OAuth
+    B: Sign in once
+    C: Secure Socket Operations
+    D: Sing solo online
   answer: B
 
-- id: dev-lore-10016
-  category: Dev Lore
+- id: authentication-10012
+  category: Authentication
   round: 1
-  text: According to Leslie Lamport, what is defined as “a _________ is one in which the failure of a computer you didn't even know existed can render your own computer unusable”?
+  text: Why should you implement 2FA?
   options:
-    A: Centralized Network
-    B: Fault-Tolerant System
-    C: Cloud Computing
-    D: Distributed System
+    A: Faster sign in
+    B: Better UI
+    C: Double the security
+    D: Twice the passwords
+  answer: C
+
+- id: authentication-20009
+  category: Authentication
+  round: 2
+  text: The main difference between authentication and authorization is that authentication verifies identity, where authorization does what?
+  answer: Grants access
+
+- id: authentication-20010
+  category: Authentication
+  round: 2
+  text: What authentication protocol, built on top of OAuth 2.0, allows users to sign into multiple applications with one set of credentials?
+  answer: OpenID Connect
+
+- id: authentication-20011
+  category: Authentication
+  round: 2
+  text: Which authentication method requires both "something you have" and "something you are"?
+  answer: Multi-Factor Authentication or MFA
+
+- id: authentication-20012
+  category: Authentication
+  round: 2
+  text: Biometric authentication, one-time passcodes, magic links, and hardware keys are examples of what category of authentication?
+  answer: Passwordless authentication (or just passwordless)
+
+- id: css-10025
+  category: CSS
+  round: 1
+  text: 'What does `font-display: swap` do?'
+  options:
+    A: enables a font switcher
+    B: inverts the text color scheme
+    C: improves custom font loading performance
+    D: attempts to trade the given font on Craigslist
+  answer: C
+
+- id: css-10026
+  category: CSS
+  round: 1
+  text: What is the common name for this approach to dealing with floats?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737701926/leet-heat/questions/css-10026.png
+  options:
+    A: unfloat
+    B: breaker
+    C: floatjammer
+    D: clearfix
   answer: D
 
-- id: dev-lore-20013
-  category: Dev Lore
-  round: 2
-  text: Which architectural style involves breaking down applications into smaller, independent services that communicate over APIs, offering scalability and flexibility?
-  answer: Microservices
-
-- id: dev-lore-20014
-  category: Dev Lore
-  round: 2
-  text: This architectural approach applies the principles of microservices to the front-end, allowing independent teams to build and deploy features in isolation.
-  answer: Micro Frontends
-
-- id: dev-lore-20015
-  category: Dev Lore
-  round: 2
-  text: What approach, popularized by LaunchDarkly, allows developers to enable or disable specific functionality in an application without requiring a new deployment?
-  answer: Feature flags
-
-- id: dev-lore-20016
-  category: Dev Lore
-  round: 2
-  text: What controversial feature does Python use to outline code structure?
-  answer: Whitespace / Indentation
-
-- id: web-security-10009
-  category: Web Security
+- id: css-10027
+  category: CSS
   round: 1
-  text: Which HTTP header helps prevent XSS by controlling trusted sources for scripts?
+  text: Which CSS shorthand property enables developers to build animations that are driven by the user's scrolling behavior?
   options:
-    A: X-Content-Type-Options
-    B: Content-Security-Policy
-    C: X-Frame-Options
-    D: Strict-Transport-Security
+    A: animation-scroll
+    B: scroll-timeline
+    C: scroll-behavior
+    D: scroll-animation
   answer: B
 
-- id: web-security-10010
-  category: Web Security
+- id: css-10028
+  category: CSS
   round: 1
-  text: HTTPS primarily protects against ________ attacks by encrypting data in transit.
+  text: Which selector matches elements with a `data-spicy` attribute?
   options:
-    A: DDoS attacks
-    B: Privilege escalation
-    C: Man-in-the-middle attacks
-    D: SQL injection
+    A: '~data-spicy {}'
+    B: '@attribute(data-spicy) {}'
+    C: '[data-spicy] {}'
+    D: '::data(spicy) {}'
   answer: C
 
-- id: web-security-10011
-  category: Web Security
-  round: 1
-  text: A CSRF token is primarily used to
-  options:
-    A: Automatically refresh the user’s session
-    B: Encrypt data at rest
-    C: Verify that requests come from an authenticated user
-    D: Override HTTP headers
-  answer: C
-
-- id: web-security-10012
-  category: Web Security
-  round: 1
-  text: What does PKI stand for?
-  options:
-    A: Public Knowledge Index
-    B: Private Key Integration
-    C: Public Key Infrastructure
-    D: Protected Key Interface
-  answer: C
-
-- id: web-security-20009
-  category: Web Security
-  round: 2
-  text: Intercepting and possibly altering communication between two parties is known as _____.
-  answer: Man-in-the-Middle (MitM) attacks
-
-- id: web-security-20010
-  category: Web Security
-  round: 2
-  text: What is DNS Spoofing is used for?
-  answer: Redirecting users to malicious websites
-
-- id: web-security-20011
-  category: Web Security
-  round: 2
-  text: 'A unique, single-use value to prevent replay attacks is known as a ______.'
-  answer: Nonce
-
-- id: web-security-20012
-  category: Web Security
-  round: 2
-  text: What does HMAC stand for?
-  answer: Hash-Based Message Authentication Code
-
-- id: css-10021
-  category: CSS
-  round: 1
-  text: Which HTML tag is used to load an external CSS file?
-  options:
-    A: link
-    B: style
-    C: css
-    D: script
-  answer: A
-
-- id: css-10022
-  category: CSS
-  round: 1
-  text: Which pseudo-class matches elements based on their position among siblings?
-  options:
-    A: :nth-child()
-    B: :first-of-type
-    C: :only-child
-    D: :last-child
-  answer: A
-
-- id: css-10023
-  category: CSS
-  round: 1
-  text: Which of these CSS color functions supports transparency?
-  options:
-    A: rgb()
-    B: oklch()
-    C: hsla()
-    D: all of the above
-  answer: D
-
-- id: css-10024
-  category: CSS
-  round: 1
-  text: Which CSS selector matches elements with no children?
-  options:
-    A: :empty
-    B: :children(none)
-    C: :no-descendants
-    D: :blank
-  answer: A
-
-- id: css-20021
+- id: css-20025
   category: CSS
   round: 2
-  text: To apply layer blending effects, such as "multiply" and "soft light", which CSS property is used?
-  answer: mix-blend-mode
+  text: Before flexbox, what CSS property did developers use to get content to show up side-by-side?
+  answer: float
 
-- id: css-20022
+- id: css-20026
   category: CSS
   round: 2
-  text: To set the amount of space between an element's content and its border, which property should be used?
-  answer: padding
+  text: If two elements with a 10px margin are siblings, their margins don't stack and the total margin between them is 10px. What is this behavior called?
+  answer: margin collapsing
 
-- id: css-20023
+- id: css-20027
   category: CSS
   round: 2
-  text: What is the optional second argument to `var()` in CSS?
-  answer: initial value or fallback
+  text: 'When `position: absolute;` is applied, '
+  answer: closest ancestor with position set or the root element
 
-- id: css-20024
+- id: css-20028
   category: CSS
   round: 2
-  text: Which size unit is based on the root element's font-size?
-  answer: rem
+  text: The `translate` property accepts up to 3 values that represent what?
+  answer: the X, Y, and Z axis
 
-- id: animation-10005
-  category: Animation
+- id: user-experience-10001
+  category: User Experience
   round: 1
-  text: What is the commonly accepted "standard" frame rate for web animations?
+  text: When creating a company web layout, what should every page have?
   options:
-    A: '23.98'
-    B: '100'
-    C: '1000'
-    D: '60'
-  answer: D
-
-# https://aerotwist.com/blog/flip-your-animations/
-- id: animation-10006
-  category: Animation
-  round: 1
-  text: What approach introduced by Paul Lewis precalculates an animation to increase its performance?
-  options:
-    A: Flash
-    B: FLIP
-    C: stop motion
-    D: tweening
+    A: Animated intro
+    B: A clear call to action
+    C: A very large logo
+    D: A half-dozen tracking scripts
   answer: B
 
-# https://mdn.io/@keyframes
-- id: animation-10007
-  category: Animation
+- id: user-experience-10002
+  category: User Experience
   round: 1
-  text: In CSS, which at-rule is used to define animations?
+  text: When describing the portion of a web page that's visible without scrolling, what term is commonly used?
   options:
-    A: '@animation'
-    B: '@motion'
-    C: '@keyframes'
-    D: '@tween'
+    A: In the box
+    B: The money maker
+    C: Above the fold
+    D: None of the above
   answer: C
 
-# https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame
-- id: animation-10008
-  category: Animation
+- id: user-experience-10003
+  category: User Experience
   round: 1
-  text: Which JavaScript window method runs a callback at the display's refresh rate when called in a loop?
+  text: Drawing attention to the most relevant or important part of a page first is best achieved through what?
   options:
-    A: setInterval()
-    B: requestAnimationFrame()
-    C: requestIdleCallback()
-    D: queueMicrotask()
+    A: Visual hierarchy
+    B: The blink tag
+    C: Bright, flashing colors
+    D: Huge red arrows
+  answer: A
+
+- id: user-experience-10004
+  category: User Experience
+  round: 1
+  text: A delay of what length of time is generally considered to be imperceptible by users?
+  options:
+    A: 1ms
+    B: 10ms
+    C: 100ms
+    D: 1 second
+  answer: C
+
+- id: user-experience-20001
+  category: User Experience
+  round: 2
+  text: When a website uses deceptive or misleading UI to trick or trap users, what is this practice called?
+  answer: Dark patterns
+
+- id: user-experience-20002
+  category: User Experience
+  round: 2
+  text: What term from the early days of web design describes unclear or difficult to use navigation?
+  answer: '"Mystery meat" navigation'
+  note: In the early days of the internet, there weren't clear patterns for how to do things. Many designers were experimenting with new ideas — and not every experiment is worth keeping.
+
+- id: user-experience-20003
+  category: User Experience
+  round: 2
+  text: When a website layout modifies itself based on the size of the viewport, it's known as what kind of design?
+  answer: Responsive
+
+- id: user-experience-20004
+  category: User Experience
+  round: 2
+  text: The practice of ensuring that a web page functions as HTML only before building additional features with CSS and JavaScript is called what?
+  answer: Progressive enhancement
+
+- id: developerisms-10005
+  category: Developerisms
+  round: 1
+  text: Using your own software internally before releasing it to the public is often described as this peculiar dish.
+  options:
+    A: fish-fooding
+    B: dog-fooding
+    C: cat-fooding
+    D: wolf-fooding
   answer: B
 
-- id: animation-20005
-  category: Animation
-  round: 2
-  text: Which HTML element is commonly used to render animated graphics?
-  answer: canvas
-
-- id: animation-20006
-  category: Animation
-  round: 2
-  text: Browsers increased performance for certain CSS animations using what technique that offloads work from the CPU?
-  answer: Hardware acceleration or GPU acceleration
-
-- id: animation-20007
-  category: Animation
-  round: 2
-  text: What field of study provides math that makes animations feel more realistic by simulating things like friction and weight?
-  answer: physics
-
-- id: animation-20008
-  category: Animation
-  round: 2
-  text: Which often overused web effect is achieved by making elements scroll at different speeds?
-  answer: parallax
-
-- id: acronyms-10009
-  category: Acronyms
+- id: developerisms-10006
+  category: Developerisms
   round: 1
-  text: What does KPI stand for?
+  text: Often associated with early hackers, what system of writing changes words to look like "1337 H347"?
   options:
-    A: Knowledge Practicality Index
-    B: Keeping People Imbalanced
-    C: Kinetic Programming Incentive
-    D: Key Performance Indicator
-  answer: D
-
-- id: acronyms-10010
-  category: Acronyms
-  round: 1
-  text: In web standards groups, what does RFC stand for?
-  options:
-    A: Request For Comments
-    B: Returned For Corrections
-    C: Ready For Committee
-    D: Run From Commitment
-  answer: A
-
-- id: acronyms-10011
-  category: Acronyms
-  round: 1
-  text: Those of us over a certain age may remember this as "what came before Slack". What does IRC stand for?
-  options:
-    A: Intermittent Resource Connection
-    B: International Routing Console
-    C: Internet Relay Chat
-    D: Instantly Regrettable Choices
+    A: md5
+    B: hackish
+    C: leetspeak
+    D: T-9
   answer: C
 
-- id: acronyms-10012
-  category: Acronyms
+- id: developerisms-10007
+  category: Developerisms
   round: 1
-  text: What does HTTP stand for?
+  text: In Jurassic Park, what type of system does Lex Murphy realize she knows?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737732785/leet-heat/questions/developerisms-10007.jpg
   options:
-    A: HyperText Transfer Protocol
-    B: Haste
-    C: High Tech ThroughPut
-    D: How To Talk 'Puter
+    A: Windows
+    B: Unix
+    C: TOPS-10
+    D: TENEX
+  answer: B
+
+- id: developerisms-10008
+  category: Developerisms
+  round: 1
+  text: Commonly used for naming classes and types, what is the widely accepted name for this casing? `SpicyBiteController`
+  options:
+    A: Pascal case
+    B: camel case
+    C: sentence case
+    D: bumpy case
   answer: A
 
-- id: acronyms-20009
-  category: Acronyms
+- id: developerisms-20005
+  category: Developerisms
   round: 2
-  text: What does API stand for?
-  answer: Application Programming Interface
+  text: 'Complete this famous copy-pasta: "I’d just like to interject for a moment. What you’re referring to as _____, is in fact, GNU/_____, or as I’ve recently taken to calling it, GNU plus _____."'
+  answer: Linux
 
-- id: acronyms-20010
-  category: Acronyms
+- id: developerisms-20006
+  category: Developerisms
   round: 2
-  text: What does SDK stand for?
-  answer: Software Development Kit
+  text: When an emergency patch is shipped to correct an error in production, what is it typically called?
+  answer: hotfix
 
-- id: acronyms-20011
-  category: Acronyms
+- id: developerisms-20007
+  category: Developerisms
   round: 2
-  text: What does W3C stand for?
-  answer: World Wide Web Consortium
+  text: Quick! You've accidentally opened vim — what's the command to close it?
+  answer: :wq or :x or :q or :cq
 
-- id: acronyms-20012
-  category: Acronyms
+- id: developerisms-20008
+  category: Developerisms
   round: 2
-  text: What does DAG stand for?
-  answer: Directed Acyclic Graph
+  text: In CSS, doing what kind of positioning is legendarily difficult?
+  answer: vertically centering or centering a div
