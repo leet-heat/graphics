@@ -1,0 +1,345 @@
+# TODO for game 9
+# - Developerisms Round 1 and 2
+
+- id: developerisms-10013
+  category: Developerisms
+  round: 1
+  text: What term do developers use for a codebase that's become such a disaster, it's practically impossible to fix?
+  options:
+    A: code spaghetti
+    B: code soup
+    C: tire fire
+    D: tech debt trap
+  answer: C
+
+- id: developerisms-10014
+  category: Developerisms
+  round: 1
+  text: What term describes old, sometimes poorly documented code that everyone's afraid to touch but the business depends on?
+  options:
+    A: heritage code
+    B: technical debt
+    C: vintage software
+    D: legacy code
+  answer: D
+
+- id: developerisms-10015
+  category: Developerisms
+  round: 1
+  text: What JavaScript nightmare occurs when you have multiple nested asynchronous functions, creating deeply indented and hard-to-follow code?
+  options:
+    A: callback hell
+    B: promise chain
+    C: event loop block
+    D: async/await chain
+  answer: A
+
+- id: developerisms-10016
+  category: Developerisms
+  round: 1
+  text: What's the development term for when a project's requirements keep expanding uncontrollably during development?
+  options:
+    A: scope creep
+    B: project drift
+    C: feature bloat
+    D: stack overflow
+  answer: A
+
+- id: developerisms-20017
+  category: Developerisms
+  round: 2
+  text: What term describes a subtle indicator in code that usually points to a deeper underlying problem in the design or architecture?
+  answer: code smell
+
+- id: developerisms-20018
+  category: Developerisms
+  round: 2
+  text: What phrase is famously used in beginner programming demos?
+  answer: hello world
+
+- id: developerisms-20019
+  category: Developerisms
+  round: 2
+  text: What is a condescending phrase used to instruct developers to read the documentation?
+  answer: Read The Fucking Manual (or RTFM)
+
+- id: developerisms-20020
+  category: Developerisms
+  round: 2
+  text: Information that only exists in a developer's heads, but not documentation.
+  answer: Tribal knowledge
+
+- id: css-10033
+  category: CSS
+  round: 1
+  text: Pseudo-class functions `:is()` and `:where()` match the same elements. What is the difference between them?
+  options:
+    A: performance
+    B: character count
+    C: nesting depth
+    D: specificity
+  answer: D
+
+- id: css-10034
+  category: CSS
+  round: 1
+  text: Which CSS selector allows for matching elements without specific characteristics?
+  options:
+    A: :not()
+    B: :exclude()
+    C: :without()
+    D: :inverse()
+  answer: A
+
+- id: css-10035
+  category: CSS
+  round: 1
+  text: To match only one direct sibling element, which combinator should be used?
+  options:
+    A: p ~ .sibling {}
+    B: p > .sibling {}
+    C: p + .sibling {}
+    D: p .sibling {}
+  answer: A
+
+- id: css-10036
+  category: CSS
+  round: 1
+  text: What pseudo-element applies styles to highlighted text on a page?
+  options:
+    A: ::highlight
+    B: ::mark
+    C: ::selection
+    D: ::cursor
+  answer: C
+
+- id: css-20033
+  category: CSS
+  round: 2
+  text: What declaration will cause an element to be hidden, but still occupy space?
+  answer: 'visibility: hidden'
+
+- id: css-20034
+  category: CSS
+  round: 2
+  text: Which value for `justify-content` will spread items evenly across the flex container?
+  answer: space-between
+
+- id: css-20035
+  category: CSS
+  round: 2
+  text: The `border` property is shorthand for which 3 border properties?
+  answer: border-width, border-style, border-color
+
+- id: css-20036
+  category: CSS
+  round: 2
+  text: Which CSS property adjusts the transparency of an element?
+  answer: opacity
+
+- id: user-experience-10005
+  category: User Experience
+  round: 1
+  text: Which design decision feels really cool to build, but often degrades user experience?
+  options:
+    A: Parallax effects
+    B: Scrolljacking
+    C: Carousel
+    D: All of the above
+  answer: D
+
+- id: user-experience-10006
+  category: User Experience
+  round: 1
+  text: To improve delivery speed for static assets, developers can leverage what?
+  options:
+    A: S3 buckets
+    B: Content Delivery Networks
+    C: localStorage
+    D: IPv6
+  answer: B
+
+- id: user-experience-10007
+  category: User Experience
+  round: 1
+  text: Which of the following is NOT a library of ready-made React interface elements?
+  options:
+    A: Radix
+    B: Grommet
+    C: Mantine
+    D: Cortex
+  answer: D
+
+- id: user-experience-10008
+  category: User Experience
+  round: 1
+  text: The presence of a loading spinner can perceived loading slower if loading takes less than how long?
+  options:
+    A: 100ms
+    B: 500ms
+    C: 2 seconds
+    D: 5 seconds
+  answer: C
+
+# https://developer.mozilla.org/en-US/docs/Glossary/Jank
+- id: user-experience-20005
+  category: User Experience
+  round: 2
+  text: Which slang term refers to sluggishness in a user interface, usually caused by executing long tasks on the main thread, blocking rendering, or expending too much processor power on background processes.
+  answer: Jank
+
+- id: user-experience-20006
+  category: User Experience
+  round: 2
+  text: What technique can be used to reduce video buffering on playback?
+  answer: '"adaptive bitrate streaming" or "HLS" or "MPEG-DASH"'
+
+# https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API
+- id: user-experience-20007
+  category: User Experience
+  round: 2
+  text: Many SPA sites make the browser back button behave unexpectedly. Which browser API should developers use to fix its behavior?
+  answer: History API
+
+- id: user-experience-20008
+  category: User Experience
+  round: 2
+  text: We see them everywhere, but what is the condition for ACTUALLY requiring a cookie banner?
+  answer: Collecting personal data with cookies
+
+- id: user-management-10009
+  category: User Management
+  round: 1
+  text: Role escalation occurs when _____..
+  options:
+    A: Roles are deleted from the system
+    B: Users downgrade their access
+    C: A user gains higher privileges than intended
+    D: Roles are properly assigned
+  answer: C
+
+- id: user-management-10010
+  category: User Management
+  round: 1
+  text: What's the function of firewalls in user management?
+  options:
+    A: Manage user roles
+    B: Style sign in pages
+    C: Block unauthorized access
+    D: Cook user data
+  answer: C
+
+- id: user-management-10011
+  category: User Management
+  round: 1
+  text: What does session hijacking refer to?
+  options:
+    A: Enhancing session security
+    B: Styling session pages
+    C: Taking over a user's session
+    D: Speeding up session loads
+  answer: C
+
+- id: user-management-10012
+  category: User Management
+  round: 1
+  text: What is the purpose of account provisioning?
+  options:
+    A: To create and manage user accounts
+    B: To encrypt user communications
+    C: To delete all user data
+    D: To design user interfaces
+  answer: A
+
+- id: user-management-20009
+  category: User Management
+  round: 2
+  text: 'In RBAC, what is the term for the lowest level of access right?'
+  answer: Permission
+
+- id: user-management-20010
+  category: User Management
+  round: 2
+  text: What is a common method for tenant identification in a web application?
+  answer: Subdomain or Custom Domain
+
+- id: user-management-20011
+  category: User Management
+  round: 2
+  text: The ability to customize the application’s look & feel for each tenant in a multi-tenancy application is called?
+  answer: White Labeling
+
+- id: user-management-20012
+  category: User Management
+  round: 2
+  text: ______ allows for custom data to be saved on the User object.
+  answer: Metadata
+
+- id: frameworks-10009
+  category: Frameworks
+  round: 1
+  text: In Lit, custom components and properties are declared using what shorthand syntax?
+  options:
+    A: Decorators
+    B: IIFEs
+    C: Pipe operator
+    D: Pattern matching
+  answer: A
+
+- id: frameworks-10010
+  category: Frameworks
+  round: 1
+  text: Which library used to ship with a method called `__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED`?
+  options:
+    A: '.Net'
+    B: React
+    C: Angular
+    D: None of the above
+  answer: B
+
+# https://github.com/facebook/react/issues/25573
+- id: frameworks-10011
+  category: Frameworks
+  round: 1
+  text: In 2022, Next.js faced backlash after patching which global?
+  options:
+    A: localStorage
+    B: cookie
+    C: fetch
+    D: Array
+  answer: C
+
+- id: frameworks-10012
+  category: Frameworks
+  round: 1
+  text: In Ruby on Rails, what is the built-in ORM called?
+  options:
+    A: RubyRM
+    B: Active Record
+    C: GemBase
+    D: DataRail
+  answer: B
+
+- id: frameworks-20009
+  category: Frameworks
+  round: 2
+  text: In React, creating elements by looping or mapping will cause console warnings unless a _____ is provided.
+  answer: key
+
+- id: frameworks-20010
+  category: Frameworks
+  round: 2
+  text: What framework was Twitter originally built with?
+  answer: Ruby on Rails
+
+- id: frameworks-20011
+  category: Frameworks
+  round: 2
+  text: This wildly popular CSS framework describes itself as "utility-first"?
+  answer: Tailwind
+
+- id: frameworks-20012
+  category: Frameworks
+  round: 2
+  text: What is the Vue.js directive for looping through an array?
+  answer: v-for
