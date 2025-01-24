@@ -1,342 +1,343 @@
-- id: acronyms-10005
-  category: Acronyms
+- id: dev-lore-10013
+  category: Dev Lore
   round: 1
-  text: What does PHP stand for?
+  text: What is the name of the Rust crab mascot?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737583091/leet-heat/questions/dev-lore-10013.png
   options:
-    A: PHP Hypertext Preprocessor
-    B: Parallel Hardware Processing
-    C: Portable Hosting Platform
-    D: Post-HTML Programming
-  answer: A
-
-- id: acronyms-10006
-  category: Acronyms
-  round: 1
-  text: What does SSR stand for?
-  options:
-    A: Split Server Route
-    B: Situational Site Rendering
-    C: Server Side Rendering
-    D: Something Something Resource
-  answer: C
-
-- id: acronyms-10007
-  category: Acronyms
-  round: 1
-  text: In web dev, what does MPA stand for?
-  options:
-    A: Multi-Platform Architecture
-    B: Multi-Page App
-    C: Mobile Processing Algorithm
-    D: Middleware Protocol Adapter
-  answer: B
-
-- id: acronyms-10008
-  category: Acronyms
-  round: 1
-  text: What does ORM stand for?
-  options:
-    A: Official Resource Management
-    B: Only Runs at Microsoft
-    C: Ordered Result Manipulation
-    D: Object-Relational Mapping
+    A: Rusty
+    B: Citizen Snips
+    C: Clippy
+    D: Ferris
   answer: D
 
-- id: acronyms-20005
-  category: Acronyms
-  round: 2
-  text: What does URL stand for?
-  answer: Uniform Resource Locator
-
-- id: acronyms-20006
-  category: Acronyms
-  round: 2
-  text: What does CRUD stand for?
-  answer: Create Read Update Delete
-
-- id: acronyms-20007
-  category: Acronyms
-  round: 2
-  text: What does TDD stand for?
-  answer: Test-Driven Development
-
-- id: acronyms-20008
-  category: Acronyms
-  round: 2
-  text: What does CI/CD stand for?
-  answer: Continuous Integration and Continuous Delivery
-
-- id: dev-lore-10009
+- id: dev-lore-10014
   category: Dev Lore
   round: 1
-  text: Which flavor of Mountain Dew shares its name with one of the first large-scale computer worm attacks?
+  text: What company did Steve Jobs found after being forced out of Apple?
   options:
-    A: Voltage
-    B: Code Red
-    C: Baja Blast
-    D: LiveWire
+    A: NeXT
+    B: ForWARD
+    C: Ghost
+    D: Apple 2
+  answer: A
+
+- id: dev-lore-10015
+  category: Dev Lore
+  round: 1
+  text: 'A common saying among devs is that there are only two hard things in Computer Science: cache invalidation and what?'
+  options:
+    A: Debugging
+    B: Optimizing algorithms
+    C: Naming things
+    D: Avoiding meetings
   answer: B
 
-- id: dev-lore-10010
+- id: dev-lore-10016
   category: Dev Lore
   round: 1
-  text: Which classic Unix command, originally named for “Tape Archive,” is used to bundle multiple files into a single archive?
+  text: According to Leslie Lamport, what is defined as “a _________ is one in which the failure of a computer you didn't even know existed can render your own computer unusable”?
   options:
-    A: grep
-    B: tar
-    C: concat
-    D: gzip
-  answer: B
-
-- id: dev-lore-10011
-  category: Dev Lore
-  round: 1
-  text: The first known computer “bug” in history was caused by what?
-  options:
-    A: A missing punch card
-    B: Overheated vacuum tubes
-    C: A short circuit on a transistor
-    D: A real moth in a relay
+    A: Centralized Network
+    B: Fault-Tolerant System
+    C: Cloud Computing
+    D: Distributed System
   answer: D
-  note: The story of the first documented “computer bug” famously involves an actual moth found in a relay of the Mark II computer at Harvard University in 1947.
 
-- id: dev-lore-10012
+- id: dev-lore-20013
   category: Dev Lore
+  round: 2
+  text: Which architectural style involves breaking down applications into smaller, independent services that communicate over APIs, offering scalability and flexibility?
+  answer: Microservices
+
+- id: dev-lore-20014
+  category: Dev Lore
+  round: 2
+  text: This architectural approach applies the principles of microservices to the front-end, allowing independent teams to build and deploy features in isolation.
+  answer: Micro Frontends
+
+- id: dev-lore-20015
+  category: Dev Lore
+  round: 2
+  text: What approach, popularized by LaunchDarkly, allows developers to enable or disable specific functionality in an application without requiring a new deployment?
+  answer: Feature flags
+
+- id: dev-lore-20016
+  category: Dev Lore
+  round: 2
+  text: What controversial feature does Python use to outline code structure?
+  answer: Whitespace / Indentation
+
+- id: web-security-10009
+  category: Web Security
   round: 1
-  text: In the iconic xkcd comic often referred to as “Little Bobby Tables,” a child’s name causes the school’s database table to be dropped. Which security vulnerability does this scenario illustrate?
-  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737582523/leet-heat/questions/dev-lore-10012.png
+  text: Which HTTP header helps prevent XSS by controlling trusted sources for scripts?
   options:
-    A: Cross-Site Scripting
-    B: SQL Injection
-    C: Denial of Service
-    D: Remote Code Execution
+    A: X-Content-Type-Options
+    B: Content-Security-Policy
+    C: X-Frame-Options
+    D: Strict-Transport-Security
   answer: B
 
-- id: dev-lore-20009
-  category: Dev Lore
-  round: 2
-  text: On July 19, 2024, which cybersecurity firm released a faulty update to its Falcon sensor software, causing millions of Microsoft Windows systems to crash and disrupting industries worldwide?
-  answer: CrowdStrike
-
-- id: dev-lore-20010
-  category: Dev Lore
-  round: 2
-  text: In Unix, where would someone typically pipe output they don’t want to use?
-  answer: /dev/null
-
-- id: dev-lore-20011
-  category: Dev Lore
-  round: 2
-  text: What was the original proposition called that outlined the values and principles for modern Agile software development in 2001?
-  answer: Agile Manifesto
-
-- id: dev-lore-20012
-  category: Dev Lore
-  round: 2
-  text: The famous "Developers, Developers, Developers!" chant was performed by which Microsoft executive?
-  answer: Steve Ballmer
-
-- id: web-security-10005
+- id: web-security-10010
   category: Web Security
   round: 1
-  text: What does the acronym “HTTPS” stand for?
+  text: HTTPS primarily protects against ________ attacks by encrypting data in transit.
   options:
-    A: High-Tech Text Parsing System
-    B: Host Transfer Payload System
-    C: Hypertext Transfer Protocol Secure
-    D: Hyper Transfer Proxy Source
+    A: DDoS attacks
+    B: Privilege escalation
+    C: Man-in-the-middle attacks
+    D: SQL injection
   answer: C
 
-- id: web-security-10006
+- id: web-security-10011
   category: Web Security
   round: 1
-  text: What is the primary purpose of CSRF attacks?
+  text: A CSRF token is primarily used to
   options:
-    A: Overloading server resources
-    B: Injecting malicious code
-    C: Tricking users into performing unintended actions
-    D: Stealing user passwords
+    A: Automatically refresh the user’s session
+    B: Encrypt data at rest
+    C: Verify that requests come from an authenticated user
+    D: Override HTTP headers
   answer: C
 
-- id: web-security-10007
+- id: web-security-10012
   category: Web Security
   round: 1
-  text: Which cookie setting makes cookies inaccessible to JavaScript?
+  text: What does PKI stand for?
   options:
-    A: Path=/
-    B: Domain=example.com
-    C: HttpOnly flag
-    D: Secure
+    A: Public Knowledge Index
+    B: Private Key Integration
+    C: Public Key Infrastructure
+    D: Protected Key Interface
   answer: C
 
-- id: web-security-10008
-  category: Web Security
-  round: 1
-  text: What is the primary use case of CAPTCHA?
-  options:
-    A: Verifying a user is human
-    B: Managing user roles & permission
-    C: Encrypting user data
-    D: Enhancing password strength
-  answer: A
-
-- id: web-security-20005
+- id: web-security-20009
   category: Web Security
   round: 2
-  text: What does the acronym “CSRF” stand for?
-  answer: Cross-Site Request Forgery
+  text: Intercepting and possibly altering communication between two parties is known as _____.
+  answer: Man-in-the-Middle (MitM) attacks
 
-- id: web-security-20006
+- id: web-security-20010
   category: Web Security
   round: 2
-  text: Trying many passwords quickly is known as a _______.
-  answer: Brute Force Attack
+  text: What is DNS Spoofing is used for?
+  answer: Redirecting users to malicious websites
 
-- id: web-security-20007
+- id: web-security-20011
   category: Web Security
   round: 2
-  text: SQL Injection attacks primarily target ____.
-  answer: Database Queries
+  text: 'A unique, single-use value to prevent replay attacks is known as a ______.'
+  answer: Nonce
 
-- id: web-security-20008
+- id: web-security-20012
   category: Web Security
   round: 2
-  text: What are Intrusion Detection Systems (IDS)  used for?
-  answer: Detecting unauthorized access or anomalies
+  text: What does HMAC stand for?
+  answer: Hash-Based Message Authentication Code
 
-- id: apis-and-sdks-10001
-  category: APIs & SDKs
-  round: 1
-  text: If a request to a REST API has incorrect data, what HTTP response should be returned?
-  options:
-    A: '400'
-    B: '401'
-    C: '500'
-    D: '508'
-  answer: A
-
-- id: apis-and-sdks-10002
-  category: APIs & SDKs
-  round: 1
-  text: A common criticism of GraphQL is that it always returns what HTTP response code?
-  options:
-    A: '301'
-    B: '200'
-    C: '206'
-    D: '304'
-  answer: B
-
-- id: apis-and-sdks-10003
-  category: APIs & SDKs
-  round: 1
-  text: A SOAP API sends and receives data using what format?
-  options:
-    A: JSON
-    B: Buffer
-    C: XML
-    D: all of the above
-  answer: C
-
-- id: apis-and-sdks-10004
-  category: APIs & SDKs
-  round: 1
-  text: What is a common way to provide credentials safely to SDKs that require them?
-  options:
-    A: hashed values
-    B: environment variables
-    C: password vault
-    D: secret handshake
-  answer: B
-
-- id: apis-and-sdks-20001
-  category: APIs & SDKs
-  round: 2
-  text: Which technique for testing API endpoints might sound like it's trying to hurt the API's feelings?
-  answer: mocking
-
-- id: apis-and-sdks-20002
-  category: APIs & SDKs
-  round: 2
-  text: GitHub's official SDKs are published under what name, inspired by their mascot?
-  answer: octokit
-
-- id: apis-and-sdks-20003
-  category: APIs & SDKs
-  round: 2
-  text: An API token is commonly sent using which HTTP header?
-  answer: Authorization
-
-- id: apis-and-sdks-20004
-  category: APIs & SDKs
-  round: 2
-  text: For APIs that need two-way, real-time communication, an HTTP connection can be upgraded to which protocol?
-  answer: WebSocket
-
-- id: css-10017
+- id: css-10021
   category: CSS
   round: 1
-  text: Which CSS pseudo-class selects inputs with invalid data only after a user has interacted with it?
+  text: Which HTML tag is used to load an external CSS file?
   options:
-    A: ':user-invalid'
-    B: ':invalid'
-    C: ':error'
-    D: ':incorrect'
+    A: link
+    B: style
+    C: css
+    D: script
   answer: A
 
-- id: css-10018
+- id: css-10022
   category: CSS
   round: 1
-  text: To style the wrapping element that contains a focused element, which pseudo-class is used?
+  text: Which pseudo-class matches elements based on their position among siblings?
   options:
-    A: ':target'
-    B: ':is(:focus)'
-    C: ':focus-within'
-    D: ':enabled'
-  answer: C
+    A: :nth-child()
+    B: :first-of-type
+    C: :only-child
+    D: :last-child
+  answer: A
 
-- id: css-10019
+- id: css-10023
   category: CSS
   round: 1
-  text: To size something relative to its container, which unit is used?
+  text: Which of these CSS color functions supports transparency?
   options:
-    A: cqw
-    B: cqb
-    C: cqi
+    A: rgb()
+    B: oklch()
+    C: hsla()
     D: all of the above
   answer: D
 
-- id: css-10020
+- id: css-10024
   category: CSS
   round: 1
-  text: What is the third argument of `clamp()`?
+  text: Which CSS selector matches elements with no children?
   options:
-    A: the minimum value
-    B: the target value
-    C: the maximum value
-    D: no one knows
+    A: :empty
+    B: :children(none)
+    C: :no-descendants
+    D: :blank
+  answer: A
+
+- id: css-20021
+  category: CSS
+  round: 2
+  text: To apply layer blending effects, such as "multiply" and "soft light", which CSS property is used?
+  answer: mix-blend-mode
+
+- id: css-20022
+  category: CSS
+  round: 2
+  text: To set the amount of space between an element's content and its border, which property should be used?
+  answer: padding
+
+- id: css-20023
+  category: CSS
+  round: 2
+  text: What is the optional second argument to `var()` in CSS?
+  answer: initial value or fallback
+
+- id: css-20024
+  category: CSS
+  round: 2
+  text: Which size unit is based on the root element's font-size?
+  answer: rem
+
+- id: animation-10005
+  category: Animation
+  round: 1
+  text: What is the commonly accepted "standard" frame rate for web animations?
+  options:
+    A: 23.98
+    B: 100
+    C: 1000
+    D: 60
+  answer: D
+
+# https://aerotwist.com/blog/flip-your-animations/
+- id: animation-10006
+  category: Animation
+  round: 1
+  text: What approach introduced by Paul Lewis precalculates an animation to increase its performance?
+  options:
+    A: Flash
+    B: FLIP
+    C: stop motion
+    D: tweening
+  answer: B
+
+# https://mdn.io/@keyframes
+- id: animation-10007
+  category: Animation
+  round: 1
+  text: In CSS, which at-rule is used to define animations?
+  options:
+    A: '@animation'
+    B: '@motion'
+    C: '@keyframes'
+    D: '@tween'
   answer: C
 
-- id: css-20017
-  category: CSS
-  round: 2
-  text: Which function allows developers to do math in CSS?
-  answer: calc()
+# https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame
+- id: animation-10008
+  category: Animation
+  round: 1
+  text: Which JavaScript window method runs a callback at the display's refresh rate when called in a loop?
+  options:
+    A: setInterval()
+    B: requestAnimationFrame()
+    C: requestIdleCallback()
+    D: queueMicrotask()
+  answer: B
 
-- id: css-20018
-  category: CSS
+- id: animation-20005
+  category: Animation
   round: 2
-  text: What does this gradient declaration result in?
-  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737621034/leet-heat/questions/css-20018.png
-  answer: all colors or a rainbow
+  text: Which HTML element is commonly used to render animated graphics?
+  answer: canvas
 
-- id: css-20019
-  category: CSS
+- id: animation-20006
+  category: Animation
   round: 2
-  text: Which CSS function blends two colors together by a given amount?
-  answer: color-mix()
+  text: Browsers increased performance for certain CSS animations using what technique that offloads work from the CPU?
+  answer: Hardware acceleration or GPU acceleration
 
-- id: css-20020
-  category: CSS
+- id: animation-20007
+  category: Animation
   round: 2
-  text: In SVG elements such as `<circle>`, which CSS property is used instead of `background-color` to determine what color the element appears?
-  answer: fill
+  text: What field of study provides math that makes animations feel more realistic by simulating things like friction and weight?
+  answer: physics
+
+- id: animation-20008
+  category: Animation
+  round: 2
+  text: Which often overused web effect is achieved by making elements scroll at different speeds?
+  answer: parallax
+
+- id: acronyms-10009
+  category: Acronyms
+  round: 1
+  text: What does KPI stand for?
+  options:
+    A: Knowledge Practicality Index
+    B: Keeping People Imbalanced
+    C: Kinetic Programming Incentive
+    D: Key Performance Indicator
+  answer: D
+
+- id: acronyms-10010
+  category: Acronyms
+  round: 1
+  text: In web standards groups, what does RFC stand for?
+  options:
+    A: Request For Comments
+    B: Returned For Corrections
+    C: Ready For Committee
+    D: Run From Commitment
+  answer: A
+
+- id: acronyms-10011
+  category: Acronyms
+  round: 1
+  text: Those of us over a certain age may remember this as "what came before Slack". What does IRC stand for?
+  options:
+    A: Intermittent Resource Connection
+    B: International Routing Console
+    C: Internet Relay Chat
+    D: Instantly Regrettable Choices
+  answer: C
+
+- id: acronyms-10012
+  category: Acronyms
+  round: 1
+  text: What does HTTP stand for?
+  options:
+    A: HyperText Transfer Protocol
+    B: Haste
+    C: High Tech ThroughPut
+    D: How To Talk 'Puter
+  answer: A
+
+- id: acronyms-20009
+  category: Acronyms
+  round: 2
+  text: What does API stand for?
+  answer: Application Programming Interface
+
+- id: acronyms-20010
+  category: Acronyms
+  round: 2
+  text: What does SDK stand for?
+  answer: Software Development Kit
+
+- id: acronyms-20011
+  category: Acronyms
+  round: 2
+  text: What does W3C stand for?
+  answer: World Wide Web Consortium
+
+- id: acronyms-20012
+  category: Acronyms
+  round: 2
+  text: What does DAG stand for?
+  answer: Directed Acyclic Graph
