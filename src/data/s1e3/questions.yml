@@ -208,10 +208,10 @@
   round: 1
   text: What is the commonly accepted "standard" frame rate for web animations?
   options:
-    A: 23.98
-    B: 100
-    C: 1000
-    D: 60
+    A: '23.98'
+    B: '100'
+    C: '1000'
+    D: '60'
   answer: D
 
 # https://aerotwist.com/blog/flip-your-animations/
