@@ -1,345 +1,341 @@
-# https://remix.run/docs/en/main/route/loader
-- id: frameworks-10005
-  category: Frameworks
+- id: css-10029
+  category: CSS
   round: 1
-  text: In Remix, data can be loaded server-side and provided to the client by exporting what function?
+  text: Which of the following is NOT a keyword value for `border-style`?
   options:
-    A: 'loader()'
-    B: 'fetcher()'
-    C: 'getStaticProps()'
-    D: 'useData()'
+    A: transparent
+    B: dashed
+    C: dotted
+    D: groove
   answer: A
 
-# https://angular.dev/guide/templates/defer
-- id: frameworks-10006
-  category: Frameworks
+- id: css-10030
+  category: CSS
   round: 1
-  text: Which feature of Angular waits to load a component until a trigger condition is met?
+  text: Which property defines a geometric region that sets what part of an element should be visible?
   options:
-    A: '@suspense'
-    B: '@delay'
-    C: '@defer'
-    D: '@lazy'
+    A: clip-mask
+    B: overflow
+    C: clip-path
+    D: content-area
   answer: C
 
-# https://vuejs.org/guide/essentials/event-handling.html#event-handling
-- id: frameworks-10007
-  category: Frameworks
+- id: css-10031
+  category: CSS
   round: 1
-  text: In Vue.js, the shorthand for adding an event handler for a click is _____.
+  text: To keep an element's height and width proportional to each other, which property can be used?
   options:
-    A: 'on:click'
-    B: ':click'
-    C: '@click'
-    D: 'v-click'
-  answer: C
-
-- id: frameworks-10008
-  category: Frameworks
-  round: 1
-  text: How does Svelte template syntax handle conditionals?
-  options:
-    A: '{{#if expression}}...{{/if}}'
-    B: '<% if (expression) { %>...<% } %>'
-    C: "{expression ? '...' : null}"
-    D: '{#if expression}...{/if}'
+    A: size
+    B: block-size
+    C: scale
+    D: aspect-ratio
   answer: D
 
-- id: frameworks-20005
-  category: Frameworks
-  round: 2
-  text: These reusable classes provide functionality to components, promoting code organization and separation of concerns
-  answer: Services
-
-- id: frameworks-20006
-  category: Frameworks
-  round: 2
-  text: What are the fundamental building blocks of user intefaces in modern web frameworks?
-  answer: Components
-
-- id: frameworks-20007
-  category: Frameworks
-  round: 2
-  text: To transform the combined output of templates, styles, and HTML into a final, optimized form, web frameworks often use what?
-  answer: Compiler
-
-- id: frameworks-20008
-  category: Frameworks
-  round: 2
-  text: In Svelte, these are used to manage complex nested data structures
-  answer: stores
-
-- id: authentication-10009
-  category: Authentication
+- id: css-10032
+  category: CSS
   round: 1
-  text: What is the primary purpose of a refresh token?
+  text: To create a drop cap style like this one, which pseudo-element should be used?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737704458/leet-heat/questions/css-10032.png
   options:
-    A: Validate a user's password
-    B: Store user session data
-    C: Encrypt API requests
-    D: Obtain a new access token without re-authenticating
-  answer: D
+    A: ::first-letter
+    B: ::drop-cap
+    C: ::initial-character
+    D: none of the above
+  answer: A
 
-- id: authentication-10010
-  category: Authentication
-  round: 1
-  text: In a password-based authentication system, why are passwords salted?
-  options:
-    A: To boost hashing speed
-    B: To comply with OAuth guidelines
-    C: To ensure strong password length
-    D: To protect against rainbow table attacks
-  answer: D
+- id: css-20029
+  category: CSS
+  round: 2
+  text: The introduction of which pseudo-class provided a long-awaited solution for a parent selector in CSS?
+  answer: :has()
 
-- id: authentication-10011
-  category: Authentication
-  round: 1
-  text: SSO helps you _____.
-  options:
-    A: Share some OAuth
-    B: Sign in once
-    C: Secure Socket Operations
-    D: Sing solo online
-  answer: B
+- id: css-20030
+  category: CSS
+  round: 2
+  text: What property converts all text to uppercase?
+  answer: 'text-transform: uppercase'
 
-- id: authentication-10012
-  category: Authentication
+- id: css-20031
+  category: CSS
+  round: 2
+  text: Which unit sizes an element relative to the width of the current viewport?
+  answer: vw
+
+- id: css-20032
+  category: CSS
+  round: 2
+  text: How to you place an element on screen that will not move, even when the page is scrolled?
+  answer: 'position: fixed'
+
+- id: deployment-10005
+  category: Deployment
   round: 1
-  text: Why should you implement 2FA?
+  text: When a deployment has an issue, what strategy allows for rapid reversion to the last known working build?
   options:
-    A: Faster sign in
-    B: Better UI
-    C: Double the security
-    D: Twice the passwords
+    A: Blame-free retrospective
+    B: Pager duty
+    C: Rollback
+    D: Calling the only dev who knows how it works at 3AM
   answer: C
 
-- id: authentication-20009
-  category: Authentication
-  round: 2
-  text: The main difference between authentication and authorization is that authentication verifies identity, where authorization does what?
-  answer: Grants access
-
-- id: authentication-20010
-  category: Authentication
-  round: 2
-  text: What authentication protocol, built on top of OAuth 2.0, allows users to sign into multiple applications with one set of credentials?
-  answer: OpenID Connect
-
-- id: authentication-20011
-  category: Authentication
-  round: 2
-  text: Which authentication method requires both "something you have" and "something you are"?
-  answer: Multi-Factor Authentication or MFA
-
-- id: authentication-20012
-  category: Authentication
-  round: 2
-  text: Biometric authentication, one-time passcodes, magic links, and hardware keys are examples of what category of authentication?
-  answer: Passwordless authentication (or just passwordless)
-
-- id: css-10025
-  category: CSS
+- id: deployment-10006
+  category: Deployment
   round: 1
-  text: 'What does `font-display: swap` do?'
+  text: Which of the following is NOT a CI/CD platform?
   options:
-    A: enables a font switcher
-    B: inverts the text color scheme
-    C: improves custom font loading performance
-    D: attempts to trade the given font on Craigslist
-  answer: C
-
-- id: css-10026
-  category: CSS
-  round: 1
-  text: What is the common name for this approach to dealing with floats?
-  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737701926/leet-heat/questions/css-10026.png
-  options:
-    A: unfloat
-    B: breaker
-    C: floatjammer
-    D: clearfix
+    A: TeamCity
+    B: CircleCI
+    C: Jenkins
+    D: Selenium
   answer: D
 
-- id: css-10027
-  category: CSS
+- id: deployment-10007
+  category: Deployment
   round: 1
-  text: Which CSS shorthand property enables developers to build animations that are driven by the user's scrolling behavior?
+  text: What is this syntax?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737591702/leet-heat/questions/deployment-10007.png
   options:
-    A: animation-scroll
-    B: scroll-timeline
-    C: scroll-behavior
-    D: scroll-animation
-  answer: B
-
-- id: css-10028
-  category: CSS
-  round: 1
-  text: Which selector matches elements with a `data-spicy` attribute?
-  options:
-    A: '~data-spicy {}'
-    B: '@attribute(data-spicy) {}'
-    C: '[data-spicy] {}'
-    D: '::data(spicy) {}'
-  answer: C
-
-- id: css-20025
-  category: CSS
-  round: 2
-  text: Before flexbox, what CSS property did developers use to get content to show up side-by-side?
-  answer: float
-
-- id: css-20026
-  category: CSS
-  round: 2
-  text: If two elements with a 10px margin are siblings, their margins don't stack and the total margin between them is 10px. What is this behavior called?
-  answer: margin collapsing
-
-- id: css-20027
-  category: CSS
-  round: 2
-  text: 'When `position: absolute;` is applied, '
-  answer: closest ancestor with position set or the root element
-
-- id: css-20028
-  category: CSS
-  round: 2
-  text: The `translate` property accepts up to 3 values that represent what?
-  answer: the X, Y, and Z axis
-
-- id: user-experience-10001
-  category: User Experience
-  round: 1
-  text: When creating a company web layout, what should every page have?
-  options:
-    A: Animated intro
-    B: A clear call to action
-    C: A very large logo
-    D: A half-dozen tracking scripts
-  answer: B
-
-- id: user-experience-10002
-  category: User Experience
-  round: 1
-  text: When describing the portion of a web page that's visible without scrolling, what term is commonly used?
-  options:
-    A: In the box
-    B: The money maker
-    C: Above the fold
+    A: YAML
+    B: Gherkin
+    C: TOML
     D: None of the above
-  answer: C
-
-- id: user-experience-10003
-  category: User Experience
-  round: 1
-  text: Drawing attention to the most relevant or important part of a page first is best achieved through what?
-  options:
-    A: Visual hierarchy
-    B: The blink tag
-    C: Bright, flashing colors
-    D: Huge red arrows
-  answer: A
-
-- id: user-experience-10004
-  category: User Experience
-  round: 1
-  text: A delay of what length of time is generally considered to be imperceptible by users?
-  options:
-    A: 1ms
-    B: 10ms
-    C: 100ms
-    D: 1 second
-  answer: C
-
-- id: user-experience-20001
-  category: User Experience
-  round: 2
-  text: When a website uses deceptive or misleading UI to trick or trap users, what is this practice called?
-  answer: Dark patterns
-
-- id: user-experience-20002
-  category: User Experience
-  round: 2
-  text: What term from the early days of web design describes unclear or difficult to use navigation?
-  answer: '"Mystery meat" navigation'
-  note: In the early days of the internet, there weren't clear patterns for how to do things. Many designers were experimenting with new ideas — and not every experiment is worth keeping.
-
-- id: user-experience-20003
-  category: User Experience
-  round: 2
-  text: When a website layout modifies itself based on the size of the viewport, it's known as what kind of design?
-  answer: Responsive
-
-- id: user-experience-20004
-  category: User Experience
-  round: 2
-  text: The practice of ensuring that a web page functions as HTML only before building additional features with CSS and JavaScript is called what?
-  answer: Progressive enhancement
-
-- id: developerisms-10005
-  category: Developerisms
-  round: 1
-  text: Using your own software internally before releasing it to the public is often described as this peculiar dish.
-  options:
-    A: fish-fooding
-    B: dog-fooding
-    C: cat-fooding
-    D: wolf-fooding
   answer: B
 
-- id: developerisms-10006
-  category: Developerisms
+- id: deployment-10008
+  category: Deployment
   round: 1
-  text: Often associated with early hackers, what system of writing changes words to look like "1337 H347"?
+  text: Which open source JavaScript project enabled developers to ship new JS syntax safely using plugins?
   options:
-    A: md5
-    B: hackish
-    C: leetspeak
-    D: T-9
+    A: Sizzle
+    B: Gulp
+    C: Babel
+    D: Yeoman
   answer: C
 
-- id: developerisms-10007
-  category: Developerisms
+- id: deployment-20005
+  category: Deployment
+  round: 2
+  text: What is it called when everything an app needs to run is packaged up into a standalone package?
+  answer: A container
+
+- id: deployment-20006
+  category: Deployment
+  round: 2
+  text: What is it called when a system increases capacity by adding more machines or nodes to a network?
+  answer: Horizontal scaling
+
+- id: deployment-20007
+  category: Deployment
+  round: 2
+  text: What device or service distributes requests across multiple servers to improve reliability and performance?
+  answer: Load balancer
+
+- id: deployment-20008
+  category: Deployment
+  round: 2
+  text: A coordinated attack that sends requests to a service more quickly than it can respond in an attempt to bring it down is known as what?
+  answer: DDoS (Distributed Denial of Service)
+
+- id: user-management-10005
+  category: User Management
   round: 1
-  text: In Jurassic Park, what type of system does Lex Murphy realize she knows?
-  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737732785/leet-heat/questions/developerisms-10007.jpg
+  text: What is the primary purpose of CSRF tokens in web applications?
   options:
-    A: Windows
-    B: Unix
-    C: TOPS-10
-    D: TENEX
+    A: Encrypt user data
+    B: Authenticate API requests
+    C: Manage user sessions
+    D: Prevent Cross-Site Request Forgery
+  answer: D
+
+- id: user-management-10006
+  category: User Management
+  round: 1
+  text: "In RBAC, what determines a user's permissions?"
+  options:
+    A: The device they are using
+    B: The roles assigned to them
+    C: Time of access
+    D: Their user ID
   answer: B
 
-- id: developerisms-10008
-  category: Developerisms
+- id: user-management-10007
+  category: User Management
   round: 1
-  text: Commonly used for naming classes and types, what is the widely accepted name for this casing? `SpicyBiteController`
+  text: What is the purpose of rate limiting in user management systems?
   options:
-    A: Pascal case
-    B: camel case
-    C: sentence case
-    D: bumpy case
+    A: Limit the number of requests a user can make in a given timeframe
+    B: Restrict the number of users accessing the system
+    C: Prioritize user access based on roles
+    D: Control user bandwidth usage
   answer: A
 
-- id: developerisms-20005
-  category: Developerisms
-  round: 2
-  text: 'Complete this famous copy-pasta: "I’d just like to interject for a moment. What you’re referring to as _____, is in fact, GNU/_____, or as I’ve recently taken to calling it, GNU plus _____."'
-  answer: Linux
+- id: user-management-10008
+  category: User Management
+  round: 1
+  text: Which is a best practice for managing user sessions?
+  options:
+    A: 'Using long, easily guessable session IDs'
+    B: Implementing session timeout & regeneration
+    C: Sharing session data across multiple domains without restrictions
+    D: Storing session data in URL parameters
+  answer: B
 
-- id: developerisms-20006
-  category: Developerisms
+- id: user-management-20005
+  category: User Management
   round: 2
-  text: When an emergency patch is shipped to correct an error in production, what is it typically called?
-  answer: hotfix
+  text: What is the purpose of a user session token?
+  answer: To maintain user authentication state across requests
 
-- id: developerisms-20007
-  category: Developerisms
+- id: user-management-20006
+  category: User Management
   round: 2
-  text: Quick! You've accidentally opened vim — what's the command to close it?
-  answer: :wq or :x or :q or :cq
+  text: The practice of gradually increasing sign in attempt delays after failed attempts is called _______.
+  answer: Exponential Backoff
 
-- id: developerisms-20008
+- id: user-management-20007
+  category: User Management
+  round: 2
+  text: What is the recommended practice for storing user profile images?
+  answer: Using a Content Delivery Network (CDN)
+
+- id: user-management-20008
+  category: User Management
+  round: 2
+  text: 'To prevent session fixation attacks, the session ID should be ______ after successful authentication.'
+  answer: Regenerated
+
+- id: developerisms-10009
+  category: Developerisms
+  round: 1
+  text: When a developer calls your point "orthogonal", they usually mean that it is _____.
+  options:
+    A: irrelevent or unrelated
+    B: too hard to actually build
+    C: likely to cause them extra work and they don't wanna
+    D: some combination of all of the above
+  answer: D
+
+- id: developerisms-10010
+  category: Developerisms
+  round: 1
+  text: Which snippet has a sci-fi themed name? `if (true === condition)`
+  options:
+    A: Deckard Conditions
+    B: Starbuck Conditions
+    C: Ripley Conditions
+    D: Yoda Conditions
+  answer: D
+
+- id: developerisms-10011
+  category: Developerisms
+  round: 1
+  text: What is this casing called? `I_AM_A_VARIABLE`
+  options:
+    A: Very Loud Variables
+    B: Screaming Snake Case
+    C: Camel Case
+    D: Env Var Case
+  answer: B
+
+- id: developerisms-10012
+  category: Developerisms
+  round: 1
+  text: If a feature is assigned with a big event driving delivery, this is sometimes jokingly referred to as what?
+  options:
+    A: Conference-Driven Development
+    B: High Pressure Development
+    C: Waterfall Planning
+    D: Most of us just call it Tuesday
+  answer: A
+
+- id: developerisms-20009
   category: Developerisms
   round: 2
-  text: In CSS, doing what kind of positioning is legendarily difficult?
-  answer: vertically centering or centering a div
+  text: What term has been historically overuse by recruiters when writing developer job descriptions?
+  answer: rockstar or ninja or unicorn
+
+- id: developerisms-20010
+  category: Developerisms
+  round: 2
+  text: What is the term for when numerous dependencies conflict with each other in, one might say, a biblically bad way?
+  answer: dependency hell
+
+- id: developerisms-20011
+  category: Developerisms
+  round: 2
+  text: What is the most overused placeholder for a variable name?
+  answer: foo and bar
+
+- id: developerisms-20012
+  category: Developerisms
+  round: 2
+  text: What ist he term for messy, tangled, hard-to-maintain code?
+  answer: spaghetti code
+
+- id: shipping-fast-10005
+  category: Shipping Fast
+  round: 1
+  text: Which of these things has the highest latency cost in JavaScript?
+  options:
+    A: Accessing an array element
+    B: Calling a function
+    C: Reading from local storage
+    D: Performing a mathematical operation
+  answer: C
+
+- id: shipping-fast-10006
+  category: Shipping Fast
+  round: 1
+  text: Which programming language is famously used to write the Linux kernel?
+  options:
+    A: C
+    B: C++
+    C: C#
+    D: Seashell
+  answer: A
+
+- id: shipping-fast-10007
+  category: Shipping Fast
+  round: 1
+  text: Which type of storage drive is known for offering the slowest data transfer speeds?
+  options:
+    A: SATA SSD
+    B: NVMe SSD
+    C: Hybrid Drive (SSHD)
+    D: HDD
+  answer: D
+
+- id: shipping-fast-10008
+  category: Shipping Fast
+  round: 1
+  text: What is the name of the algorithm designed by Tony Hoare, famous for its speed in sorting?
+  options:
+    A: ZoomieSort
+    B: QuickSort
+    C: SlickSort
+    D: TonySort
+  answer: B
+
+- id: shipping-fast-20005
+  category: Shipping Fast
+  round: 2
+  text: What practiced action, inspired by martial arts, was indoctrinated as a means of practicing programming?
+  answer: Kata
+
+- id: shipping-fast-20006
+  category: Shipping Fast
+  round: 2
+  text: What PostgreSQL command is used to undo all changes made during a transaction?
+  answer: ROLLBACK
+
+- id: shipping-fast-20007
+  category: Shipping Fast
+  round: 2
+  text: A deployment strategy where a new version is released to a small subset of users in production before a full rollout is known as what?
+  answer: Canary Deployment
+
+- id: shipping-fast-20008
+  category: Shipping Fast
+  round: 2
+  text: Jest, Mocha, and Jasmine are all examples of what kind of library?
+  answer: Testing
