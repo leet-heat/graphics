@@ -1,345 +1,346 @@
-# TODO for game 9
-# - Developerisms Round 1 and 2
+# TODO
+# - CSS 3 for round 1, 4 for round 2
+# - Acronyms - 1 for round 1
 
-- id: developerisms-10013
-  category: Developerisms
+- id: acronyms-10013
+  category: Acronyms
   round: 1
-  text: What term do developers use for a codebase that's become such a disaster, it's practically impossible to fix?
+  text: What does CORS stand for?
   options:
-    A: code spaghetti
-    B: code soup
-    C: tire fire
-    D: tech debt trap
+    A: Content Object Read Security
+    B: Code Optimization for Remote Servers
+    C: Cross-Origin Resource Sharing
+    D: Continuous Online Reason for Suffering
   answer: C
 
-- id: developerisms-10014
-  category: Developerisms
+- id: acronyms-10014
+  category: Acronyms
   round: 1
-  text: What term describes old, sometimes poorly documented code that everyone's afraid to touch but the business depends on?
+  text: What does CSS stand for?
   options:
-    A: heritage code
-    B: technical debt
-    C: vintage software
-    D: legacy code
-  answer: D
-
-- id: developerisms-10015
-  category: Developerisms
-  round: 1
-  text: What JavaScript nightmare occurs when you have multiple nested asynchronous functions, creating deeply indented and hard-to-follow code?
-  options:
-    A: callback hell
-    B: promise chain
-    C: event loop block
-    D: async/await chain
-  answer: A
-
-- id: developerisms-10016
-  category: Developerisms
-  round: 1
-  text: What's the development term for when a project's requirements keep expanding uncontrollably during development?
-  options:
-    A: scope creep
-    B: project drift
-    C: feature bloat
-    D: stack overflow
-  answer: A
-
-- id: developerisms-20017
-  category: Developerisms
-  round: 2
-  text: What term describes a subtle indicator in code that usually points to a deeper underlying problem in the design or architecture?
-  answer: code smell
-
-- id: developerisms-20018
-  category: Developerisms
-  round: 2
-  text: What phrase is famously used in beginner programming demos?
-  answer: hello world
-
-- id: developerisms-20019
-  category: Developerisms
-  round: 2
-  text: What is a condescending phrase used to instruct developers to read the documentation?
-  answer: Read The Fucking Manual (or RTFM)
-
-- id: developerisms-20020
-  category: Developerisms
-  round: 2
-  text: Information that only exists in a developer's heads, but not documentation.
-  answer: Tribal knowledge
-
-- id: css-10033
-  category: CSS
-  round: 1
-  text: Pseudo-class functions `:is()` and `:where()` match the same elements. What is the difference between them?
-  options:
-    A: performance
-    B: character count
-    C: nesting depth
-    D: specificity
-  answer: D
-
-- id: css-10034
-  category: CSS
-  round: 1
-  text: Which CSS selector allows for matching elements without specific characteristics?
-  options:
-    A: :not()
-    B: :exclude()
-    C: :without()
-    D: :inverse()
-  answer: A
-
-- id: css-10035
-  category: CSS
-  round: 1
-  text: To match only one direct sibling element, which combinator should be used?
-  options:
-    A: p ~ .sibling {}
-    B: p > .sibling {}
-    C: p + .sibling {}
-    D: p .sibling {}
-  answer: A
-
-- id: css-10036
-  category: CSS
-  round: 1
-  text: What pseudo-element applies styles to highlighted text on a page?
-  options:
-    A: ::highlight
-    B: ::mark
-    C: ::selection
-    D: ::cursor
-  answer: C
-
-- id: css-20033
-  category: CSS
-  round: 2
-  text: What declaration will cause an element to be hidden, but still occupy space?
-  answer: 'visibility: hidden'
-
-- id: css-20034
-  category: CSS
-  round: 2
-  text: Which value for `justify-content` will spread items evenly across the flex container?
-  answer: space-between
-
-- id: css-20035
-  category: CSS
-  round: 2
-  text: The `border` property is shorthand for which 3 border properties?
-  answer: border-width, border-style, border-color
-
-- id: css-20036
-  category: CSS
-  round: 2
-  text: Which CSS property adjusts the transparency of an element?
-  answer: opacity
-
-- id: user-experience-10005
-  category: User Experience
-  round: 1
-  text: Which design decision feels really cool to build, but often degrades user experience?
-  options:
-    A: Parallax effects
-    B: Scrolljacking
-    C: Carousel
-    D: All of the above
-  answer: D
-
-- id: user-experience-10006
-  category: User Experience
-  round: 1
-  text: To improve delivery speed for static assets, developers can leverage what?
-  options:
-    A: S3 buckets
-    B: Content Delivery Networks
-    C: localStorage
-    D: IPv6
+    A: Code Standard Styling
+    B: Cascading Style Sheets
+    C: Computed Style Structure
+    D: Chaos Sown Stylishly
   answer: B
 
-- id: user-experience-10007
-  category: User Experience
+- id: acronyms-10015
+  category: Acronyms
   round: 1
-  text: Which of the following is NOT a library of ready-made React interface elements?
+  text: What does PEBKAC stand for?
   options:
-    A: Radix
-    B: Grommet
-    C: Mantine
-    D: Cortex
+    A: Poor Execution Brings Karma And Consequences
+    B: Prior Engagement Blocking Kickoff And C
+    C: Program Easy Base Knowledge
+    D: Problem Exists Between Keyboard And Chair
   answer: D
 
-- id: user-experience-10008
-  category: User Experience
+- id: acronyms-10016
+  category: Acronyms
   round: 1
-  text: The presence of a loading spinner can perceived loading slower if loading takes less than how long?
+  text: What does LGTM stand for?
   options:
-    A: 100ms
-    B: 500ms
-    C: 2 seconds
-    D: 5 seconds
-  answer: C
+    A: Looks go to Mars
+    B: Let's get this merged
+    C: Let's get this money
+    D: Looks good to me
+  answer: D
 
-# https://developer.mozilla.org/en-US/docs/Glossary/Jank
-- id: user-experience-20005
-  category: User Experience
+- id: acronyms-20013
+  category: Acronyms
   round: 2
-  text: Which slang term refers to sluggishness in a user interface, usually caused by executing long tasks on the main thread, blocking rendering, or expending too much processor power on background processes.
-  answer: Jank
+  text: What does SVG stand for?
+  answer: Scalable Vector Graphics
 
-- id: user-experience-20006
-  category: User Experience
+- id: acronyms-20014
+  category: Acronyms
   round: 2
-  text: What technique can be used to reduce video buffering on playback?
-  answer: '"adaptive bitrate streaming" or "HLS" or "MPEG-DASH"'
+  text: What does JWT stand for?
+  answer: JSON Web Token
 
-# https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API
-- id: user-experience-20007
-  category: User Experience
+- id: acronyms-20015
+  category: Acronyms
   round: 2
-  text: Many SPA sites make the browser back button behave unexpectedly. Which browser API should developers use to fix its behavior?
-  answer: History API
+  text: In research, what does HCI stand for?
+  answer: Human-Computer Interaction
 
-- id: user-experience-20008
-  category: User Experience
+- id: acronyms-20016
+  category: Acronyms
   round: 2
-  text: We see them everywhere, but what is the condition for ACTUALLY requiring a cookie banner?
-  answer: Collecting personal data with cookies
+  text: What do programmers mean when they say YAGNI?
+  answer: You Aren't Gonna Need It
 
-- id: user-management-10009
-  category: User Management
+- id: css-10037
+  category: CSS
   round: 1
-  text: Role escalation occurs when _____..
+  text: In the Before Times, complex selectors like this were used to do what?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737707263/leet-heat/questions/css-10037.png
   options:
-    A: Roles are deleted from the system
-    B: Users downgrade their access
-    C: A user gains higher privileges than intended
-    D: Roles are properly assigned
-  answer: C
-
-- id: user-management-10010
-  category: User Management
-  round: 1
-  text: What's the function of firewalls in user management?
-  options:
-    A: Manage user roles
-    B: Style sign in pages
-    C: Block unauthorized access
-    D: Cook user data
-  answer: C
-
-- id: user-management-10011
-  category: User Management
-  round: 1
-  text: What does session hijacking refer to?
-  options:
-    A: Enhancing session security
-    B: Styling session pages
-    C: Taking over a user's session
-    D: Speeding up session loads
-  answer: C
-
-- id: user-management-10012
-  category: User Management
-  round: 1
-  text: What is the purpose of account provisioning?
-  options:
-    A: To create and manage user accounts
-    B: To encrypt user communications
-    C: To delete all user data
-    D: To design user interfaces
+    A: hack IE to conditionally apply styles
+    B: prove CSS is a programming language
+    C: meet minimum character limits for git commits
+    D: none of the above
   answer: A
 
-- id: user-management-20009
-  category: User Management
-  round: 2
-  text: 'In RBAC, what is the term for the lowest level of access right?'
-  answer: Permission
-
-- id: user-management-20010
-  category: User Management
-  round: 2
-  text: What is a common method for tenant identification in a web application?
-  answer: Subdomain or Custom Domain
-
-- id: user-management-20011
-  category: User Management
-  round: 2
-  text: The ability to customize the application’s look & feel for each tenant in a multi-tenancy application is called?
-  answer: White Labeling
-
-- id: user-management-20012
-  category: User Management
-  round: 2
-  text: ______ allows for custom data to be saved on the User object.
-  answer: Metadata
-
-- id: frameworks-10009
-  category: Frameworks
+- id: css-10038
+  category: CSS
   round: 1
-  text: In Lit, custom components and properties are declared using what shorthand syntax?
+  text: Which font unit is relative to parent element's font size?
   options:
-    A: Decorators
-    B: IIFEs
-    C: Pipe operator
-    D: Pattern matching
+    A: rem
+    B: pt
+    C: px
+    D: em
+  answer: D
+
+- id: css-10039
+  category: CSS
+  round: 1
+  text: Which of the following is not a valid value for the `display` property?
+  options:
+    A: absolute
+    B: table
+    C: block
+    D: run-in
   answer: A
 
-- id: frameworks-10010
-  category: Frameworks
+- id: css-10040
+  category: CSS
   round: 1
-  text: Which library used to ship with a method called `__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED`?
+  text: What is the default flex direction?
   options:
-    A: '.Net'
-    B: React
-    C: Angular
-    D: None of the above
+    A: horizonal
+    B: row
+    C: column
+    D: left-right
   answer: B
 
-# https://github.com/facebook/react/issues/25573
-- id: frameworks-10011
-  category: Frameworks
+- id: css-20037
+  category: CSS
+  round: 2
+  text: To manually change the stacking order of elements, what property is used?
+  answer: z-index
+
+- id: css-20038
+  category: CSS
+  round: 2
+  text: To prevent text from wrapping, even if it overflows the element, what value for white-space is used?
+  answer: pre
+
+- id: css-20039
+  category: CSS
+  round: 2
+  text: Content, padding, border, and margin are all parts of what?
+  answer: the box model
+
+- id: css-20040
+  category: CSS
+  round: 2
+  text: What are special states like :hover, :active, :first-child, etc called?
+  answer: pseudo-classes
+
+- id: apis-and-sdks-10005
+  category: APIs & SDKs
   round: 1
-  text: In 2022, Next.js faced backlash after patching which global?
+  text: What does a product SDK typically do?
   options:
-    A: localStorage
-    B: cookie
-    C: fetch
-    D: Array
+    A: Provide convenience methods
+    B: Wrap the product's API
+    C: Handle auth and connection
+    D: all of the above
+  answer: D
+
+- id: apis-and-sdks-10006
+  category: APIs & SDKs
+  round: 1
+  text: What word commonly prefixes credentials sent via header?
+  options:
+    A: Api-Key
+    B: Token
+    C: Bearer
+    D: Access
   answer: C
 
-- id: frameworks-10012
-  category: Frameworks
+- id: apis-and-sdks-10007
+  category: APIs & SDKs
   round: 1
-  text: In Ruby on Rails, what is the built-in ORM called?
+  text: In a RESTful API, URLs map to resources. What is used to specify which action is being performed?
   options:
-    A: RubyRM
-    B: Active Record
-    C: GemBase
-    D: DataRail
+    A: HTTP request methods
+    B: Query parameters
+    C: The request body
+    D: Vibes
+  answer: A
+
+- id: apis-and-sdks-10008
+  category: APIs & SDKs
+  round: 1
+  text: Some APIs allow the requester to specify the MIME type of the response using which header?
+  options:
+    A: Content-Type
+    B: Accept
+    C: Format
+    D: Mime-Type
   answer: B
 
-- id: frameworks-20009
-  category: Frameworks
+- id: apis-and-sdks-20005
+  category: APIs & SDKs
   round: 2
-  text: In React, creating elements by looping or mapping will cause console warnings unless a _____ is provided.
-  answer: key
+  text: To check the headers of a GET request without downloading the response, what HTTP method is used?
+  answer: HEAD
 
-- id: frameworks-20010
-  category: Frameworks
+- id: apis-and-sdks-20006
+  category: APIs & SDKs
   round: 2
-  text: What framework was Twitter originally built with?
-  answer: Ruby on Rails
+  text: The Access-Control-Allow-Origin header is used to manage what type of error?
+  answer: CORS or Cross-Origin Resource Sharing
 
-- id: frameworks-20011
-  category: Frameworks
+- id: apis-and-sdks-20007
+  category: APIs & SDKs
   round: 2
-  text: This wildly popular CSS framework describes itself as "utility-first"?
-  answer: Tailwind
+  text: Where REST focuses on resources, which API approach focuses on verbs and actions?
+  answer: RPC
 
-- id: frameworks-20012
-  category: Frameworks
+- id: apis-and-sdks-20008
+  category: APIs & SDKs
   round: 2
-  text: What is the Vue.js directive for looping through an array?
-  answer: v-for
+  text: What mechanism allows an API to serve alternative formats of a resource (e.g. WebP vs. JPEG images) best suited for the user?
+  answer: content negotiation
+
+- id: authentication-10013
+  category: Authentication
+  round: 1
+  text: What is the purpose of access logs?
+  options:
+    A: Style access pages
+    B: Record user activities and access patterns
+    C: Encrypt user data
+    D: Manage user passwords
+  answer: B
+
+- id: authentication-10014
+  category: Authentication
+  round: 1
+  text: Token-based authentication is stateless because _____.
+  options:
+    A: It uses server memory
+    B: Tokens are stored in cookies
+    C: It doesn't require server-side sessions
+    D: It relies on session IDs
+  answer: C
+
+- id: authentication-10015
+  category: Authentication
+  round: 1
+  text: Single Logout (SLO) ensures that _____.
+  options:
+    A: Sign out processes are faster
+    B: Users can sign out from all sessions at once
+    C: Users never have to sign out
+    D: Users can sign out from one device only
+  answer: B
+
+- id: authentication-10016
+  category: Authentication
+  round: 1
+  text: A Yubikey is a popular form of what authentication-related item?
+  options:
+    A: One-time password generator
+    B: Retina scanner
+    C: Password manager
+    D: Hardware passkey
+  answer: D
+
+- id: authentication-20013
+  category: Authentication
+  round: 2
+  text: What hashing algorithm is commonly recommended for securely storing user passwords?
+  answer: bcrypt or Argon2
+
+- id: authentication-20014
+  category: Authentication
+  round: 2
+  text: Which HTTP method is typically used to submit sign in credentials to a server?
+  answer: POST
+
+- id: authentication-20015
+  category: Authentication
+  round: 2
+  text: In the context of web authentication, what does the term "IdP" stand for?
+  answer: Identity Provider
+
+- id: authentication-20016
+  category: Authentication
+  round: 2
+  text: Using _____, a user is able to sign in to any of several related, yet independent systems using one login ID.
+  answer: SSO
+
+- id: dev-lore-10017
+  category: Dev Lore
+  round: 1
+  text: What was the original name of the Kubernetes project?
+  options:
+    A: Project Picard
+    B: Project Seven of Nine
+    C: Project Spock
+    D: Project Dukat
+  answer: B
+
+- id: dev-lore-10018
+  category: Dev Lore
+  round: 1
+  text: What language does this mascot represent?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737582996/leet-heat/questions/dev-lore-10018.webp
+  options:
+    A: Go
+    B: Rust
+    C: C
+    D: C#
+  answer: A
+
+- id: dev-lore-10019
+  category: Dev Lore
+  round: 1
+  text: Which famous technology law states that the performance of hardware doubles approximately every two years?
+  options:
+    A: Metcalfe's Law
+    B: Murphy's Law
+    C: Moore's Law
+    D: Shannon's Law
+  answer: C
+
+- id: dev-lore-10020
+  category: Dev Lore
+  round: 1
+  text: The name "Kubernetes" comes from the Greek word meaning "______" or "_______," reflecting its role in steering containerized applications.
+  options:
+    A: General or Navigator
+    B: Helmsman or Pilot
+    C: Commander or Leader
+    D: Engineer or Architect
+  answer: B
+
+- id: dev-lore-20017
+  category: Dev Lore
+  round: 2
+  text: What is the name of the character encoding standard developed in the 1960s that uses 7 bits to represent text and includes 128 unique characters such as letters, numbers, and symbols?
+  answer: ASCII
+
+- id: dev-lore-20018
+  category: Dev Lore
+  round: 2
+  text: What development approach, proposed by Kent Beck, requires writing automated tests for functionality before writing the actual implementation code?
+  answer: Test-Driven Development (TDD)
+
+- id: dev-lore-20019
+  category: Dev Lore
+  round: 2
+  text: What is the name of the Linux mascot?
+  image: https://res.cloudinary.com/jlengstorf/image/upload/f_auto/q_auto/w_1000/v1737583894/leet-heat/questions/dev-lore-20019.webp
+  answer: Tux
+
+- id: dev-lore-20020
+  category: Dev Lore
+  round: 2
+  text: Which programming language is known for its compile-time memory safety and preventing issues like null pointer dereferencing?
+  answer: Rust
